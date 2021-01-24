@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)https://support.travelport.com/webhelp/uapi/Content/Getting_Started/Design_Considerations/Date_and_Time_Formats.htm -->
+<html xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="NonSchemaFiles" data-mc-search-type="Stem" data-mc-help-system-file-name="uAPI.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Getting Started|Universal API Overview|Design Considerations" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Date and Time Formats</title>
+        <!-- Google Analytics code that tracks page usage -->
+        <link href="./Date and Time Formats_files/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./Date and Time Formats_files/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./Date and Time Formats_files/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./Date and Time Formats_files/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True">
+        <link href="./Date and Time Formats_files/Universal.css" rel="stylesheet" type="text/css">
+        <link href="./Date and Time Formats_files/TravelportRows.css" rel="stylesheet" data-mc-stylesheet-type="table">
+        <script type="text/javascript" async="" src="./Date and Time Formats_files/analytics.js.download"></script><script src="./Date and Time Formats_files/jquery.min.js.download" type="text/javascript">
+        </script>
+        <script src="./Date and Time Formats_files/require.min.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./Date and Time Formats_files/require.config.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./Date and Time Formats_files/foundation.min.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./Date and Time Formats_files/plugins.min.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script src="./Date and Time Formats_files/MadCapAll.js.download" type="text/javascript" defer="defer">
+        </script>
+        <script async="" src="./Date and Time Formats_files/js">
+        </script>
+        <script type="text/javascript">/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-26551215-3');	
+		/* ]]> */</script>
+    <meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xxlarge"><style></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../Data/Language.js" src="./Date and Time Formats_files/Language.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../Subsystems/Schemas/Data/Language.js" src="./Date and Time Formats_files/Language.js(1).download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="../../../Data/Filters.js" src="./Date and Time Formats_files/Filters.js.download"></script></head>
+    <body class="height-container-no-footer height-container" style="min-height: calc(100vh - 16px);">
+        <div role="main" id="mc-main-content" data-original-display-attribute-value="">
+            <h1 data-original-display-attribute-value=""><a name="aanchor359" data-original-display-attribute-value=""></a>
+                <madcap:concept term="Topics Only" data-original-display-attribute-value="">Date and Time Formats</madcap:concept></h1>
+            <p class="bodytext" data-original-display-attribute-value="">The following formats are used throughout Universal API schema unless exceptions are 
+ noted.</p>
+            <h2 data-original-display-attribute-value="">General Formats </h2>
+            <p class="bodytext" data-original-display-attribute-value="">
+            Universal API adheres to the ISO-standard specification 
+ of date and time supported by the W3C in the xs:dateTime format: <br style="font-weight: bold;" data-original-display-attribute-value=""><b data-original-display-attribute-value="">yyyy</b>-<b data-original-display-attribute-value="">mm</b>-<b data-original-display-attribute-value="">ddThh</b>:<b data-original-display-attribute-value="">mm</b>:<b data-original-display-attribute-value="">ss</b>.<b data-original-display-attribute-value="">s</b>+<b data-original-display-attribute-value="">zzzzzz</b></p>
+            <p class="bodytext" data-original-display-attribute-value="">Where:</p>
+            <ul data-original-display-attribute-value="">
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value=""><b data-original-display-attribute-value="">yyyy</b>
+                     
+ is the year</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value=""><b data-original-display-attribute-value="">mm</b>
+                     
+ (first) is the month</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value=""><b data-original-display-attribute-value="">dd</b>
+                     
+ is the day</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value=""><b data-original-display-attribute-value="">T</b>
+                     
+ is a separator indicating that time-of-day follows</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value=""><b data-original-display-attribute-value="">hh</b>
+                     
+ is the hour on a 24-hour clock</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value=""><b data-original-display-attribute-value="">mm</b>
+                     
+ (second) is the minute</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value=""><b data-original-display-attribute-value="">ss</b>
+                     
+ is whole seconds</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value=""><b data-original-display-attribute-value="">s</b> 
+ (optional) is the fractional second</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value=""><b data-original-display-attribute-value="">zzzzzz</b>
+                     
+ is the time zone</p>
+                </li>
+            </ul>
+            <p class="bodytext" data-original-display-attribute-value=""><span class="Note" data-original-display-attribute-value="">Note:</span> See <a href="http://www.w3.org/TR/xmlschema-2#dateTime" data-original-display-attribute-value="">http://www.w3.org/TR/xmlschema-2/#dateTime</a> 
+ for the full lexical description of the dateTime format.</p>
+            <p class="bodytext" data-original-display-attribute-value="">The following examples indicate the format:</p>
+            <table style="width: 100%;border-spacing: 0px;border-spacing: 0px;margin-left: 0;margin-right: auto;mc-table-style: url(&#39;../../Resources/TableStyles/TravelportRows.css&#39;);" cellspacing="0" width="100%" class="TableStyle-TravelportRows" data-original-display-attribute-value="">
+                <colgroup data-original-display-attribute-value=""><col style="width: 31.437%;" class="TableStyle-TravelportRows-Column-Column1" data-original-display-attribute-value="">
+                <col style="width: 68.563%;" class="TableStyle-TravelportRows-Column-Column1" data-original-display-attribute-value="">
+                </colgroup><thead data-original-display-attribute-value="">
+                    <tr class="TableStyle-TravelportRows-Head-Header1" data-original-display-attribute-value="">
+                        <th class="TableStyle-TravelportRows-HeadE-Column1-Header1" data-original-display-attribute-value="" scope="col">
+                            <p class="tableheading" data-original-display-attribute-value="">Date and Time</p>
+                        </th>
+                        <th class="TableStyle-TravelportRows-HeadD-Column1-Header1" data-original-display-attribute-value="" scope="col">
+                            <p class="tableheading" data-original-display-attribute-value="">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody data-original-display-attribute-value="">
+                    <tr style="height: 33px;" valign="top" class="TableStyle-TravelportRows-Body-Body1" data-original-display-attribute-value="">
+                        <td colspan="1" rowspan="1" width="31.437%" class="TableStyle-TravelportRows-BodyB-Column1-Body1" data-original-display-attribute-value="">
+                            <p class="tabletext" data-original-display-attribute-value="">2009-10-10T12:00:00-05:00</p>
+                        </td>
+                        <td colspan="1" rowspan="1" width="68.563%" class="TableStyle-TravelportRows-BodyA-Column1-Body1" data-original-display-attribute-value="">
+                            <p class="tabletext" data-original-display-attribute-value="">Noon on 10 October 2009, Central Daylight Savings Time<br data-original-display-attribute-value="">or Eastern Standard Time in the U.S.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="bodytext" data-original-display-attribute-value=""><span class="Note" data-original-display-attribute-value="">Note:</span> Universal API does not 
+ support Zulu Time (GMT) formats, such as <i data-original-display-attribute-value="">2009-10-10T12:00:00Z</i>. 
+ However, some providers may return Zulu time. </p>
+            <h2 data-original-display-attribute-value="">System Dates and Times </h2>
+            <p class="bodytext" data-original-display-attribute-value="">Any system-generated times are specified with the xs:dateTime 
+ type. This format is returned for all dates and times except:</p>
+            <ul data-original-display-attribute-value="">
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value="">Flight times/</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value="">Booking creation and modification 
+ times.</p>
+                </li>
+                <li class="p-bullettext" data-original-display-attribute-value="">
+                    <p class="bullettext" data-original-display-attribute-value="">Ticketing time limits.</p>
+                </li>
+            </ul>
+            <p class="bodytext" data-original-display-attribute-value="">Currently, data is returned in Greenwich 
+ Mean Time (GMT). For example:</p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value="">&lt;PNR Version="1" 
+ CreateDate="2009-05-11T13:13:02.802" ModifiedDate="2009-05-12T07:17:51.984"&gt;</p>
+            <h2 data-original-display-attribute-value="">Flight Dates and Times </h2>
+            <p class="bodytext" data-original-display-attribute-value="">Flight-related dates and times follow the standard practice 
+ of being in represented as Airport Local Time at the place of arrival 
+ or departure. The correct time zone offset is also included in this field. 
+ </p>
+            <p class="bodytext" data-original-display-attribute-value="">For example:</p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value="">&lt;AirSegment Key="1" 
+ Group="0" Carrier="AS" FlightNumber="563" 
+ Origin="SFO" Destination="SEA" </p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value="">DepartureTime="2009-06-02T09:00:00.000-07:00" 
+ </p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value="">ArrivalTime="2009-06-02T11:10:00.000-07:00" 
+ </p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value="">ClassOfService="V" 
+ ETicketability="Yes" Status="HK"\&gt;</p>
+            <p class="bodytext" data-original-display-attribute-value="">However, most of the fields in the requests that accept 
+ date/time data is defined as a xs:string type rather than a xs:dateTime 
+ type. This is due to the number of XML marshalling tools that process 
+ these field types. Typically, these tools attempt to shift the time from 
+ the specified time zone offset to the local time zone offset.</p>
+            <p class="bodytext" data-original-display-attribute-value="">For example, a segment with a Pacific Standard Time airport, 
+ processed by an Atlanta-based system, in Eastern Standard Time:</p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value="">Origin="SFO" DepartureTime="2009-06-02T09:00:00.000-07:00" 
+ </p>
+            <p style="margin-left: 88px;" data-original-display-attribute-value="">is converted to:</p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value="">Origin="SFO" DepartureTime="2009-06-02T11:00:00.000-04:00" 
+ </p>
+            <p class="bodytext" data-original-display-attribute-value="">Although this conversion is technically correct, and 
+ both represent the same time, it does not properly represent Airport Local 
+ Time. With the fields represented as xs:string, the client application 
+ processes and converts the time according to its protocols, and makes 
+ or does not make adjustments. There is no automatic conversion that has 
+ to be undone. </p>
+            <p class="bodytext" data-original-display-attribute-value="">Although this usage implies that the system expects the 
+ time zone offset value to be sent in with all date/time fields, this is 
+ not the case. It is assumed that the data returned in the search requests 
+ (which includes the offset values) would simply be returned during pricing 
+ or booking requests. However, this has not been the desired situation 
+ for the various client applications. </p>
+            <p class="bodytext" data-original-display-attribute-value="">As a result, we maintain a database to link Airports 
+ and Time Zones to determine the offset value in the event it was not sent 
+ in. But, if the Zulu format is received, we will assume GMT time and make 
+ the appropriate adjustments. So, it is recommended to send in either the 
+ complete or partial date/time format, and not the Zulu format. </p>
+            <p class="bodytext" style="font-weight: bold;" data-original-display-attribute-value="">Preferred: </p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value="">2009-06-01T10:00:00.000-05:00 
+ </p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value=""><span style="font-family: Verdana, sans-serif;" data-original-display-attribute-value="">2009-06-01T10:00:00.000</span>
+            </p>
+            <p class="bodytext" style="font-weight: bold;" data-original-display-attribute-value="">Not recommended: </p>
+            <p class="SampleXML" style="margin-left: 40px;" data-original-display-attribute-value="">2009-06-01T15:00:00.000Z</p>
+            <p data-original-display-attribute-value="">&nbsp;</p>
+        </div>
+        <p data-original-display-attribute-value="">&nbsp;</p>
+        <!-- Following section displays Helpful? and yes/no buttons. Universal.css contains supporting elements. -->
+        <!-- References feedback.js that hides/displays div and email.js that is the Email feedback link. -->
+        <div class="highlightBox2" data-original-display-attribute-value="">
+            <p data-original-display-attribute-value="">Please 
+			<script type="text/javascript" src="./Date and Time Formats_files/email.js.download" data-original-display-attribute-value=""></script><a href="mailto:TechCommuAPI@travelport.com?subject=Travelport%20Universal%20API%20Help%20Feedback&amp;body=This%20email%20form%20is%20used%20to%20suggest%20updates%20to%20the%20online%20help.%20To%20request%20Universal%20API%20support%2C%20open%20a%20case%20at%20https%3A//my.travelport.com.%20%0A%0A%5BEnter%20comments%20here%5D%20%0A%0AMy%20comments%20apply%20to%20this%20page%3A%20https%3A//support.travelport.com/webhelp/uapi/Content/Getting_Started/Design_Considerations/Date_and_Time_Formats.htm" data-original-display-attribute-value="">email</a> us details on how we can make your experience better.</p>
+        </div>
+        <div id="feedback-survey" data-original-display-attribute-value="">
+            <div class="feedback-question" data-original-display-attribute-value="">
+                <h4 class="survey" data-original-display-attribute-value="">Helpful?</h4>
+                <p data-original-display-attribute-value=""><a class="feedback-button feedback-yes" href="javascript:void(0)" title="Yes, this article was helpful." alt="Yes, this article was helpful." data-original-display-attribute-value="">Yes</a>&nbsp;<a class="feedback-button feedback-no" href="javascript:void(0)" title="No, this article wasn&#39;t helpful." alt="No, this article wasn&#39;t helpful." data-original-display-attribute-value="">No</a></p>
+                <p data-original-display-attribute-value=""> &nbsp;</p>
+                <p data-original-display-attribute-value=""> &nbsp;</p>
+                <p data-original-display-attribute-value=""> &nbsp;</p>
+                <p data-original-display-attribute-value=""> &nbsp;</p>
+            </div>
+            <div class="feedback-reason no" data-original-display-attribute-value="">
+                <hr width="100%" size="0" align="center" data-original-display-attribute-value="">
+                <div data-original-display-attribute-value="">
+                    <h4 class="survey" data-original-display-attribute-value="">Sorry about that</h4>
+                    <p data-original-display-attribute-value="">Please 
+					<script type="text/javascript" src="./Date and Time Formats_files/email.js.download" data-original-display-attribute-value=""></script><a href="mailto:TechCommuAPI@travelport.com?subject=Travelport%20Universal%20API%20Help%20Feedback&amp;body=This%20email%20form%20is%20used%20to%20suggest%20updates%20to%20the%20online%20help.%20To%20request%20Universal%20API%20support%2C%20open%20a%20case%20at%20https%3A//my.travelport.com.%20%0A%0A%5BEnter%20comments%20here%5D%20%0A%0AMy%20comments%20apply%20to%20this%20page%3A%20https%3A//support.travelport.com/webhelp/uapi/Content/Getting_Started/Design_Considerations/Date_and_Time_Formats.htm" data-original-display-attribute-value="">email</a> us details on how we can make your experience better.</p>
+                    <p data-original-display-attribute-value="">Why wasn't this helpful? (check all that apply)</p>
+                    <div class="feedback-option" data-original-display-attribute-value="">
+                        <input type="checkbox" class="option no" id="option1" value="Could not find what I was looking for" data-analytics-label="Could not find" data-original-display-attribute-value="">
+                        <label for="option1" data-original-display-attribute-value="">Couldn't find what I was looking for</label>
+                    </div>
+                    <div class="feedback-option" data-original-display-attribute-value="">
+                        <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" data-original-display-attribute-value="">
+                        <label for="option2" data-original-display-attribute-value="">Instructions confusing or unclear</label>
+                    </div>
+                    <div class="feedback-option" data-original-display-attribute-value="">
+                        <input type="checkbox" class="option no" id="option3" value="Instructions did not work" data-analytics-label="Did not work" data-original-display-attribute-value="">
+                        <label for="option3" data-original-display-attribute-value="">Instructions didn't work</label>
+                    </div>
+                    <div class="feedback-reason no-thanks" data-original-display-attribute-value="">
+                        <p style="font-size: 12pt;" data-original-display-attribute-value=""><b style="color: #04a326;" data-original-display-attribute-value="">Thanks for your feedback.</b>
+                        </p>
+                        <p data-original-display-attribute-value=""> &nbsp;</p>
+                        <p data-original-display-attribute-value=""> &nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-reason yes-thanks" data-original-display-attribute-value="">
+                <hr width="100%" size="0" align="center" data-original-display-attribute-value="">
+                <p style="font-size: 1.2em; color: #04a326;" data-original-display-attribute-value="">Great!</p>
+                <p data-original-display-attribute-value="">Thanks for taking the time to provide feedback. Please 
+					<script type="text/javascript" src="./Date and Time Formats_files/email.js.download" data-original-display-attribute-value=""></script><a href="mailto:TechCommuAPI@travelport.com?subject=Travelport%20Universal%20API%20Help%20Feedback&amp;body=This%20email%20form%20is%20used%20to%20suggest%20updates%20to%20the%20online%20help.%20To%20request%20Universal%20API%20support%2C%20open%20a%20case%20at%20https%3A//my.travelport.com.%20%0A%0A%5BEnter%20comments%20here%5D%20%0A%0AMy%20comments%20apply%20to%20this%20page%3A%20https%3A//support.travelport.com/webhelp/uapi/Content/Getting_Started/Design_Considerations/Date_and_Time_Formats.htm" data-original-display-attribute-value="">email</a> us details on how we can make your experience better.</p>
+            </div>
+        </div>
+        <!-- Analytics for events. This code must always be after the initial google analytics definition in the header. -->
+        <script type="text/javascript" src="./Date and Time Formats_files/feedback.js.download" data-original-display-attribute-value="">
+        </script>
+        <p data-original-display-attribute-value="">&nbsp;</p>
+    
+    <!-- Script that allows users to select GDS in a drop down to change sample page. -->
+    <script type="text/javascript" src="./Date and Time Formats_files/ShowHideVersion.js.download" data-original-display-attribute-value="">
+    </script>
+</body></html>

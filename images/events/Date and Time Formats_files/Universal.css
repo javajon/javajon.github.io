@@ -1,0 +1,1252 @@
+/*<meta />*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+li
+{
+	font-family: 'Open Sans', Verdana, Arial, sans-serif;
+	font-weight: 400;
+}
+
+html
+{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+body
+{
+	font-style: normal;
+	color: #000000;
+	font-size: 14px;
+}
+
+p
+{
+	font-style: normal;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	line-height: 22px;
+}
+
+/* Blue headings now hidden with Atlas implementation  
+******************************************************
+h1
+{
+	padding-bottom: 15px;
+	font-weight: 600;
+	font-size: 18pt;
+	border: none;
+	color: #0075B0;
+	font-weight: bold;
+}
+
+h2
+{
+	font-weight: 600;
+	margin-top: 25px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	mc-heading-level: 2;
+	font-size: 15pt;
+	color: #0075B0;
+}
+
+h3
+{
+	margin-top: 15px;
+	margin-bottom: 0px;
+	mc-heading-level: 3;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 13pt;
+	color: #0075B0;
+}
+
+h4
+{
+	margin-top: 20pt;
+	margin-bottom: 3pt;
+	mc-heading-level: 4;
+	font-weight: bold;
+	font-size: 1em;
+	color: #4a4a4a;
+}
+
+h5
+{
+	margin-top: 12px;
+	margin-bottom: 0pt;
+	mc-heading-level: 5;
+	font-style: italic;
+	font-size: .95em;
+	font-weight: normal;
+	color: #4a4a4a;
+}
+
+h6
+{
+	color: #000000;
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 0.6em;
+	font-size: 10.5pt;
+}
+
+***************************** */
+
+h1
+{
+	padding-bottom: 15px;
+	font-weight: 400;
+	font-size: 40px;
+	border: none;
+	color: #1D1D1D;
+	line-height: 40px;
+}
+
+h2
+{
+	font-weight: 600;
+	margin-top: 25px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	mc-heading-level: 2;
+	font-size: 28px;
+	line-height: 40px;
+	color: #1D1D1D;
+}
+
+h3
+{
+	margin-top: 15px;
+	margin-bottom: 0px;
+	mc-heading-level: 3;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 36px;
+	color: #1D1D1D;
+}
+
+h4
+{
+	margin-top: 20pt;
+	margin-bottom: 3pt;
+	mc-heading-level: 4;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 30px;
+	color: #1D1D1D;
+}
+
+h5
+{
+	margin-top: 12px;
+	margin-bottom: 0pt;
+	mc-heading-level: 5;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #1D1D1D;
+}
+
+h6
+{
+	color: #1D1D1D;
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 0.6em;
+	font-size: 14px;
+}
+
+.bodytext
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.spaceList
+{
+	margin-top: 4pt;
+	margin-bottom: 4pt;
+}
+
+.spaceListMore
+{
+	margin-top: 9pt;
+	margin-bottom: 9pt;
+}
+
+.indent
+{
+	margin-left: 15px;
+}
+
+.bodytextindent
+{
+	font-weight: normal;
+	margin-left: .25in;
+	margin-bottom: 6pt;
+}
+
+.Important
+{
+	color: #C00000;
+	font-weight: bold;
+}
+
+/* codeHeader used in LowFareSearchModifiers as Code Snippet heading */
+
+.codeHeader
+{
+	margin-top: 12pt;
+	margin-bottom: 3pt;
+	font-weight: bold;
+	font-size: 11pt;
+	color: #00A3AD;
+}
+
+th.GHead
+{
+	border-bottom: solid 2px #000000;
+	background-color: #69be28;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: left;
+	width: 20px;
+	width: fixed !important;
+	word-wrap: break-word;
+}
+
+th.GHeadCode
+{
+	border-bottom: solid 2px #000000;
+	background-color: #69be28;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: left;
+	width: 20px;
+	width: fixed !important;
+	word-wrap: break-word;
+}
+
+th.GHeadDesc
+{
+	border-bottom: solid 2px #000000;
+	background-color: #69be28;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: left;
+	width: 80px;
+	width: fixed !important;
+	word-wrap: break-word;
+}
+
+th.GHead1
+{
+	border-bottom: solid 2px #000000;
+	background-color: #69be28;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: left;
+	width: 15px;
+	width: fixed !important;
+	word-wrap: break-word;
+}
+
+.tabletext
+{
+	line-height: Normal;
+}
+
+.tableheading
+{
+	padding: 2px;
+}
+
+p.pre
+{
+	font-size: 10pt;
+	font-family: "Consolas", monospace;
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+}
+
+li.P-pre
+{
+	font-size: 10pt;
+	font-family: "Courier New", monospace;
+}
+
+p.SampleXML
+{
+	color: #830006;
+	font-size: 9pt;
+	font-family: Consolas, Verdana, sans-serif;
+	margin-top: 2px;
+	line-height: 12px;
+	margin: 0;
+	margin-bottom: 2px;
+}
+
+li.P-SampleXML
+{
+	font-size: 10pt;
+	font-family: Verdana, sans-serif;
+	color: #830006;
+}
+
+p.SampleTerminal
+{
+	font-size: 10pt;
+	color: #008080;
+	font-family: "Courier New", monospace;
+}
+
+li.P-SampleTerminal
+{
+	font-size: 10pt;
+	color: #008080;
+	font-family: "Courier New", monospace;
+}
+
+p.SampleAppCode
+{
+	font-family: "Courier New", monospace;
+	font-size: 10pt;
+	line-height: 14px;
+	margin: 0;
+}
+
+li.P-SampleAppCode
+{
+	font-family: "Courier New", monospace;
+}
+
+span.Note
+{
+	color: #4a4a4a;
+	font-weight: 700;
+}
+
+p.NotePara
+{
+	margin-top: 0pt;
+}
+
+li.P-NotePara
+{
+	
+}
+
+MadCap|xref.custom
+{
+	mc-format: '{quote}{paratext}{quote}';
+}
+
+pre.codeBlock
+{
+	font-family: Consolas, Verdana, 'Courier New';
+	line-height: 1.2em;
+	margin: 0 0 10px;
+	font-size: 0.9em;
+	color: #333;
+}
+
+div.codeBlock
+{
+	font-family: Consolas, Verdana, 'Courier New';
+	line-height: 1.2em;
+	display: block;
+	margin: 0 0 10px;
+	font-size: 0.9em;
+	color: #333;
+	overflow-y: scroll;
+	max-height: 340px;
+	word-wrap: break-word;
+	width: 98%;
+	background-color: #F2F2F2;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+@media print
+{
+	MadCap|xref.custom
+	{
+		mc-format: '{quote}{paratext}{quote} on page {page}';
+	}
+
+	a
+	{
+		font-family: Arial;
+		color: #005D8C;
+	}
+
+	p
+	{
+		font-family: Arial;
+	}
+
+	p.alphaBeta
+	{
+		padding: 10px;
+	}
+}
+
+a
+{
+	color: #01838a;
+}
+
+a:link
+{
+	color: #01838a;
+}
+
+a:visited
+{
+	color: #464648;
+}
+
+span.bold
+{
+	font-weight: bold;
+}
+
+span.italic
+{
+	font-style: italic;
+}
+
+li
+{
+	margin-bottom: 4px;
+	padding-left: .3em;
+}
+
+MadCap|dropDown
+{
+	mc-open-image: url('../Images/CSS/arrow-down-gray.png');
+	mc-closed-image: url('../Images/CSS/arrow-right-gray.png');
+	padding-top: 2pt;
+}
+
+MadCap|dropDownHead
+{
+	font-weight: bold;
+	color: #00a8b4;
+	padding-bottom: 5pt;
+	padding-top: 2pt;
+}
+
+MadCap|dropDownHotspot
+{
+	color: #00a8b4;
+}
+
+MadCap|dropDownBody
+{
+	padding-left: 1.5em;
+	border-bottom: solid 1px #0c3b55;
+	background-color: #fcfcee;
+	border-bottom-color: #dcdcdc;
+}
+
+/* TryMe drop down is light blue background and use with div.noteAlt for vertical blue bar */
+
+MadCap|dropDownBody.TryMe
+{
+	background-color: transparent;
+	border-bottom: solid 0px #000000;
+	padding-left: 10px;
+}
+
+MadCap|dropDownHotspot.TryMe
+{
+	color: #333333;
+	font-size: 1.1em;
+}
+
+MadCap|dropDownHead.TryMe
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #333333;
+}
+
+div.noteAlt
+{
+	background-color: #f0f7fb;
+	border-left: solid 4px #3498db;
+	line-height: 22px;
+	/* mc-auto-number-format: '{b}Try Me{/b}';  */
+	overflow: hidden;
+	padding: 12px;
+}
+
+MadCap|dropDown.Mods
+{
+	padding-top: .1em;
+}
+
+/* Use in modifiers tables for Implementation Details */
+
+MadCap|dropDownHotspot.Implement
+{
+	font-size: 1em;
+	font-weight: bold;
+	color: #582C83;
+}
+
+/* This div adds a purple vertical bar. Used in conjunction with drop down for the bar to display the length of the drop down body */
+
+div.Implement
+{
+	border-left: solid 2px #582C83;
+	/* mc-auto-number-format: '{b}Try Me{/b}';  */
+	overflow: hidden;
+	padding: 6px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	margin-top: 15px;
+}
+
+/* Use in modifiers tables for Provider Exclusions */
+
+MadCap|dropDownHotspot.Exclusion
+{
+	font-size: 1em;
+	font-weight: bold;
+	color: #4a4a4a;
+}
+
+/* This div adds a gray vertical bar. Used in conjunction with drop down for the bar to display the length of the drop down body */
+
+div.Exclusion
+{
+	border-left: solid 2px #4a4a4a;
+	/* mc-auto-number-format: '{b}Try Me{/b}';  */
+	overflow: hidden;
+	padding: 6px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	margin-top: 15px;
+}
+
+td.subheading
+{
+	background-color: #ebf9fe;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+td.headingGreen
+{
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #69be28;
+	color: #ffffff;
+	border-bottom: solid 2px #000000;
+	border-color: #ffffff;
+	border-bottom-color: #000000;
+}
+
+th.headingGreen
+{
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #69be28;
+	color: #ffffff;
+	border-bottom: solid 2px #000000;
+	border-color: #ffffff;
+	border-bottom-color: #000000;
+	width: 20px;
+}
+
+span.Internal
+{
+	color: #ff4500;
+}
+
+.Internal
+{
+	color: #ff4500;
+	mc-conditions: 'Primary.Internal';
+}
+
+span.releaseVersion
+{
+	font-size: 10pt;
+	color: #696969;
+	font-weight: bold;
+	font-style: oblique;
+}
+
+span.release
+{
+	font-size: 12pt;
+	font-family: Magneto;
+	color: #69be28;
+	font-weight: bold;
+}
+
+span.Diff
+{
+	background-color: #ffffe0;
+}
+
+td.subHeadingGreen
+{
+	background-color: #a6e278;
+	border-bottom-color: #ffffff;
+	border-color: #ffffff;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.sampleLightGreen
+{
+	/*border-bottom-color: #ffffff;
+	border-color: #ffffff;
+	background-color: #eaf8e0;
+	font-size: 10pt;
+	width: 20px;	*/
+	border: solid 1px #ffffff;
+	color: #000000;
+	font-size: 9pt;
+	width: 20px;
+}
+
+td.sampleGreen
+{
+	border-bottom-color: solid 1px #ffffff;
+	border-color: solid 1px #ffffff;
+	color: #0886b6;
+}
+
+/*td.sampleBlack
+{
+    border-bottom-color:solid 1px #ffffff;
+	border-color:solid 1px #ffffff;
+	color: #000000;
+	font-size: 10pt;
+	width: 20px;
+}*/
+
+/*td.sampleBlack
+{
+	background-color: #ecfae1;
+	border: solid 1px #a9a9a9;
+	font-size: 9pt;
+	width: 20px;
+}*/
+
+/*tr
+{
+	vertical-align: top;
+}*/
+
+td.greenColumn
+{
+	background-color: #ecfae1;
+	border: solid 0.01px #a9a9a9;
+	font-size: 9pt;
+	width: fixed !important;
+	word-wrap: break-word;
+	width: 150px;
+	color: #000000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: normal;
+}
+
+td.GrayBorder2
+{
+	background-color: #ffffff;
+	border: solid 0.01px #a9a9a9;
+	font-size: 9pt;
+	width: fixed !important;
+	word-wrap: break-word;
+	width: 150px;
+	color: #000000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: normal;
+}
+
+tr
+{
+	vertical-align: top;
+	padding-bottom: 0px;
+}
+
+span.NextSteps
+{
+	color: #008000;
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 12pt;
+}
+
+a.imagelink
+{
+	
+}
+
+a.imagelink:link
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a.imagelink:visited
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+map
+{
+	border: none;
+	outline: none;
+}
+
+map.area
+{
+	outline: none;
+}
+
+span.SampleXML
+{
+	font-family: Verdana, sans-serif;
+	color: #830006;
+	font-size: 9pt;
+	padding-top: 6pt;
+	padding-bottom: 6pt;
+}
+
+pre
+{
+	margin: 6pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	line-height: 1.1em;
+}
+
+span.Content
+{
+	font-weight: bolder;
+	color: #800080;
+}
+
+span.Schema
+{
+	font-weight: bolder;
+	color: #228b22;
+}
+
+span.SchemaDiagram
+{
+	font-weight: bolder;
+	color: #800080;
+}
+
+span.Element
+{
+	font-weight: bolder;
+	color: #008000;
+}
+
+blockquote
+{
+	margin-bottom: 6pt;
+	margin-top: 6pt;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+span.Normal
+{
+	color: #000000;
+	font-weight: normal;
+	padding-bottom: 4px;
+}
+
+style.Normal
+{
+	color: #000000;
+	font-weight: normal;
+}
+
+thead.GreenHead
+{
+	border-bottom: solid 2px #000000;
+	background-color: #69be28;
+	color: #ffffff;
+	font-size: 9pt;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: left;
+}
+
+table.GrayBorders
+{
+	border-collapse: collapse;
+	border: solid 0px #a9a9a9;
+	padding: 2px;
+	font-size: 9pt;
+	table-layout: fixed;
+}
+
+tr.Elements
+{
+	background-color: #ecfae1;
+	font-size: 9pt;
+}
+
+td.GrayBorder
+{
+	border: solid 0.01px #a9a9a9;
+	border-spacing: 0px 0px;
+	width: fixed !important;
+	width: 40px;
+	word-wrap: break-word;
+}
+
+td.GrayBorder1
+{
+	border: solid 0.01px #a9a9a9;
+	border-spacing: 0px 0px;
+	width: fixed !important;
+	width: 15px;
+	word-wrap: break-word;
+}
+
+p.DataOrigin
+{
+	background-color: #e9f5e0;
+	border-bottom: solid 1px #0886b6;
+	border-top: solid 1px #0886b6;
+	padding-bottom: 6pt;
+	padding-top: 6pt;
+	padding-left: 3pt;
+	padding-right: 3pt;
+}
+
+p.MessageFlow
+{
+	border-top: solid 1px #660066;
+	border-bottom: solid 1px #660066;
+	color: #000000;
+	font-size: 8pt;
+	padding-bottom: 3pt;
+	padding-top: 3pt;
+	padding-left: 10pt;
+	margin-left: 0pt;
+	background-color: #f5f5f5;
+	margin-bottom: 12pt;
+}
+
+MadCap|dropDownHotspot.Workflow
+{
+	color: #696969;
+	font-weight: bold;
+}
+
+span.Origin
+{
+	color: #69be28;
+	font-size: 10pt;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+MadCap|toggler
+{
+	mc-closed-image: url('../Images/CSS/BPlus.png');
+	mc-open-image: url('../Images/CSS/BMinus.png');
+}
+
+p.table9pt
+{
+	font-size: 9pt;
+}
+
+tr:hover
+{
+	background-image: none;
+}
+
+p.message
+{
+	margin-left: 0pt;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	font-style: italic;
+	text-indent: 20px;
+}
+
+p.alphaBeta
+{
+	margin-left: 0pt;
+	margin-top: 6pt;
+	font-weight: bold;
+	background-color: #69be28;
+	color: #ffffff;
+	padding-bottom: 0.12em;
+	padding-top: 0.12em;
+	padding: 0.12em;
+	margin-bottom: 12pt;
+}
+
+p.story
+{
+	margin-left: 0pt;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	font-weight: bold;
+	color: #800080;
+}
+
+p.TechCommOnly
+{
+	font-weight: bold;
+	color: #ff00ff;
+}
+
+p.Internal
+{
+	margin-left: 0pt;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	color: #ff4500;
+}
+
+ol
+{
+	list-style-type: decimal;
+	padding-left: 2.0em;
+	list-style-position: outside;
+}
+
+ol ol
+{
+	list-style-type: lower-alpha;
+}
+
+ul
+{
+	list-style-type: disc;
+	padding-left: 2.0em;
+	/* list-style-image: url('../Images/CSS/bullet.png'); */
+	list-style-position: outside;
+}
+
+ul.Indent
+{
+	list-style-type: disc;
+	padding-left: 4.0em;
+	/* list-style-image: url('../Images/CSS/bullet.png'); */
+}
+
+ul ol
+{
+	list-style-type: decimal;
+	list-style-image: none;
+}
+
+ol ol ol
+{
+	list-style-type: lower-roman;
+}
+
+ul ol ol
+{
+	list-style-type: lower-alpha;
+}
+
+ul ul ol
+{
+	list-style-type: decimal;
+}
+
+ol ul ol
+{
+	list-style-type: decimal;
+}
+
+ul ul
+{
+	/* list-style-image: url('../Images/CSS/circle.png'); */
+	list-style-type: circle;
+}
+
+ol ul
+{
+	list-style: disc;
+	/* list-style-image: url('../Images/CSS/bullet.png'); */
+}
+
+ul ul ul
+{
+	/* list-style-image: url('../Images/CSS/bar.png'); */
+	list-style-type: square;
+}
+
+ol ul ul
+{
+	/* list-style-image: url('../Images/CSS/circle.png'); */
+	list-style-type: circle;
+}
+
+ol ol ul
+{
+	/* list-style-image: url('../Images/CSS/bullet.png'); */
+	list-style-type: disc;
+	list-style: disc;
+}
+
+ul ol ul
+{
+	list-style: circle;
+	/* list-style-image: url('../Images/CSS/bullet.png'); */
+}
+
+p.SampleCode
+{
+	font-family: 'Courier New';
+	margin: 0;
+	font-size: 9pt;
+	background-color: #f6faf2;
+	margin-bottom: 0px;
+}
+
+p.Path
+{
+	color: #696969;
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+	margin-left: 2em;
+	font-size: 9pt;
+}
+
+.TechCommOnly
+{
+	font-weight: bold;
+	color: #ff00ff;
+}
+
+MadCap|expanding
+{
+	mc-closed-image: url('../Images/CSS/BPlus.png');
+	mc-open-image: url('../Images/CSS/BMinus.png');
+}
+
+div.codeBlock
+{
+	font-family: Consolas, Verdana, 'Courier New';
+	line-height: 1.2em;
+	display: block;
+	margin: 0 15px 0 15px;
+	font-size: 0.9em;
+	color: #333;
+	overflow-y: scroll;
+	max-height: 250px;
+	word-wrap: break-word;
+	width: 70%;
+	background-color: #F2F2F2;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+/* topTOC is used to create a table of mid-topic links for long topcis. Refer to LowFareSearchModifiers for example */
+
+div.topTOC
+{
+	line-height: 1.2em;
+	display: block;
+	width: 70%;
+	color: #ffffff;
+	margin: 0;
+	padding: 10px;
+	font-weight: 500;
+	background-color: #0075b0;
+}
+
+/* This link settings only applied to links within the div.topTOC */
+
+div.topTOC a
+{
+	color: #ffffff;
+}
+
+/* The following style is used to force this image to build in the output. This image is used in the skin's Toolbar custom JS and displays the image at the top of the header section */
+
+p.NeedForSkin
+{
+	list-style-image: url('../Images/CSS/color_bar.png');
+}
+
+@media non-print
+{
+	MadCap|dropDownHotspot
+	{
+		
+	}
+
+	MadCap|dropDownHotspot:focus
+	{
+		
+	}
+
+	img
+	{
+		
+	}
+
+	img.map
+	{
+		outline: none;
+		border: solid 0px;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	div.topTOC
+	{
+		width: 95%;
+	}
+}
+
+MadCap|dropDown.NumberedStep
+{
+	padding-top: .1em;
+	mc-image-position: right;
+}
+
+/* elements from here to div.highlightBox are used by the Feedback question in the masterpage */
+
+.feedback-reason
+{
+	display: none;
+}
+
+.feedback-question i:hover,
+.feedback-question i:focus,
+.feedback-question i:active
+{
+	cursor: pointer;
+}
+
+div.feedback-option
+{
+	line-height: 1.3em;
+	margin: 0em 0em .6em 0em;
+}
+
+a.feedback-yes
+{
+	color: #41A940 !important;
+	border: 2px solid #41a940;
+	text-decoration: none;
+}
+
+a.feedback-no
+{
+	color: #CE0058 !important;
+	border: 2px solid #CE0058;
+	text-decoration: none;
+}
+
+a.feedback-button
+{
+	background-color: #ffffff;
+	display: inline-block;
+	font-size: 1em;
+	line-height: 1em;
+	padding: 0.4em;
+	margin: 0.5em 0.5em 0.5em 0;
+	text-align: center;
+	min-width: 3.5em;
+}
+
+a.feedback-yes:hover,
+a.feedback-yes:focus
+{
+	background-color: #41A940;
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+a.feedback-no:hover,
+a.feedback-no:focus
+{
+	background-color: #CE0058;
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+div.feedback-survey
+{
+	font-size: 14px;
+	line-height: 21px;
+}
+
+h4.survey
+{
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin: 1em 0em 0em 0em;
+}
+
+div.highlightBox	/* div.highlightBox: Highlight box (normal) */
+{
+	margin: 0.5em 0em 1em 0em;
+	padding: 1em;
+	background-color: #eeeeed;
+	width: auto;
+	overflow: auto;
+}
+
+div.highlightBox2	/* div.highlightBox2 TP blue */
+{
+	margin: 0.5em 0em 1em 0em;
+	width: auto;
+	overflow: auto;
+	background-color: #f2f3f3;
+	max-width: 65%;
+	border: solid 3px #00A3AD;
+	padding: 0.5em;
+	padding-left: 0.7em;
+}
+

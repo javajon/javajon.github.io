@@ -1,0 +1,8 @@
+﻿var mailSubject = 'Travelport Universal API Help Feedback'; 
+var mailBody = 'This email form is used to suggest updates to the online help. To request Universal API support, open a case at https://my.travelport.com. \n\n[Enter comments here] \n\nMy comments apply to this page: ' + location.href; 
+var mailDisplay = 'email'; 
+document.write( 
+'<a href="mailto:TechCommuAPI@travelport.com' 
++ '?subject=' + escape(mailSubject) 
++ '&body=' + escape(mailBody) 
++ '">' + mailDisplay + '</a>');

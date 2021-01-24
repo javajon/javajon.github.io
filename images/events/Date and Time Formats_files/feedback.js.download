@@ -1,0 +1,42 @@
+﻿$(document).ready(function(){
+  
+	/* -------------- Feedback -------------- */
+	/* Yes click */
+	$('.feedback-yes').click(function() {
+		/* fade out question, fade in thankyou message */
+		$('.feedback-question').fadeOut(function() {
+			$('.feedback-reason.yes-thanks').fadeIn();
+		});
+               
+		gtag('event', 'N/A', {
+			'event_category': 'Feedback - Yes',
+			'event_label': location.href
+		});
+	});
+
+	/* No click */
+	$('.feedback-no').click(function() {
+		/* fade out question, fade in thankyou message */
+		$('.feedback-question').fadeOut(function() {
+			$('.feedback-reason.no').fadeIn();
+		});
+	});
+      
+	/* No - response reasons */
+	$('.feedback-reason .option').change(function() {
+		/* if any options change, disable checkbox, record event, and fade in thankyou and email link */
+		$(this).attr('disabled', true);
+			if ($(this).is(':checked')) {
+				/* get the label text of the reason (option) text that's selected */
+				var reason = $(this).attr('data-analytics-label');   
+				/* ga('send', 'event', 'Feedback - No', reason, location.href); */
+				gtag('event', reason, {
+					'event_category': 'Feedback - No',
+					'event_label': location.href
+				});
+			}
+		$('.feedback-reason.no-thanks').fadeIn();
+	});
+   
+});   
+
