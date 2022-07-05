@@ -931,3 +931,49 @@ div.debug {
 
 .copyright-font {
   font-size: xx-small; }
+
+.description-header-row {
+  display: flex;
+  align-items: stretch; }
+
+.description-header-row > div {
+  margin-right: 35px; }
+
+.card-img-small-top {
+  max-height: 3.5vh;
+  /*limit consumption of vertical space*/
+  object-fit: contain;
+  /*show all image, autosized, no cut, in available space*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+  margin-bottom: 4px; }
+
+.text-with-description-fixed-height {
+  width: 100%;
+  height: 150px;
+  overflow: hidden; }
+
+.single-img-top {
+  max-height: 15vh;
+  /*limit consumption of vertical space*/
+  object-fit: contain;
+  /*show all image, autosized, no cut, in available space*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+  margin-bottom: 4px; }
+
+.hr-theme-slash-2 {
+  display: flex; }
+  .hr-theme-slash-2 .hr-line {
+    width: 100%;
+    position: relative;
+    margin: 15px;
+    border-bottom: 1px solid #000; }
+  .hr-theme-slash-2 .hr-icon {
+    position: relative;
+    top: 3px;
+    color: #ff0000; }
