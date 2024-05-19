@@ -120,7 +120,7 @@ h6, .h6 {
     background: #2d2e38;
     color: #434555; }
 
-.btn-primary.active:not(:disabled):not(.disabled),
+.btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
