@@ -1,0 +1,6 @@
+ui:
+  dockerRegistryUrl: http://registry-docker-registry:5000
+  proxy: true
+  service:
+    type: NodePort
+    nodePort: 31010

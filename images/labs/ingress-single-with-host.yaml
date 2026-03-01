@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: routes-with-host
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "$TRY_HOST"
+    http:
+      paths:
+      - path: /webapp1
+        pathType: Prefix
+        backend:
+          service:
+            name: webapp1-svc
+            port: 
+              number: 80

@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: deny-engine-ingress
+  namespace: model-system
+spec:
+  podSelector:
+    matchLabels:
+      app: climate-model-engine
+  policyTypes:
+  - Ingress
+  ingress: []

@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /  # Regardless of ingress URL, change request to / when arriving at web server
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "*.environments.katacoda.com"
+    http:
+      paths:
+      - path: /a
+        pathType: Prefix
+        backend:
+          service:
+            name: {{service_name_a}}
+            port:
+              number: {{service_port_a}}
+      - path: /b
+        pathType: Prefix
+        backend:
+          service:
+            name: {{service_name_b}}
+            port:
+              number: {{service_port_b}}

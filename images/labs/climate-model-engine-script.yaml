@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: model-engine-script
+  namespace: model-system
+data:
+  server.py: |
+    #!/usr/bin/env python3
+    from http.server import BaseHTTPRequestHandler, HTTPServer
+
+    class ModelHandler(BaseHTTPRequestHandler):
+        def _set_response(self, content_type="text/plain"):
+            self.send_response(200)
+            self.send_header('Content-type', content_type)
+            self.end_headers()
+            
+        def do_GET(self):
+            if self.path == '/status':
+                self._set_response()
+                self.wfile.write("Running".encode('utf-8'))
+            elif self.path == '/predict':
+                self._set_response()
+                self.wfile.write("Based on the model you have presented and actions applied, global sea-level rise will halt and start reversing in 35 years.".encode('utf-8'))
+            else:
+                self._set_response()
+                self.wfile.write("Climate Model Engine API".encode('utf-8'))
+
+    def run(server_class=HTTPServer, handler_class=ModelHandler, port=8080):
+        server_address = ('', port)
+        httpd = server_class(server_address, handler_class)
+        print(f"Starting climate model server on port {port}")
+        httpd.serve_forever()
+
+    if __name__ == '__main__':
+        run()

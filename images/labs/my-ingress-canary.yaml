@@ -1,0 +1,41 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: canary-example-to-default
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /  # Regardless of ingress URL, change request to / when arriving at web server
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "*.environments.katacoda.com"
+    http:
+      paths:
+      - path: /canary-test
+        pathType: Prefix
+        backend:
+          service:
+            name: {{service_name_a}}
+            port:
+              number: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: canary-example-to-canary
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /  # Regardless of ingress URL, change request to / when arriving at web server
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: "{{percentage}}"  # What percent?
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "*.environments.katacoda.com"
+    http:
+      paths:
+      - path: /canary-test
+        pathType: Prefix
+        backend:
+          service:
+            name: {{service_name_b}}
+            port:
+              number: 80

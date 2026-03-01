@@ -1,0 +1,72 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: data-fetcher-script
+  labels:
+    app: disease-dashboard
+data:
+  fetch_disease_data.js: |
+    // fetch_disease_data.js
+    // Script to fetch and prepare disease data for the Global Disease Surveillance Dashboard
+
+    const https = require('https');
+    const fs = require('fs');
+
+    function main() {
+      console.log("Disease Data Initializer starting...");
+      console.log("Fetching disease data from WHO API...");
+
+      // Base URL for the WHO Global Health Observatory API
+      const gho_base_url = "https://ghoapi.azureedge.org/api";
+      
+      // API endpoints
+      const api_url = gho_base_url + "/MALARIA_EST_CASES";
+
+      // Function to fetch and save data
+      function fetchData(url, outputFile, label) {
+        return new Promise((resolve, reject) => {
+          console.log(`Fetching ${label} data from: ${url}`);
+          
+          https.get(url, (res) => {
+            let data = '';
+            
+            res.on('data', (chunk) => {
+              data += chunk;
+            });
+            
+            res.on('end', () => {
+              try {
+                const jsonData = JSON.parse(data);
+                fs.writeFileSync(outputFile, data);
+                console.log(`Successfully retrieved ${label} data: ${jsonData.value.length} records`);
+                resolve(jsonData);
+              } catch (e) {
+                console.error(`Error processing ${label} data: ${e.message}`);
+                reject(e);
+              }
+            });
+          }).on('error', (err) => {
+            console.error(`Error fetching ${label} data: ${err.message}`);
+            reject(err);
+          });
+        });
+      }
+
+      // Process both datasets
+      Promise.all([
+        fetchData(api_url, '/data/disease_data.json', 'malaria'),
+        fetchData(gho_base_url + "/TB_e_inc_num", '/data/tb_data.json', 'TB')
+      ])
+      .then(([malariaData, tbData]) => {
+        console.log("Disease data successfully fetched and saved");
+        console.log("Summary:");
+        console.log(`- Malaria data: ${malariaData.value.length} records`);
+        console.log(`- Tuberculosis data: ${tbData.value.length} records`);
+      })
+      .catch(error => {
+        console.error(`Error fetching disease data: ${error.message}`);
+        process.exit(1); // Exit with error code
+      });
+    }
+
+    main();

@@ -1,0 +1,52 @@
+service:
+  type: NodePort
+  nodePort: 31111
+
+persistence:
+  enabled: true
+  storageClass: manual
+  size: 10Gi
+  accessMode: ReadWriteOnce
+
+postgresql:
+  persistence:
+    enabled: true
+  resources:
+    limits:
+      cpu: "500m"
+      memory: "512Mi"
+    requests:
+      cpu: "100m"
+      memory: "256Mi"
+
+community:
+  enabled: true
+
+monitoringPasscode: "Password123#"
+
+resources:
+  limits:
+    cpu: "2"
+    memory: "2Gi"
+    ephemeral-storage: "10Gi"
+  requests:
+    cpu: "400m"
+    memory: "1536Mi"
+    ephemeral-storage: "1Gi"
+
+env:
+  - name: SONAR_SEARCH_JAVAOPTS
+    value: "-Xmx512m -Xms512m"
+  - name: SONAR_WEB_JAVAOPTS
+    value: "-Xmx512m -Xms512m"
+  - name: SONAR_CE_JAVAOPTS
+    value: "-Xmx512m -Xms256m"
+
+prometheusExporter:
+  enabled: false
+
+initSysctl:
+  enabled: true
+  vmMaxMapCount: 262144
+  fsFileMax: 131072
+  nproc: 8192

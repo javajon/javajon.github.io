@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: log-writer
+  namespace: kube-system
+  labels:
+    k8s-app: fluentd-logging
+spec:
+  selector:
+    matchLabels:
+      name: log-writer
+  template:
+    metadata:
+      labels:
+        name: log-writer
+    spec:
+      tolerations:
+      # this toleration is to have the DaemonSet runnable on control-plane nodes
+      # remove it if your control-plane nodes can't run pods
+      - key: node-role.kubernetes.io/master
+        effect: NoSchedule
+      containers:
+      - name: log-writer
+        image: busybox
+        args:
+          - /bin/sh
+          - -c
+          - >
+            while true;
+            do
+              echo "$(date) INFO $i" >> /var/log/log-writer.log;
+              sleep 5;
+            done
+        volumeMounts:
+          - name: varlog
+            mountPath: /var/log
+      volumes:
+      - name: varlog
+        hostPath:
+          path: /var/log

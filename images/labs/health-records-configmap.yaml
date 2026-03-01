@@ -1,0 +1,135 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: health-data-validator-script
+data:
+  validate-records.py: |
+    #!/usr/bin/env python3
+    
+    import json
+    import os
+    import sys
+    import time
+    from datetime import datetime
+    
+    def load_records(filename):
+        """Load patient records from JSON file."""
+        try:
+            with open(filename, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error loading records: {e}")
+            sys.exit(1)
+    
+    def validate_required_fields(record):
+        """Ensure all required fields are present."""
+        required_fields = ['patientId', 'name', 'dob', 'gender', 'address']
+        missing = [field for field in required_fields if field not in record]
+        if missing:
+            return False, f"Missing required fields: {', '.join(missing)}"
+        return True, "All required fields present"
+    
+    def validate_date_format(date_str):
+        """Ensure date is in YYYY-MM-DD format."""
+        try:
+            datetime.strptime(date_str, '%Y-%m-%d')
+            return True, "Date format valid"
+        except ValueError:
+            return False, "Invalid date format, should be YYYY-MM-DD"
+    
+    def validate_record(record):
+        """Validate a single patient record."""
+        # Check required fields
+        valid, message = validate_required_fields(record)
+        if not valid:
+            return False, message
+        
+        # Validate DOB format
+        valid, message = validate_date_format(record['dob'])
+        if not valid:
+            return False, message
+        
+        # Additional validations could be added here
+        
+        return True, "Record is valid"
+    
+    def main():
+        print(f"Starting health records validation at {datetime.now().isoformat()}")
+        
+        # Configuration from environment
+        validation_level = os.environ.get('VALIDATION_LEVEL', 'normal')
+        max_records = int(os.environ.get('MAX_RECORDS', '100'))
+        
+        # Load the records
+        records = load_records('/data/records.json')
+        
+        print(f"Loaded {len(records)} records for validation")
+        
+        # Validate each record
+        valid_count = 0
+        invalid_count = 0
+        
+        for i, record in enumerate(records):
+            if i >= max_records:
+                break
+                
+            valid, message = validate_record(record)
+            
+            if valid:
+                valid_count += 1
+            else:
+                invalid_count += 1
+                print(f"Invalid record {record.get('patientId', 'unknown')}: {message}")
+        
+        # Print summary
+        print(f"Validation complete: {valid_count} valid, {invalid_count} invalid records")
+        
+        # Simulate some processing time
+        time.sleep(2)
+        
+        print(f"Health records validation completed successfully at {datetime.now().isoformat()}")
+        
+        # Return the number of records processed
+        sys.exit(len(records))
+    
+    if __name__ == "__main__":
+        main()
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sample-records
+data:
+  record-sample.json: |
+    [
+      {
+        "patientId": "PT10001",
+        "name": "John Smith",
+        "dob": "1985-03-15",
+        "gender": "male",
+        "address": "123 Main St, Anytown, US 12345",
+        "contactPhone": "555-123-4567",
+        "insurance": "BlueCross",
+        "lastVisit": "2023-11-10"
+      },
+      {
+        "patientId": "PT10002",
+        "name": "Sarah Johnson",
+        "dob": "1976-08-22",
+        "gender": "female",
+        "address": "456 Oak Ave, Somecity, US 67890",
+        "contactPhone": "555-987-6543",
+        "insurance": "Aetna",
+        "lastVisit": "2023-12-05"
+      },
+      {
+        "patientId": "PT10003",
+        "name": "Robert Williams",
+        "dob": "1992-05-07",
+        "gender": "male",
+        "address": "789 Pine Rd, Othertown, US 54321",
+        "contactPhone": "555-456-7890",
+        "insurance": "UnitedHealth",
+        "lastVisit": "2024-01-15"
+      }
+    ]

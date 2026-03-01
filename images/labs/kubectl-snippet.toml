@@ -1,0 +1,792 @@
+# Reference source snippets
+
+[[snippets]]
+  description = "Reference Cheat Sheet"
+  command = "start https://kubernetes.io/docs/reference/kubectl/cheatsheet/"
+  tag = ["reference"]
+  output = ""
+
+
+# Setup snippets
+
+[[snippets]]
+  description = "Setup; autocomplete in bash into the current shell, bash-completion package should be installed first."
+  command = "source <(kubectl completion bash)"
+  tag = ["autocomplete", "bash"]
+  output = ""
+
+[[snippets]]
+  description = "Setup; add autocomplete permanently to your bash shell."
+  command = "echo 'source <(kubectl completion bash)' >> ~/.bashrc"
+  tag = ["autocomplete", "bashrc"]
+  output = ""
+
+[[snippets]]
+  description = "Setup; shorthand alias for kubectl that also works with completion"
+  command = "alias k=kubectl && complete -F __start_kubectl k"
+  tag = ["alias", "autocomplete", "bash"]
+  output = ""
+
+[[snippets]]
+  description = "Setup; autocomplete in bash into the current shell, bash-completion package should be installed first."
+  command = "source <(kubectl completion zsh)"
+  tag = ["autocomplete", "zhs"]
+  output = ""
+
+[[snippets]]
+  description = "Setup; add autocomplete permanently to your bash shell."
+  command = "echo '[[ $commands[kubectl] ]] && source <(kubectl completion zsh)' >> ~/.zshrc"
+  tag = ["autocomplete", "zhsrc"]
+  output = ""
+
+
+# Context and configuration snippets
+
+[[snippets]]
+  description = "Context and configuration; use multiple kubeconfig files at the same time and view merged config"
+  command = "KUBECONFIG=~/.kube/config:~/.kube/kubconfig2 "
+  tag = ["cfg", "multi"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; Show Merged kubeconfig settings."
+  command = "kubectl config view"
+  tag = ["cfg", "view"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; get the password for the user"
+  command = "kubectl config view -o jsonpath='{.users[?(@.name == '<user>')].user.password}'"
+  tag = ["cfg", "user", "pass"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; display the first user"
+  command = "kubectl config view -o jsonpath='{.users[].name}'"
+  tag = ["cfg", "user", "1"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; get a list of users"
+  command = "kubectl config view -o jsonpath='{.users[*].name}'"
+  tag = ["cfg", "users"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; display list of contexts"
+  command = "kubectl config get-contexts"
+  tag = ["cfg", "contexts", "ctxs"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; display the current-context"
+  command = "kubectl config current-context"
+  tag = ["cfg", "context", "ctx"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; set the default context to my-cluster-name"
+  command = "kubectl config use-context <my-cluster-name>"
+  tag = ["cfg", "cluster"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; add a new user to your kubeconf that supports basic auth"
+  command = "kubectl config set-credentials kubeuser/foo.kubernetes.com --username=<name> --password=<password>"
+  tag = ["cfg", "adduser"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; permanently save the namespace for all subsequent kubectl commands in that context."
+  command = "kubectl config set-context --current --namespace=<name-space=default>"
+  tag = ["cfg", "ns"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; set a context utilizing a specific username and namespace."
+  command = "kubectl config set-context gce --user=cluster-admin --namespace=foo && kubectl config use-context gce"
+  tag = ["cfg", "setcontext"]
+  output = ""
+
+[[snippets]]
+  description = "Context and configuration; delete user by name"
+  command = "kubectl config unset users.<user-name>"
+  tag = ["cfg", "deluser"]
+  output = ""
+
+
+
+# Create Objects
+
+[[snippets]]
+  description = "Create; start a single instance of an app"
+  command = "kubectl create deployment <name=nginx> --image=<image=nginx>"
+  tag = ["create", "deploy"]
+  output = ""
+
+[[snippets]]
+  description = "Create; create a Job which prints 'Hello World'"
+  command = "kubectl create job hello --image=<image=busybox> -- echo 'Hello World'"
+  tag = ["create", "job"]
+  output = ""
+ 
+[[snippets]]
+  description = "Create; create a CronJob that prints 'Hello World' every minute"
+  command = "kubectl create cronjob hello --image=<image=busybox> --schedule='<cron=*/1 * * * *>' -- echo 'Hello World'"
+  tag = ["create", ""]
+  output = ""
+
+[[snippets]]
+  description = "Create; get the documentation for specified manifests"
+  command = "kubectl explain <resource=pods>"
+  tag = ["explain"]
+  output = ""
+
+# Viewing, finding resources
+
+[[snippets]]
+  description = "Find & View; view a resource from current or default namespace"
+  command = "kubectl get <resource=pods>"
+  tag = ["get"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; view a resource from in a namespace"
+  command = "kubectl get <resource=pods> --namespace=<namespace=default>"
+  tag = ["get", "ns"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; view a resource across whole cluster"
+  command = "kubectl get <resource=pods> --all-namespaces"
+  tag = ["get", "all"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; view a resource with common options"
+  command = "kubectl get <resource=pods> --namespace=<namespace=default> --selector <label=app=nginx> -o <output=yaml>"
+  tag = ["get", "params"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; describe a resource from in a namespace"
+  command = "kubectl describe <resource=pods> --namespace=<namespace=default>"
+  tag = ["desc", "ns"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; describe a resource from in a namespace"
+  command = "kubectl describe <resource=pods> --all-namespaces"
+  tag = ["desc", "all"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; describe a resource with common options"
+  command = "kubectl describe <resource=pods> --namespace=<namespace=default> --selector <label=app=nginx>"
+  tag = ["desc", "params"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; List resource sorted by specific metadata field"
+  command = "kubectl get <resource=pods> --namespace=<namespace=default> --sort-by=<sort=.metadata.name>"
+  tag = ["get", "sort", "metadata"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; List resource sorted by specific status field"
+  command = "kubectl get <resource=pods> --namespace=<namespace=default> --sort-by=<sort=.status.containerStatuses[0].restartCount>"
+  tag = ["get", "sort", "status"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; List PersistentVolumes sorted by capacity"
+  command = "kubectl get pv --sort-by=.spec.capacity.storage"
+  tag = ["get", "pv"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; Get metadata of resources with matching label"
+  command = "kubectl get <resource=pods> --selector=<label> -o jsonpath='{.items[*].metadata}'"
+  tag = ["get", "metadata"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; Retrieve value of a key with dots, e.g. 'ca.crt'"
+  command = "kubectl get configmap <configmap=myconfig> -o jsonpath='{.data.ca\\.crt}'"
+  tag = ["get", "cfg", "crt"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; Retrieve value of a key with dots, e.g. 'ca.crt'"
+  command = "kubectl get configmap <configmap=myconfig> -o jsonpath='{.data.ca\\.crt}'"
+  tag = ["get", "cfg", "crt"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; Get all resources that don't match a label (use a selector to exclude results that have a label named 'node-role.kubernetes.io/master')"
+  command = "kubectl get <resource=nodes> --selector=<label='!node-role.kubernetes.io/master'>"
+  tag = ["get", "not", "label"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; Get all running pods in the namespace"
+  command = "kubectl get pods --field-selector=status.phase=Running"
+  tag = ["get", "pod", "running"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; Get ExternalIPs of all nodes"
+  command = "kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=='ExternalIP')].address}'"
+  tag = ["get", "node", "ip"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; Show labels for resource"
+  command = "kubectl get <resource=pods> --show-labels"
+  tag = ["get", "labels"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; Check which nodes are ready or not"
+  command = "JSONPATH='{range .items[*]}{@.metadata.name}:{range @.status.conditions[*]}{@.type}={@.status};{end}{end}' && kubectl get nodes -o jsonpath=\"$JSONPATH\" | grep 'Ready=<ready=True>'"
+  tag = ["get", "nodes", "ready"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; List all Secrets currently in use by a pod"
+  command = "kubectl get pods -o json | jq '.items[].spec.containers[].env[]?.valueFrom.secretKeyRef.name' | grep -v null | sort | uniq"
+  tag = ["get", "pod", "secrets"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; List all containerIDs of initContainer of all pods. Helpful when cleaning up stopped containers, while avoiding removal of initContainers."
+  command = "kubectl get pods --all-namespaces -o jsonpath='{range .items[*].status.initContainerStatuses[*]}{.containerID}{'\n'}{end}' | cut -d/ -f3"
+  tag = ["get", "container", "ids"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; List Events sorted by timestamp"
+  command = "kubectl get events --sort-by=.metadata.creationTimestamp"
+  tag = ["get", "events", "sort"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; Compares the current state of the cluster against the state that the cluster would be in if the manifest was applied."
+  command = "kubectl diff -f <manifest='./my-manifest.yaml;>"
+  tag = ["diff", "manifests"]
+  output = ""
+
+[[snippets]]
+  description = "Find & View; A period-delimited tree of all keys returned for resources. Helpful when locating a key within a complex nested JSON structure."
+  command = "kubectl get <resource=pods> -o json | jq -c 'path(..)|[.[]|tostring]|join('.')'"
+  tag = ["get", "keys"]
+  output = ""
+
+# Updating resources
+
+[[snippets]]
+  description = "Update; Rolling update 'www' containers of 'frontend' deployment, updating the image"
+  command = "kubectl set image deployment/<name=frontend> <container-image=www=image:v2>"
+  tag = ["update", "roll", "image"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Check the history of deployments including the revision"
+  command = "kubectl rollout history deployment/<name=frontend>"
+  tag = ["update", "roll", "history"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Rollback to the previous deployment"
+  command = "kubectl rollout undo deployment/<name=frontend>"
+  tag = ["update", "roll", "undo"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Rollback to a specific revision"
+  command = "kubectl rollout undo deployment/<name=frontend> --to-revision=<revision-number=2>"
+  tag = ["update", "roll", "revision"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Watch rolling update status of deployment until completion"
+  command = "kubectl rollout status -w deployment/<name=frontend>"
+  tag = ["update", "roll", "status"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Rolling restart of the deployment"
+  command = "kubectl rollout restart deployment/<name=frontend>"
+  tag = ["update", "roll", "restart"]
+  output = ""
+
+[[snippets]]
+  description = "Update;  Replace a resource based on the YAML/JSON passed into std"
+  command = "cat <yaml-or-json=./pod.yaml> | kubectl replace -f -"
+  tag = ["update"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Force replace, delete, and re-create resource. Will cause a service outage."
+  command = "kubectl replace --force -f <yaml-or-json=./pod.yaml>"
+  tag = ["update", "force"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Create a service for pod or deployment, which serves on an external port external 80 and connects to the containers target port 8000"
+  command = "kubectl expose <resource-type=deployment> <resource-name=nginx> --port=<port=80> --target-port=<target-port=8000>"
+  tag = ["update", "expose"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Update a single-container pod's image version (tag)"
+  command = "kubectl get pod <pod=mypod> -o yaml | sed 's/\\(image: <image=myimage>\\):.*$/\\1:<version=1.0.0>/' | kubectl replace -f -"
+  tag = ["update", "container", "version"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Add label to resource"
+  command = "kubectl label <resource=pods> <resource-name> <label='key=value'>"
+  tag = ["update", "label"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Add annotation to resource"
+  command = "kubectl annotate <resource=pods> <resource-name> <annotation='key=value'>"
+  tag = ["update", "annotate"]
+  output = ""
+
+[[snippets]]
+  description = "Update; Auto scale a deployment"
+  command = "kubectl autoscale deployment <deployment=app> --min=<min=2> --max=<max=10>"
+  tag = ["update", "scale"]
+  output = ""
+
+# Patching resources
+
+[[snippets]]
+  description = "Patch; Partially update a node"
+  command = "kubectl patch node k8s-node-1 -p '{'spec':{'unschedulable':true}}'"
+  tag = ["patch", ""]
+  output = ""
+
+[[snippets]]
+  description = "Patch; Update a container's image; spec.containers[*].name is required because it's a merge key"
+  command = "kubectl patch pod <pod-name> -p '{'spec':{'containers':[{'name':'kubernetes-serve-hostname','image':''<image>''}]}}'"
+  tag = ["patch", "image", "by-name"]
+  output = ""
+
+[[snippets]]
+  description = "Patch; Update a container's image using a json patch with positional arrays"
+  command = "kubectl patch pod <pod-name> --type='json' -p='[{'op': \"replace\", \"path\": \"/spec/containers/0/image\", \"value\":<image>\"}]'"
+  tag = ["patch", "image", "by-pos"]
+  output = ""
+
+[[snippets]]
+  description = "Patch; Disable a deployment livenessProbe using a json patch with positional arrays"
+  command = "kubectl patch deployment valid-deployment  --type json   -p='[{\"op\": \"remove\", \"path\": \"/spec/template/spec/containers/0/livenessProbe\"}]'"
+  tag = ["patch", "liveness", "disable"]
+  output = ""
+
+[[snippets]]
+  description = "Patch; Add a new element to a positional array"
+  command = "kubectl patch sa default --type='json' -p='[{\"op\": \"add\", \"path\": \"/secrets/1\", \"value\": {\"name\": \"whatever\" } }]'"
+  tag = ["patch", ""]
+  output = ""
+
+
+# Editing
+
+[[snippets]]
+  description = "Edit; Edit a resource with a specified editor"
+  command = "KUBE_EDITOR=<editor='nano'> kubectl edit <resource=svc/docker-registry>"
+  tag = ["edit"]
+  output = ""
+
+
+# Scaling
+
+[[snippets]]
+  description = "Scaling; Scale a deployment or replicaset to a replica count"
+  command = "kubectl scale --replicas=<replicas=3> <deployment-or-rs=deployment>/<name=nginx>  "
+  tag = ["scaling", "resource"]
+  output = ""
+
+[[snippets]]
+  description = "Scaling; Scale a  deployment or replicaset to a replica count"
+  command = "kubectl scale --replicas=<replicas=3> -f <manifest=foo.yaml>"
+  tag = ["scaling", "manifest"]
+  output = ""
+
+[[snippets]]
+  description = "Scaling; If the deployment current size is n, scale to x"
+  command = "kubectl scale --current-replicas=<current-replicas=2> --replicas=<new-replicas=3> deployment/<deployment=nginx> "
+  tag = ["scaling", "match"]
+  output = ""
+
+
+
+# Deleting
+
+[[snippets]]
+  description = "Delete; Delete a resource using a manifest"
+  command = "kubectl delete -f <manifest=./deployment.yaml"
+  tag = ["delete", "manifest"]
+  output = ""
+
+[[snippets]]
+  description = "Delete; Delete two resources with respective names"
+  command = "kubectl delete <resource1=service>,<resource2=pod> <name1=service-foo> <name2=pod-foo>"
+  tag = ["delete", "by-resource"]
+  output = ""
+
+[[snippets]]
+  description = "Delete; Delete pods and services with label name=myLabel"
+  command = "kubectl delete pods,services -l <label=name=myLabel>"
+  tag = ["delete", "by-label"]
+  output = ""
+
+[[snippets]]
+  description = "Delete; Delete all resources in namespace"
+  command = "kubectl -n <namespace=default> delete <resources=pod,svc> --all"
+  tag = ["delete", "by-ns"]
+  output = ""
+
+[[snippets]]
+  description = "Delete; Delete all resources matching the awk pattern1 or pattern2"
+  command = "kubectl get <resource=pods> -n <namespace=default> --no-headers=true | awk '/<pattern1>|<pattern2>/{print $1}' | xargs  kubectl delete -n <namespace=default> <resource=pod>"
+  tag = ["delete", "by-pattern"]
+  output = ""
+
+
+# Interacting with running Pods
+
+[[snippets]]
+  description = "Running Pods; dump pod logs (stdout)"
+  command = "kubectl logs <pod-name=my-pod>"
+  tag = ["log", "pods"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; dump pod logs, with label name=myLabel (stdout)"
+  command = "kubectl logs -l <label=name=myLabel>"
+  tag = ["log", "pods"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; dump pod logs (stdout) for a previous instantiation of a container"
+  command = "kubectl logs <pod-name=my-pod> --previous"
+  tag = ["running", "pods", "previous"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; dump pod container logs (stdout, multi-container case)"
+  command = "kubectl logs <pod-name=my-pod> -c <container-name=my-container>"
+  tag = ["running", "pods", "container"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; dump pod logs, with label name=myLabel (stdout)"
+  command = "kubectl logs -l <label=name=myLabel> -c <container-name=my-container>"
+  tag = ["running", "log", "label"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; dump pod container logs (stdout, multi-container case) for a previous instantiation of a container"
+  command = "kubectl logs <pod-name=my-pod> -c <container-name=my-container> --previous"
+  tag = ["logs", "pods", "previous"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; stream pod logs (stdout)"
+  command = "kubectl logs -f <pod-name=my-pod>"
+  tag = ["log", "pods", "stream"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; stream pod container logs (stdout, multi-container case)"
+  command = "kubectl logs -f <pod-name=my-pod> -c <container-name=my-container>"
+  tag = ["log", "pods"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; stream all pods logs with label name=myLabel (stdout)"
+  command = "kubectl logs -f -l <label=name=myLabel> --all-containers"
+  tag = ["log", "pods"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; Run pod as interactive shell"
+  command = "kubectl run -i --tty <name=busybox> --image=<image=busybox> -- sh"
+  tag = ["running", "pods", "new", "exec"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; Run pod  in a specific namespace"
+  command = "kubectl run <name=nginx> --image=<image=nginx> -n <namespace=default>"
+  tag = ["running", "pods"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; Run pod and write its spec into a file called pod.yaml"
+  command = "kubectl run <name=nginx> --image=<image=nginx> --dry-run=client -o yaml > pod.yaml"
+  tag = ["running", "pods", "yaml"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; Attach to Running Container"
+  command = "kubectl attach <pod-name=my-pod> --i"
+  tag = ["running", "pods", "attach"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; Listen on port 5000 on the local machine and forward to port 6000 on my-pod"
+  command = "kubectl port-forward <pod-name=my-pod> <expose-port=5000>:<pod-port=6000>"
+  tag = ["running", "pods", "port"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; Run command in existing pod (1 container case)"
+  command = "kubectl exec <pod-name=my-pod> -- <command='ls /'>"
+  tag = ["running", "pods", "exec"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; Run command in existing pod (multi-container case)"
+  command = "kubectl exec <pod-name=my-pod> -c <container=my-container> -- <command='ls /'>"
+  tag = ["running", "pods", "exec", "by-container"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; Interactive shell access to a running pod (1 container case) "
+  command = "kubectl exec --stdin --tty <pod-name=my-pod> -- <shell=/bin/sh>"
+  tag = ["running", "pods", "shell"]
+  output = ""
+
+[[snippets]]
+  description = "Running Pods; Show metrics for a given pod and its containers"
+  command = "kubectl top pod <name> --containers"
+  tag = ["running", "pods", "metric"]
+  output = ""
+
+
+# Interacting with running Pods snippets
+
+[[snippets]]
+  description = "Interacting with running Pods; dump pod logs by name (stdout)"
+  command = "kubectl logs <my-pod>"
+  tag = ["log", "name"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; dump pod logs by label (stdout)"
+  command = "kubectl logs -l name=<label>"
+  tag = ["log", "label"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; dump pod logs (stdout) for a previous instantiation of a container"
+  command = "kubectl logs <my-pod> --previous"
+  tag = ["log", "name", "previous"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; dump pod container logs (stdout, multi-container case)"
+  command = "kubectl logs <my-pod> -c <my-container>"
+  tag = ["log", "container"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; dump pod logs, with label name=myLabel (stdout)"
+  command = "kubectl logs -l name=<label> -c <my-container>"
+  tag = ["log", "label", "container"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; dump pod container logs (stdout, multi-container case) for a previous instantiation of a container"
+  command = "kubectl logs <my-pod>-c <my-container> --previous"
+  tag = ["log", "container", "previous"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; stream pod logs (stdout)"
+  command = "kubectl logs -f <my-pod>"
+  tag = ["log", "stream"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; stream pod container logs (stdout, multi-container case)"
+  command = "kubectl logs -f <my-pod> -c <my-container>"
+  tag = ["log", "container"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; stream all pods logs with label name=myLabel (stdout)"
+  command = "kubectl logs -f -l <name=myLabel> --all-containers"
+  tag = ["log", "pod", "label"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; Run pod as interactive shell"
+  command = "kubectl run -i --tty <name> --image=<name=busybox> -- sh"
+  tag = ["shell", "pod", "run"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; Run pod nginx in a specific namespace"
+  command = "kubectl run <nginx> --image=<name=nginx> -n <namespace=default>"
+  tag = ["run", "pod", "namespace"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; Run pod and write its spec into a file called pod.yaml"
+  command = "kubectl run <nginx> --image=<name=nginx> --dry-run=client -o yaml > pod.yaml"
+  tag = ["create", "pod", "yaml"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; Attach to Running Container"
+  command = "kubectl attach <my-pod> -i "
+  tag = ["attach"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; Listen on port 5000 on the local machine and forward to port 6000 on my-pod"
+  command = "kubectl port-forward <my-pod> <port-local=5000>:<port-pod=6000>"
+  tag = ["forward"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; Run command in existing pod (1 container case)"
+  command = "kubectl exec <my-pod> -- ls / "
+  tag = ["exec", "pod"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; Interactive shell access to a running pod (1 container case)"
+  command = "kubectl exec --stdin --tty <my-pod> -- /bin/sh"
+  tag = ["exec", "shell"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; Run command in existing pod (multi-container case)"
+  command = "kubectl exec <my-pod> -c <my-container> -- ls /"
+  tag = ["exec", "container"]
+  output = ""
+
+[[snippets]]
+  description = "Interacting with running Pods; Show metrics for a given pod and its containers"
+  command = "kubectl top pod <pod-name> --containers"
+  tag = ["top", "pod"]
+  output = ""
+
+
+# Interacting with Nodes and cluster
+
+[[snippets]]
+  description = "Cluster & Nodes; Mark node as unschedulable (cordon)"
+  command = "kubectl cordon <node=my-node>"
+  tag = ["cluster", "node", "cordon"]
+  output = ""
+
+[[snippets]]
+  description = "Cluster & Nodes; Drain node in preparation for maintenance"
+  command = "kubectl drain <node=my-node>"
+  tag = ["cluster", "node", "drain"]
+  output = ""
+
+[[snippets]]
+  description = "Cluster & Nodes; Mark my-node as schedulable (uncordon)"
+  command = "kubectl uncordon <node=my-node>  "
+  tag = ["cluster", "node", "uncordon"]
+  output = ""
+
+[[snippets]]
+  description = "Cluster & Nodes; Show metrics for a given node"
+  command = "kubectl top node <node=my-node>"
+  tag = ["cluster", "node", "top"]
+  output = ""
+
+[[snippets]]
+  description = "Cluster & Nodes; Display addresses of the control-plane and application services"
+  command = "kubectl cluster-info"
+  tag = ["cluster", "info"]
+  output = ""
+
+[[snippets]]
+  description = "Cluster & Nodes; Dump current cluster state to stdout"
+  command = "kubectl cluster-info dump"
+  tag = ["cluster", "dump"]
+  output = ""
+
+[[snippets]]
+  description = "Cluster & Nodes; Dump current cluster state to a path"
+  command = "kubectl cluster-info dump --output-directory=<path=/path/to/cluster-state>"
+  tag = ["cluster", ""]
+  output = ""
+
+[[snippets]]
+  description = "Cluster & Nodes; If a taint with that key and effect already exists, its value is replaced as specified."
+  command = "kubectl taint nodes <key=foo> dedicated=special-user:NoSchedule"
+  tag = ["cluster", ""]
+  output = ""
+
+
+# Resource types
+
+[[snippets]]
+  description = "Resources; List all"
+  command = "kubectl api-resources"
+  tag = ["resources", "all"]
+  output = ""
+
+[[snippets]]
+  description = "Resources; List all namespaced or non-namespaced resources"
+  command = "kubectl api-resources --namespaced=<namespaced=true>"
+  tag = ["resources", "namespaced"]
+  output = ""
+
+[[snippets]]
+  description = "Resources; List all resources with simple output (just the resource name)"
+  command = "kubectl api-resources -o name"
+  tag = ["resources", "name-only"]
+  output = ""
+
+[[snippets]]
+  description = "Resources; List all resources with expanded (aka 'wide') output"
+  command = "kubectl api-resources -o wide"
+  tag = ["resources", "wide"]
+  output = ""
+
+[[snippets]]
+  description = "Resources; List all resources that support specific verbs"
+  command = "kubectl api-resources --verbs=<verbs=list,get>"
+  tag = ["resources", ""]
+  output = ""
+
+[[snippets]]
+  description = "Resources; List all resources in the 'extensions' API group"
+  command = "kubectl api-resources --api-group=extensions"
+  tag = ["resources", "ext"]
+  output = ""
+
+
+# Formatting output
+
+[[snippets]]
+  description = "Formatting; List all images running in a cluster"
+  command = "kubectl get pods -A -o=custom-columns='DATA:spec.containers[*].image'"
+  tag = ["format", "pods", "cluster", "images"]
+  output = ""
+
+[[snippets]]
+  description = "Formatting; List all images excluding an image tag"
+  command = "kubectl get pods -A -o=custom-columns='DATA:spec.containers[?(@.image!=<tag='registry.k8s.io/coredns:1.6.2'>)].image'"
+  tag = ["format", "pods", "tag", "!"]
+  output = ""
+
+[[snippets]]
+  description = "Formatting; List all fields under metadata regardless of name"
+  command = "kubectl get pods -A -o=custom-columns='DATA:metadata.*'"
+  tag = ["format", "pods"]
+  output = ""

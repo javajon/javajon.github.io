@@ -1,0 +1,15 @@
+
+// Add this jib plugin declaration to plugins { ... } as well:
+//   id("com.google.cloud.tools.jib") version "2.3.0"
+
+jib {
+    container {
+        mainClass = "io.confluent.examples.clients.cloud.ProducerExample"
+    }
+    from {
+        image = "openjdk:11-jre-slim"
+    }
+    to {
+        image = "{{image}}"
+    }
+}

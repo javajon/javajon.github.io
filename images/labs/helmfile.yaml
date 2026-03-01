@@ -1,0 +1,15 @@
+releases:
+  - name: my-nginx-2
+    namespace: default
+    labels:
+      app: nginx
+    chart: ./basic-chart
+    set:
+      - name: service.type
+        value: NodePort
+      - name: replicaCount
+        value: 2
+      - name: image.repository
+        value: nginx
+      - name: image.tag
+        value: alpine3.20

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: buddy-guy-config
+data:
+  ARTIST_NAME: "Buddy Guy"
+  BIRTH_YEAR: "1936"
+  BIRTH_PLACE: "Lettsworth, Louisiana"
+  SHORT_BIO: "George 'Buddy' Guy is an American blues guitarist and singer. He is considered one of the most influential guitarists of all time and a pioneer of Chicago blues."
+  FAMOUS_QUOTE: "The blues is alive and well."
+  CURRENT_ALBUM: "The Blues Is Alive and Well (2018)"
+  NOTABLE_AWARD: "Rock and Roll Hall of Fame, inducted 2005"
+  PAGE_COLOR: "blue"
+  

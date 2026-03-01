@@ -1,0 +1,12 @@
+image:
+  tag: v2.5.0
+
+protocolHttp: true
+
+extraArgs:
+  - --enable-insecure-login
+
+service:
+  type: NodePort
+  nodePort: 30000
+  externalPort: 80

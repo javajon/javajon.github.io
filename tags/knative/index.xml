@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Knative on Dijure | Digital Architectures with a hint of Java</title><link>https://www.dijure.com/tags/knative/</link><description>Recent content in Knative on Dijure | Digital Architectures with a hint of Java</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright © 2022 by Dijure LLC · All rights reserved · Some design elements by Themefisher. Select images from Unsplash. Created using Hugo.</copyright><lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.dijure.com/tags/knative/index.xml" rel="self" type="application/rss+xml"/><item><title>Knative</title><link>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781098101176/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781098101176/</guid><description>Knative is a Kubernetes-based platform for building, deploying, and managing modern serverless workloads.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Knative on Dijure | Digital Architectures with a hint of Java</title><link>https://www.dijure.com/tags/knative/</link><description>Recent content in Knative on Dijure | Digital Architectures with a hint of Java</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright © 2026 by Dijure LLC · All rights reserved · Some design elements by Themefisher. Select images from Unsplash. Created using Hugo.</copyright><lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.dijure.com/tags/knative/index.xml" rel="self" type="application/rss+xml"/><item><title>Knative</title><link>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781098101176/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781098101176/</guid><description>&lt;p&gt;Knative (pronounced &lt;em&gt;Kay-NAY-tive&lt;/em&gt;) is a Kubernetes-based platform for building, deploying, and managing modern serverless workloads. It drives with these primary features:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Serving&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Scale to zero, request-driven compute model&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Events&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Universal subscription, delivery and management of events&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In early versions of Knative there was another feature called &lt;em&gt;Building&lt;/em&gt;. That evolved and split out into its own project called Tekton. Tekton pipelines are a cloud native and Kubernetes native technique for running CI/CD pipelines on Kubernetes. Tekton pipelines (building) are an important part of the serverless experience that coordinated with Knative.&lt;/p&gt;</description></item></channel></rss>

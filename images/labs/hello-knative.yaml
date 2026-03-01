@@ -1,0 +1,9 @@
+  apiVersion: serving.knative.dev/v1
+  kind: Service
+  metadata:
+    name: helloworld
+  spec:
+    template:
+      spec:
+        containers:
+          - image: jmalloc/echo-server:0.3.1

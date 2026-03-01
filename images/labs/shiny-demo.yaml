@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: r-shiny
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: r-shiny
+  template:
+    metadata:
+      labels:
+        app: r-shiny
+    spec:
+      containers:
+      - name: shiny-server
+        image: openanalytics/shinyproxy-dash-for-r-demo
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8050
+          name: shiny-port
+      restartPolicy: Always
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: r-shiny
+  labels:
+    app: r-shiny
+spec:
+  type: NodePort
+  ports:
+  - port: 3838
+    targetPort: shiny-port
+    nodePort: 31111
+    protocol: TCP
+  selector:
+    app: r-shiny

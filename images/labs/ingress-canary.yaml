@@ -1,0 +1,39 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: canary-example-to-default
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "*.environments.katacoda.com"
+    http:
+      paths:
+      - path: /webapp1
+        pathType: Prefix
+        backend:
+          service:
+            name: webapp1-svc
+            port: 
+              number: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: canary-example-to-canary
+  annotations:
+    # Enable canary and send 40% of traffic to version 2
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: "40"
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "*.environments.katacoda.com"
+    http:
+      paths:
+      - path: /webapp1
+        pathType: Prefix
+        backend:
+          service:
+            name: webapp2-svc
+            port: 
+              number: 80

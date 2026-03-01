@@ -1,0 +1,171 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dashboard-config
+  labels:
+    app: disease-dashboard
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Global Disease Surveillance Dashboard</title>
+      <style>
+        body { 
+          font-family: Arial, sans-serif; 
+          margin: 0; 
+          padding: 20px; 
+          background-color: #f5f9fc; 
+        }
+        h1 { 
+          color: #2c3e50; 
+          text-align: center; 
+          margin-bottom: 30px; 
+        }
+        .dashboard-container { 
+          display: flex; 
+          flex-wrap: wrap; 
+          justify-content: center; 
+          gap: 20px; 
+        }
+        .disease-card { 
+          background: white; 
+          border-radius: 8px; 
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+          padding: 20px; 
+          width: 400px; 
+        }
+        .disease-title { 
+          color: #3498db; 
+          font-size: 1.5em; 
+          margin-bottom: 15px; 
+        }
+        .loading { 
+          color: #7f8c8d; 
+          text-align: center; 
+          font-style: italic; 
+        }
+        .error { 
+          color: #e74c3c; 
+          text-align: center; 
+          font-weight: bold; 
+          padding: 20px; 
+        }
+        .stat { 
+          margin: 10px 0; 
+        }
+        .stat-label { 
+          font-weight: bold; 
+          color: #34495e; 
+        }
+        .stat-value { 
+          color: #2c3e50; 
+        }
+        .who-logo { 
+          display: block; 
+          margin: 0 auto 20px auto; 
+          width: 120px; 
+        }
+      </style>
+    </head>
+    <body>
+      <img src="https://www.who.int/images/default-source/infographics/who-emblem.png?sfvrsn=877bb56a_2" class="who-logo" alt="WHO Logo">
+      <h1>Global Disease Surveillance Dashboard</h1>
+      
+      <div class="dashboard-container">
+        <div class="disease-card">
+          <h2 class="disease-title">Malaria Statistics</h2>
+          <p class="loading" id="malaria-loading">Loading malaria data...</p>
+          <div id="malaria-data"></div>
+        </div>
+        
+        <div class="disease-card">
+          <h2 class="disease-title">Tuberculosis Statistics</h2>
+          <p class="loading" id="tb-loading">Loading tuberculosis data...</p>
+          <div id="tb-data"></div>
+        </div>
+      </div>
+      
+      <script>
+        // Try to fetch the malaria data
+        fetch('/data/disease_data.json')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Malaria data not available');
+            }
+            return response.json();
+          })
+          .then(data => {
+            document.getElementById('malaria-loading').style.display = 'none';
+            const malariaDiv = document.getElementById('malaria-data');
+            
+            // Display some of the malaria data
+            const malariaStats = data.value.filter(item => 
+              item.SpatialDimValueCode !== "" && 
+              item.NumericValue > 0
+            ).sort((a, b) => b.NumericValue - a.NumericValue).slice(0, 5);
+            
+            let html = '';
+            
+            malariaStats.forEach(stat => {
+              html += `
+                <div class="stat">
+                  <div class="stat-label">Country: ${stat.SpatialDimValueCode || 'Global'}</div>
+                  <div class="stat-value">
+                    Year: ${stat.TimeDim}, 
+                    Cases: ${stat.NumericValue.toLocaleString()}
+                  </div>
+                </div>
+              `;
+            });
+            
+            malariaDiv.innerHTML = html + '<p class="stat-label">Source: WHO Global Health Observatory</p>';
+          })
+          .catch(error => {
+            document.getElementById('malaria-loading').style.display = 'none';
+            const malariaDiv = document.getElementById('malaria-data');
+            malariaDiv.innerHTML = `<p class="error">Error: ${error.message}</p>`;
+          });
+          
+        // Try to fetch the TB data
+        fetch('/data/tb_data.json')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Tuberculosis data not available');
+            }
+            return response.json();
+          })
+          .then(data => {
+            document.getElementById('tb-loading').style.display = 'none';
+            const tbDiv = document.getElementById('tb-data');
+            
+            // Display some of the TB data
+            const tbStats = data.value.filter(item => 
+              item.SpatialDimValueCode !== "" && 
+              item.NumericValue > 0
+            ).sort((a, b) => b.NumericValue - a.NumericValue).slice(0, 5);
+            
+            let html = '';
+            
+            tbStats.forEach(stat => {
+              html += `
+                <div class="stat">
+                  <div class="stat-label">Country: ${stat.SpatialDimValueCode || 'Global'}</div>
+                  <div class="stat-value">
+                    Year: ${stat.TimeDim}, 
+                    Cases: ${stat.NumericValue.toLocaleString()}
+                  </div>
+                </div>
+              `;
+            });
+            
+            tbDiv.innerHTML = html + '<p class="stat-label">Source: WHO Global Health Observatory</p>';
+          })
+          .catch(error => {
+            document.getElementById('tb-loading').style.display = 'none';
+            const tbDiv = document.getElementById('tb-data');
+            tbDiv.innerHTML = `<p class="error">Error: ${error.message}</p>`;
+          });
+      </script>
+    </body>
+    </html>

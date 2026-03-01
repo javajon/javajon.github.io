@@ -1,0 +1,20 @@
+FROM alpine/git:v2.32.0 AS gitter
+WORKDIR /app
+RUN git clone --sparse --depth 1 https://github.com/confluentinc/examples && \
+    cd examples && \
+    git sparse-checkout init --cone && \
+    git sparse-checkout add clients/cloud/go/
+
+FROM golang:1.17.2 AS build-env
+WORKDIR /usr/local/go/src/app
+COPY --from=gitter /app/examples/clients/cloud/go/ ./
+RUN sed -i 's/\.\/ccloud/app\/ccloud/g' consumer.go
+RUN go mod init app.mod/app
+RUN go get -u gopkg.in/confluentinc/confluent-kafka-go.v1/kafka
+RUN go mod tidy
+RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -v -o consumer -ldflags="-w -s" consumer.go
+
+FROM gcr.io/distroless/base
+COPY --from=build-env /usr/local/go/src/app/consumer /consumer
+ENTRYPOINT ["/consumer"]
+CMD ["-f", "/etc/config/kafka.config", "-t", "my-topic"]

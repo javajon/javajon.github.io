@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: heathkit-dashboard
+  labels:
+    app: heathkit-dashboard
+    tier: frontend
+  annotations:
+    kubernetes.io/description: "Service for weather dashboard application"
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30001
+      protocol: TCP
+      name: http
+  selector:
+    app: heathkit-dashboard

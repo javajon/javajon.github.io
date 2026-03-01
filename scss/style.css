@@ -956,7 +956,7 @@ div.debug {
   overflow: hidden; }
 
 .single-img-top {
-  max-height: 15vh;
+  max-height: 30vh;
   /*limit consumption of vertical space*/
   object-fit: contain;
   /*show all image, autosized, no cut, in available space*/
@@ -965,6 +965,42 @@ div.debug {
   margin-right: auto;
   margin-top: 4px;
   margin-bottom: 4px; }
+
+body, p {
+  font-size: 16px; }
+
+img.card-img-top,
+img.img-fluid,
+.card-img img,
+section img:not(.mr-3):not(.mr-4):not([width="35"]):not([width="50"]) {
+  border-radius: 8px;
+  box-shadow: 0 0 22px 8px rgba(0, 0, 0, 0.25);
+  margin: 10px 0; }
+
+.navbar-brand img,
+.logo-footer img {
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0; }
+
+.card,
+.card-img {
+  overflow: visible !important; }
+
+img.card-img-small-top,
+img.single-img-top,
+.lab-detail img,
+.card-body img {
+  border-radius: 4px;
+  box-shadow: none !important;
+  margin: 4px auto; }
+
+.testimonial-slider img,
+.media img.mr-3,
+.media img.mr-4 {
+  border-radius: 50%;
+  box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.2);
+  margin: 0; }
 
 .hr-theme-slash-2 {
   display: flex; }

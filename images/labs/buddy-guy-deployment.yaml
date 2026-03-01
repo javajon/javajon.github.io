@@ -1,0 +1,96 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: buddy-guy-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: buddy-guy-app
+  template:
+    metadata:
+      labels:
+        app: buddy-guy-app
+    spec:
+      initContainers:
+      - name: config-copier
+        image: alpine
+        volumeMounts:
+        - name: config-volume
+          mountPath: "/config"
+        - name: web-config
+          mountPath: "/config-web"
+      containers:
+      - name: buddy-guy
+        image: nginx:1.29-alpine
+        ports:
+        - containerPort: 80
+        env:
+        - name: CONFIG_PATH
+          value: "/config"
+        - name: ARTIST_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: buddy-guy-config
+              key: ARTIST_NAME
+              optional: true
+        - name: BIRTH_YEAR
+          valueFrom:
+            configMapKeyRef:
+              name: buddy-guy-config
+              key: BIRTH_YEAR
+              optional: true
+        - name: BIRTH_PLACE
+          valueFrom:
+            configMapKeyRef:
+              name: buddy-guy-config
+              key: BIRTH_PLACE
+              optional: true
+        - name: SHORT_BIO
+          valueFrom:
+            configMapKeyRef:
+              name: buddy-guy-config
+              key: SHORT_BIO
+              optional: true
+        - name: FAMOUS_QUOTE
+          valueFrom:
+            configMapKeyRef:
+              name: buddy-guy-config
+              key: FAMOUS_QUOTE
+              optional: true
+        - name: CURRENT_ALBUM
+          valueFrom:
+            configMapKeyRef:
+              name: buddy-guy-config
+              key: CURRENT_ALBUM
+              optional: true
+        - name: NOTABLE_AWARD
+          valueFrom:
+            configMapKeyRef:
+              name: buddy-guy-config
+              key: NOTABLE_AWARD
+              optional: true
+        - name: PAGE_COLOR
+          valueFrom:
+            configMapKeyRef:
+              name: buddy-guy-config
+              key: PAGE_COLOR
+              optional: true
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        volumeMounts:
+        - name: html-content
+          mountPath: /usr/share/nginx/html
+        - name: web-config
+          mountPath: /usr/share/nginx/html/config
+      volumes:
+      - name: config-volume
+        configMap:
+          name: buddy-guy-config
+      - name: html-content
+        configMap:
+          name: buddy-guy-html
+      - name: web-config
+        emptyDir: {}

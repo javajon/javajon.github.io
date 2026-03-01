@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp-external-ip-service
+  labels:
+    app: webapp-external-ip
+spec:
+  ports:
+  - port: 80
+  externalIPs:
+  - HOSTIP
+  selector:
+    app: webapp-external-ip
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp-external-ip-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: webapp-external-ip
+    spec:
+      containers:
+      - name: webapp-external-ip-pod
+        image: katacoda/docker-http-server:latest
+        ports:
+        - containerPort: 80

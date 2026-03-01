@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-{{x}}
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-{{x}}
+  template:
+    metadata:
+      labels:
+        app: app-{{x}}
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.29-alpine
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: workdir
+              mountPath: /usr/share/nginx/html
+      initContainers:
+        - name: install
+          image: busybox
+          command: ['sh', '-c', 'echo This message is from application app-{{x}}. > /work-dir/index.html']
+          volumeMounts:
+            - name: workdir
+              mountPath: "/work-dir"
+      volumes:
+        - name: workdir
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-{{x}}-svc
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: app-{{x}}

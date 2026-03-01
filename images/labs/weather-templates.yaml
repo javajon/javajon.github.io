@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: weather-html-templates
+  labels:
+    app: weather-dashboard
+data:
+  loading-template.html: |
+    <html>
+    <head>
+      <title>Weather Dashboard</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="refresh" content="30">
+    </head>
+    <body>
+      <h1>Weather Dashboard</h1>
+      <p>Loading weather data for Reykjavík...</p>
+    </body>
+    </html>
+  
+  dashboard-template.html: |
+    <html>
+    <head>
+      <title>Reykjavík Weather</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="refresh" content="30">
+      <style>
+        body{font-family:Arial,sans-serif;margin:40px;line-height:1.6;}
+        h1{color:#333;}
+        table{border-collapse:collapse;width:100%;}
+        th,td{text-align:left;padding:8px;border-bottom:1px solid #ddd;}
+        th{background-color:#f2f2f2;}
+      </style>
+    </head>
+    <body>
+      <h1>Reykjavík Weather Dashboard</h1>
+      <p>Last updated: {{TIMESTAMP}}</p>
+      <table>
+        <tr><th>Weather Metrics</th><th>Current Values</th></tr>
+        <tr><td>Temperature</td><td>{{TEMP}}°C</td></tr>
+        <tr><td>Humidity</td><td>{{HUMIDITY}}%</td></tr>
+        <tr><td>Wind Speed</td><td>{{WIND}} m/s</td></tr>
+        <tr><td>Condition</td><td>{{CONDITION}}</td></tr>
+      </table>
+      <p><small>Data source: OpenWeatherMap API</small></p>
+    </body>
+    </html>

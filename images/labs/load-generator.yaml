@@ -1,0 +1,30 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: load-generator
+spec:
+  template:
+    spec:
+      containers:
+      - name: load-generator
+        image: busybox:1.28
+        command: ["/bin/sh", "-c"]
+        args:
+        - |
+          echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting load generation for financial-app..."
+          while true; do
+            start_time=$(date '+%Y-%m-%d %H:%M:%S')
+            # Send requests to the financial-app service
+            for i in $(seq 1 50); do
+              response=$(wget -q -O- http://financial-app:8080 || echo "Connection failed")
+              if [[ "$response" == *"Connection failed"* ]]; then
+                echo "[$(date '+%Y-%m-%d %H:%M:%S')] Request $i failed: Connection refused"
+              else
+                echo "[$(date '+%Y-%m-%d %H:%M:%S')] Request $i successful"
+              fi
+              sleep 0.1
+            done
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] Load generation cycle completed. Cycle started at $start_time"
+          done
+      restartPolicy: Never
+  backoffLimit: 4

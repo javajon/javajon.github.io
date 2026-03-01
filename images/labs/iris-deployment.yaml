@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    labels:
+        app: iris-classifier
+    name: iris-classifier
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            app: iris-classifier
+    template:
+        metadata:
+            labels:
+                app: iris-classifier
+        spec:
+            containers:
+            - image: $IRIS_MODEL_IMAGE
+              imagePullPolicy: IfNotPresent
+              name: iris-classifier
+              ports:
+              - containerPort: 5000
+                name: iris-port

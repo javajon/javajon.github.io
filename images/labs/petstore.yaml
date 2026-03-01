@@ -1,0 +1,38 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: petstore
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petstore
+  template:
+    metadata:
+      labels:
+        app: petstore
+    spec:
+      containers:
+        - name: petstore
+          # The "petstore3" (3) is important to avoid CORS ingress problem
+          image: swaggerapi/petstore3:1.0.5
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: petstore
+  labels:
+    app: petstore
+spec:
+  selector:
+    app: petstore
+  ports:
+    - port: 8080
+      targetPort: 8080
+      name: http
+      nodePort: 31234
+  type: NodePort
+ 

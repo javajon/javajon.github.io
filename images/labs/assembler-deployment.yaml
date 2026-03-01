@@ -1,0 +1,237 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: assembler
+  namespace: message-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: assembler
+  template:
+    metadata:
+      labels:
+        app: assembler
+    spec:
+      containers:
+      - name: assembler
+        image: python:3.13.3-slim
+        ports:
+        - containerPort: 8080
+        command: ["python", "/app/server.py"]
+        env:
+        - name: SERVICE_NAME
+          value: "word-service.message-app.svc.cluster.local"
+        volumeMounts:
+        - name: app-code
+          mountPath: /app
+      initContainers:
+      - name: setup-app
+        image: python:3.13.3-slim
+        command:
+        - sh
+        - -c
+        - |
+          mkdir -p /app
+
+          # Create the server.py file
+          cat > /app/server.py << 'EOF'
+          import http.server
+          import socketserver
+          import urllib.request
+          import os
+          import time
+          import html
+
+          # Configuration
+          SERVICE_NAME = os.environ.get('SERVICE_NAME', 'word-service.message-app.svc.cluster.local')
+          CORRECT_QUOTE = "If you don't know where you are going, you might wind up someplace else."
+          PORT = 8080
+
+          # HTML template for the page
+          HTML_TEMPLATE = """<!DOCTYPE html>
+          <html>
+          <head>
+            <title>Yogi Berra Quote Assembler</title>
+            <meta http-equiv="refresh" content="10">
+            <style>
+              body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                text-align: center;
+                background-color: #f9f9f9;
+              }
+              h1 {
+                color: #333;
+                margin-bottom: 30px;
+              }
+              .quote {
+                font-family: 'Georgia', serif;
+                font-style: italic;
+                font-size: 1.2em;
+                line-height: 1.4;
+              }
+              .message {
+                font-size: 24px;
+                margin: 20px;
+                padding: 30px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                background-color: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+              }
+              .refresh-note {
+                font-size: 0.9em;
+                color: #666;
+                font-style: italic;
+              }
+              .success {
+                background-color: #dff0d8;
+                color: #3c763d;
+                padding: 20px;
+                border-radius: 8px;
+                margin-top: 30px;
+                display: %s;
+              }
+              .mixed {
+                background-color: #fcf8e3;
+                color: #8a6d3b;
+                padding: 20px;
+                border-radius: 8px;
+                margin-top: 30px;
+                display: %s;
+              }
+              .attribution {
+                font-style: italic;
+                margin-top: 40px;
+                color: #666;
+              }
+            </style>
+          </head>
+          <body>
+            <h1>Yogi Berra Quote Assembler</h1>
+            <div class="message">
+              <p class="refresh-note">Page refreshes every 10 seconds to demonstrate the service behavior.</p>
+              <p>Assembled Quote:</p>
+              <p class="quote"><strong>%s</strong></p>
+              
+              <div class="success">
+                <h2>Success! Quote assembled correctly!</h2>
+                <p>The quote is now being assembled in the correct order.</p>
+              </div>
+              
+              <div class="mixed">
+                <h2>Words are mixed up!</h2>
+                <p>The quote should read: "If you don't know where you are going, you might wind up someplace else."</p>
+              </div>
+            </div>
+            <p class="attribution">- Yogi Berra</p>
+          </body>
+          </html>
+          """
+
+          def fetch_words():
+              """Fetch all words from the service and assemble the quote"""
+              print('Fetching words from service...')
+
+              # With the correct service and a StatefulSet, each pod has
+              # a predictable, stable hostname as the name of the pod. 
+              # Example: pod-name-0.service-name, pod-name-1.service-name, etc.
+              # <<<
+              phrase_services = [
+                  f'http://{SERVICE_NAME}',
+                  f'http://{SERVICE_NAME}',
+                  f'http://{SERVICE_NAME}',
+                  f'http://{SERVICE_NAME}',
+                  f'http://{SERVICE_NAME}'
+              ]
+              # >>>
+
+              words = []
+              for i, url in enumerate(phrase_services):
+                  try:
+                      print(f"Fetching word {i+1} from {url}...")
+                      with urllib.request.urlopen(url, timeout=3) as response:
+                          word = response.read().decode('utf-8').strip()
+                          words.append(word)
+                          words.append(' ')
+                          print(f'Fetched word {i+1}: "{word}"')
+                  except Exception as e:
+                      error_msg = f"[Error: {str(e)}]"
+                      words.append(error_msg)
+                      print(f'Error fetching word {i+1}: {error_msg}')
+
+              time.sleep(0.5)  # Small delay between requests
+
+              assembled_quote = ''.join(words)
+              print(f'Assembled quote: "{assembled_quote}"')
+              is_correct = assembled_quote.strip() == CORRECT_QUOTE.strip()
+              return assembled_quote, is_correct
+
+          class QuoteHandler(http.server.SimpleHTTPRequestHandler):
+              def do_GET(self):
+                  if self.path == '/' or self.path == '/index.html':
+                      print(f"Received request for main page from {self.client_address}")
+                      assembled_quote, is_correct = fetch_words()
+
+                      self.send_response(200)
+                      self.send_header('Content-type', 'text/html')
+                      self.end_headers()
+
+                      html_content = HTML_TEMPLATE % (
+                          "block" if is_correct else "none",
+                          "none" if is_correct else "block",
+                          html.escape(assembled_quote)
+                      )
+
+                      self.wfile.write(html_content.encode())
+                      print(f"Sent main page response with quote: '{assembled_quote}'")
+
+                  elif self.path == '/quote':
+                      print(f"Received request for /quote endpoint from {self.client_address}")
+                      assembled_quote, is_correct = fetch_words()
+
+                      self.send_response(200)
+                      self.send_header('Content-type', 'text/html')
+                      self.end_headers()
+
+                      expected_quote = "If you don't know where you are going, you might wind up someplace else."
+
+                      quote_html = f"""
+                      <p class="quote"><strong>{html.escape(assembled_quote)}</strong></p>
+                      <div class="{'success' if is_correct else 'mixed'}">
+                          <h2>{"Success! Quote assembled correctly!" if is_correct else "Words are mixed up!"}</h2>
+                          <p>{"The quote is now being assembled in the correct order." if is_correct else f'The quote should read: "{expected_quote}"'}</p>
+                          {'' if is_correct else "<p>Configure a headless service and update the URLs to ensure correct word order.</p>"}
+                      </div>
+                      """
+
+                      self.wfile.write(quote_html.encode())
+                      print(f"Sent /quote response with quote: '{assembled_quote}', is_correct: {is_correct}")
+
+                  else:
+                      self.send_response(404)
+                      self.send_header('Content-type', 'text/plain')
+                      self.end_headers()
+                      self.wfile.write(b'Not found')
+
+          print(f"Starting server on port {PORT}...")
+          Handler = QuoteHandler
+          socketserver.TCPServer.allow_reuse_address = True
+
+          try:
+              with socketserver.TCPServer(("", PORT), Handler) as httpd:
+                  print(f"Server running at http://0.0.0.0:{PORT}/")
+                  httpd.serve_forever()
+          except Exception as e:
+              print(f"Error starting server: {e}")
+          EOF
+
+          chmod +x /app/server.py
+        volumeMounts:
+        - name: app-code
+          mountPath: /app
+      volumes:
+      - name: app-code
+        emptyDir: {}

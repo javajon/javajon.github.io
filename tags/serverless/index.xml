@@ -1,1 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serverless on Dijure | Digital Architectures with a hint of Java</title><link>https://www.dijure.com/tags/serverless/</link><description>Recent content in Serverless on Dijure | Digital Architectures with a hint of Java</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright © 2022 by Dijure LLC · All rights reserved · Some design elements by Themefisher. Select images from Unsplash. Created using Hugo.</copyright><lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.dijure.com/tags/serverless/index.xml" rel="self" type="application/rss+xml"/><item><title>Knative</title><link>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781098101176/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781098101176/</guid><description>Knative is a Kubernetes-based platform for building, deploying, and managing modern serverless workloads.</description></item><item><title>Nuclio</title><link>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781492078944/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781492078944/</guid><description>Nucliois an open source serverless platform which allows developers to focus on building and running auto-scaling applications without worrying about managing servers.</description></item><item><title>OpenFaaS</title><link>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781492078937/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781492078937/</guid><description>OpenFaaSis a framework for building serverless functions with Docker and Kubernetes which has first-class support for metrics.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serverless on Dijure | Digital Architectures with a hint of Java</title><link>https://www.dijure.com/tags/serverless/</link><description>Recent content in Serverless on Dijure | Digital Architectures with a hint of Java</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright © 2026 by Dijure LLC · All rights reserved · Some design elements by Themefisher. Select images from Unsplash. Created using Hugo.</copyright><lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.dijure.com/tags/serverless/index.xml" rel="self" type="application/rss+xml"/><item><title>Knative</title><link>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781098101176/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781098101176/</guid><description>&lt;p&gt;Knative (pronounced &lt;em&gt;Kay-NAY-tive&lt;/em&gt;) is a Kubernetes-based platform for building, deploying, and managing modern serverless workloads. It drives with these primary features:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;&lt;/th&gt;
+ &lt;th&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Serving&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Scale to zero, request-driven compute model&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Events&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Universal subscription, delivery and management of events&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In early versions of Knative there was another feature called &lt;em&gt;Building&lt;/em&gt;. That evolved and split out into its own project called Tekton. Tekton pipelines are a cloud native and Kubernetes native technique for running CI/CD pipelines on Kubernetes. Tekton pipelines (building) are an important part of the serverless experience that coordinated with Knative.&lt;/p&gt;</description></item><item><title>Nuclio</title><link>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781492078944/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781492078944/</guid><description>&lt;img align="right" src="https://www.dijure.com/images/labs/nuclio.png" /&gt;
+&lt;p&gt;
+&lt;a href="https://nuclio.io/" target="_blank" &gt;Nuclio&lt;/a&gt;
+ is an open source serverless platform which allows developers to focus on building and running auto-scaling applications without worrying about managing servers.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The fastest platform running up to 400,000 function invocations per second&lt;/li&gt;
+&lt;li&gt;Enables simple debugging, regression and a multi-versioned CI/CD pipeline&lt;/li&gt;
+&lt;li&gt;Supports a variety of open or cloud-specific event and data sources with common APIs&lt;/li&gt;
+&lt;li&gt;Is portable across low-power devices, laptops, on-premises and multi-cloud deployments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this lab, you will learn how to:&lt;/p&gt;</description></item><item><title>OpenFaaS</title><link>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781492078937/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.dijure.com/learning.oreilly.com/scenarios/-/9781492078937/</guid><description>&lt;img align="right" src="https://www.dijure.com/images/labs/openfaas.png" /&gt;
+&lt;p&gt;
+&lt;a href="https://www.openfaas.com/" target="_blank" &gt;OpenFaaS&lt;/a&gt;
+ is a framework for building serverless functions with Docker and Kubernetes which has first-class support for metrics. Any process can be packaged as a function enabling you to consume a range of web events without repetitive boiler-plate coding.&lt;/p&gt;
+&lt;h2 id="key-features"&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ease of use through UI portal and one-click install&lt;/li&gt;
+&lt;li&gt;Write functions in any language for Linux or Windows and package in Docker/OCI image format&lt;/li&gt;
+&lt;li&gt;Portable - runs on existing hardware or public/private cloud&lt;/li&gt;
+&lt;li&gt;Kubernetes and Docker Swarm native&lt;/li&gt;
+&lt;li&gt;CLI available with YAML format for templating and defining functions&lt;/li&gt;
+&lt;li&gt;Scales as demand increases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this lab, you will learn how to:&lt;/p&gt;</description></item></channel></rss>

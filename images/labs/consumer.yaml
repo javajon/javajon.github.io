@@ -1,0 +1,40 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: consumer
+  labels:
+    app: consumer
+spec:
+  template:
+    metadata:
+      labels:
+        app: consumer
+    spec:
+      restartPolicy: OnFailure 
+      containers:
+      - name: consumer
+        image: {{image}}
+        args: [ "-f", "/etc/config/kafka.config", "-t", "$(message-topic)" ]
+        ports:
+        - containerPort: 80
+        env:
+        - name: message-topic
+          valueFrom:
+            configMapKeyRef:
+              name: kafka-topic
+              key: topic
+        - name: KAFKA_OPTS 
+          value: -Djava.security.auth.login.config=/etc/kafka/secrets/rest_jaas.conf
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/config
+        - name: kafka-secret
+          mountPath: /etc/kafka/secrets
+          subPath: rest_jaas.conf
+      volumes:
+        - name: config-volume
+          configMap:
+            name: kafka-config
+        - name: kafka-secret
+          secret:
+            secretName: kafka-secret

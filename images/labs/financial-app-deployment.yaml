@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: financial-app
+  labels:
+    app: financial-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: financial-app
+  template:
+    metadata:
+      labels:
+        app: financial-app
+    spec:
+      containers:
+      - name: financial-app
+        image: python:3.13.3-slim
+        command: ["/bin/sh", "-c"]
+        args:
+        - |
+          cat > server.py << EOF
+          from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
+          import time
+          
+          class CPULoadHandler(BaseHTTPRequestHandler):
+              def do_GET(self):
+                  print("Received request, generating CPU load...")
+                  
+                  # Fibonacci calculation (non-recursive to avoid blocking too long)
+                  def fibonacci(n):
+                      a, b = 0, 1
+                      for _ in range(n):
+                          a, b = b, a + b
+                      return a
+                  
+                  # Calculate a series of Fibonacci numbers - CPU intensive but won't hang
+                  result = 0
+                  for i in range(10000):
+                      result = fibonacci(28)  
+                  
+                  # Send response
+                  self.send_response(200)
+                  self.send_header('Content-type', 'text/plain')
+                  self.end_headers()
+                  self.wfile.write(f"Financial analysis completed. Fibonacci result: {result}\\n".encode())
+          
+          # Create threaded server that can handle multiple requests
+          PORT = 8080
+          server = ThreadingHTTPServer(("", PORT), CPULoadHandler)
+          print(f"Server running on port {PORT}")
+          server.serve_forever()
+          EOF
+          
+          # Run the server
+          python server.py
+        ports:
+        - name: http
+          containerPort: 8080
+        resources:
+          requests:
+            cpu: 100m
+            memory: 64Mi
+          limits:
+            cpu: 500m
+            memory: 128Mi

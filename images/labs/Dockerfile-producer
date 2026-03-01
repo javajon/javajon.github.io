@@ -1,0 +1,23 @@
+# Get the source for the app
+FROM alpine/git:v2.32.0 AS gitter
+WORKDIR /src
+RUN git clone https://github.com/confluentinc/examples
+
+# Builder stage needs JDK and Gradle
+FROM openjdk:8-jdk-alpine AS builder
+WORKDIR /kotlin
+COPY --from=gitter /src/examples/clients/cloud/kotlin/ .
+COPY gradle-task-uberjar.append .
+RUN cat gradle-task-uberjar.append >> build.gradle.kts
+RUN ./gradlew uberjar
+
+# Runner stage only needs JRE and JAR
+FROM gcr.io/distroless/java:8
+COPY --from=builder /kotlin/build/libs/*-uber.jar ./producer.jar
+CMD ["producer.jar"]
+
+# To debug image:
+# FROM openjdk:8-jre-alpine
+# COPY --from=builder /kotlin/build/libs/*-uber.jar ./producer.jar
+# RUN ls -l
+# RUN pwd

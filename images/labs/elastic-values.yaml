@@ -1,0 +1,20 @@
+# Permit co-located instances for solitary minikube virtual machines.
+antiAffinity: "soft"
+
+# Set JVM heap (should be about 50% of container memory)
+esJavaOpts: "-Xmx512m -Xms512m"
+
+# Number of replicas
+replicas: 2
+
+# Increase memory allocation
+resources:
+  requests:
+    cpu: "100m"
+    memory: "1Gi"
+  limits:
+    cpu: "1000m"
+    memory: "1Gi"
+
+persistence:
+  enabled: false

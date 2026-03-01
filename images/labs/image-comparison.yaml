@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: image-comparison
+spec:
+  ports:
+  - protocol: TCP
+    port: 8501
+    targetPort: 8501
+    nodePort: 32500
+  selector:
+    app: image-comparison
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-comparison
+  labels:
+    app: image-comparison
+spec:
+  selector:
+    matchLabels:
+      app: image-comparison
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: image-comparison
+    spec:
+      containers:
+      - name: image-comparison
+        image: $REGISTRY/image-comparison
+        ports:
+        - containerPort: 8501

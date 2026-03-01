@@ -1,0 +1,39 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: producer
+  labels:
+    app: producer
+spec:
+  template:
+    metadata:
+      labels:
+        app: producer
+    spec:
+      restartPolicy: OnFailure 
+      containers:
+      - name: producer
+        image: {{image}}
+        args: [ "producer.jar", "/etc/config/kafka.config", "$(message-topic)" ]
+        ports:
+        - containerPort: 80
+        env:
+        - name: message-topic
+          valueFrom:
+            configMapKeyRef:
+              name: kafka-topic
+              key: topic
+        - name: KAFKA_OPTS 
+          value: -Djava.security.auth.login.config=/etc/kafka/secrets/rest_jaas.conf
+        volumeMounts:
+        - name: config-volume
+          mountPath: /etc/config
+        - name: kafka-secret
+          mountPath: /etc/kafka/secrets
+      volumes:
+        - name: config-volume
+          configMap:
+            name: kafka-config
+        - name: kafka-secret
+          secret:
+            secretName: kafka-secret

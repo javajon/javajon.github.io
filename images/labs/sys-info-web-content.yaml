@@ -1,0 +1,447 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: heathkit-dashboard-content
+  labels:
+    app: heathkit-dashboard
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HeathKit Cloud System Dashboard</title>
+        <meta http-equiv="refresh" content="30">
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f7fa;
+                color: #333;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            header {
+                background-color: #0078d7;
+                color: white;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+            .dashboard-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+            .card {
+                background-color: white;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .card h2 {
+                margin-top: 0;
+                color: #444;
+                font-size: 18px;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+            }
+            .status-item {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .status-item:last-child {
+                margin-bottom: 0;
+            }
+            .status-label {
+                font-weight: 500;
+            }
+            .status-value {
+                font-family: monospace;
+                background-color: #f5f5f5;
+                padding: 2px 8px;
+                border-radius: 3px;
+            }
+            .metric {
+                margin-bottom: 15px;
+            }
+            .metric-name {
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .progress-bar {
+                height: 8px;
+                background-color: #e9ecef;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            .progress-value {
+                height: 100%;
+                border-radius: 4px;
+            }
+            .progress-low {
+                background-color: #5cb85c;
+            }
+            .progress-medium {
+                background-color: #f0ad4e;
+            }
+            .progress-high {
+                background-color: #d9534f;
+            }
+            .instances-card {
+                grid-column: 1 / -1;
+            }
+            .instances-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+            .instance {
+                background-color: #f8f9fa;
+                border-radius: 5px;
+                padding: 15px;
+                border-left: 4px solid #0078d7;
+            }
+            .instance.running {
+                border-left-color: #5cb85c;
+            }
+            .instance.pending {
+                border-left-color: #f0ad4e;
+            }
+            .instance.not-scheduled {
+                border-left-color: #d9534f;
+                opacity: 0.7;
+            }
+            .instance-header {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .instance-name {
+                font-weight: 600;
+            }
+            .instance-status {
+                font-size: 12px;
+                padding: 2px 6px;
+                border-radius: 10px;
+                text-transform: uppercase;
+            }
+            .status-running {
+                background-color: #dff0d8;
+                color: #3c763d;
+            }
+            .status-pending {
+                background-color: #fcf8e3;
+                color: #8a6d3b;
+            }
+            .status-not-scheduled {
+                background-color: #f2dede;
+                color: #a94442;
+            }
+            .footer {
+                text-align: center;
+                margin-top: 40px;
+                color: #777;
+                font-size: 14px;
+            }
+            .refresh-info {
+                text-align: right;
+                color: #777;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>HeathKit Cloud System Dashboard</h1>
+            </header>
+            
+            <div class="refresh-info">
+                Last Updated: <span id="timestamp">May 17, 2025 17:22:45 UTC</span> (Auto-refreshes every 30 seconds)
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="card instances-card">
+                    <h2>Instance Status</h2>
+                    <div class="status-item">
+                        <span class="status-label">Desired Replicas:</span>
+                        <span class="status-value">5</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Running Replicas:</span>
+                        <span class="status-value">3</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Unavailable Replicas:</span>
+                        <span class="status-value">2</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Deployment Status:</span>
+                        <span class="status-value" style="color: #f0ad4e;">Warning: Unable to scale to desired replicas</span>
+                    </div>
+                    
+                    <h3 style="margin-top: 20px;">Instance Details</h3>
+                    <div class="instances-grid">
+                        <div class="instance running">
+                            <div class="instance-header">
+                                <div class="instance-name">heathkit-dashboard-54f57cf6b9-a2b3c</div>
+                                <div class="instance-status status-running">Running</div>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Node:</span>
+                                <span class="status-value">worker-1</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Age:</span>
+                                <span class="status-value">45m</span>
+                            </div>
+                        </div>
+                        <div class="instance running">
+                            <div class="instance-header">
+                                <div class="instance-name">heathkit-dashboard-54f57cf6b9-d4e5f</div>
+                                <div class="instance-status status-running">Running</div>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Node:</span>
+                                <span class="status-value">worker-2</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Age:</span>
+                                <span class="status-value">45m</span>
+                            </div>
+                        </div>
+                        <div class="instance running">
+                            <div class="instance-header">
+                                <div class="instance-name">heathkit-dashboard-54f57cf6b9-g6h7i</div>
+                                <div class="instance-status status-running">Running</div>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Node:</span>
+                                <span class="status-value">worker-3</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Age:</span>
+                                <span class="status-value">45m</span>
+                            </div>
+                        </div>
+                        <div class="instance not-scheduled">
+                            <div class="instance-header">
+                                <div class="instance-name">heathkit-dashboard-54f57cf6b9-j8k9l</div>
+                                <div class="instance-status status-not-scheduled">Not Scheduled</div>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Reason:</span>
+                                <span class="status-value">Admission webhook denied</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Message:</span>
+                                <span class="status-value">Exceeds quota</span>
+                            </div>
+                        </div>
+                        <div class="instance not-scheduled">
+                            <div class="instance-header">
+                                <div class="instance-name">heathkit-dashboard-54f57cf6b9-m0n1o</div>
+                                <div class="instance-status status-not-scheduled">Not Scheduled</div>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Reason:</span>
+                                <span class="status-value">Admission webhook denied</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">Message:</span>
+                                <span class="status-value">Exceeds quota</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Cluster Resources</h2>
+                    <div class="metric">
+                        <div class="metric-name">CPU Utilization</div>
+                        <div class="progress-bar">
+                            <div class="progress-value progress-medium" style="width: 65%"></div>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Used:</span>
+                            <span class="status-value">65%</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-name">Memory Utilization</div>
+                        <div class="progress-bar">
+                            <div class="progress-value progress-high" style="width: 78%"></div>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Used:</span>
+                            <span class="status-value">78%</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-name">Pod Count</div>
+                        <div class="progress-bar">
+                            <div class="progress-value progress-high" style="width: 85%"></div>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Used:</span>
+                            <span class="status-value">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>System Information</h2>
+                    <div class="status-item">
+                        <span class="status-label">Kubernetes Version:</span>
+                        <span class="status-value">v1.28.4</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Cluster Uptime:</span>
+                        <span class="status-value">7d 14h 22m</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Node Count:</span>
+                        <span class="status-value">5</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Total Pods:</span>
+                        <span class="status-value">85 / 100 (limited by quota)</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Total Services:</span>
+                        <span class="status-value">32</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Network Traffic</h2>
+                    <div class="metric">
+                        <div class="metric-name">Inbound Traffic</div>
+                        <div class="progress-bar">
+                            <div class="progress-value progress-medium" style="width: 58%"></div>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Current:</span>
+                            <span class="status-value">248 MB/s</span>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-name">Outbound Traffic</div>
+                        <div class="progress-bar">
+                            <div class="progress-value progress-low" style="width: 32%"></div>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Current:</span>
+                            <span class="status-value">145 MB/s</span>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Active Connections:</span>
+                        <span class="status-value">1,254</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Load Balancer Status:</span>
+                        <span class="status-value" style="color: #5cb85c;">Healthy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>HeathKit Cloud System Dashboard | For internal use only</p>
+            </div>
+        </div>
+
+        <script>
+            // Update timestamp
+            function updateTimestamp() {
+                const now = new Date();
+                document.getElementById("timestamp").textContent = now.toUTCString();
+            }
+            updateTimestamp();
+            
+            // This would be replaced with real data in a production environment
+            // For this simulation, we just update the timestamp
+            setInterval(updateTimestamp, 30000);
+        </script>
+
+        <script>
+            // Function to update metrics with slightly random values
+            function updateMetrics() {
+                // Update CPU utilization
+                const cpuBase = 65;
+                const cpuUtil = Math.floor(cpuBase + (Math.random() * 10) - 5);
+                document.querySelector('.metric:nth-child(1) .progress-value').style.width = cpuUtil + '%';
+                document.querySelector('.metric:nth-child(1) .status-value').textContent = cpuUtil + '%';
+                
+                // Update memory utilization
+                const memBase = 78;
+                const memUtil = Math.floor(memBase + (Math.random() * 6) - 3);
+                document.querySelector('.metric:nth-child(2) .progress-value').style.width = memUtil + '%';
+                document.querySelector('.metric:nth-child(2) .status-value').textContent = memUtil + '%';
+                
+                // Update network traffic
+                const inboundBase = 248;
+                const inbound = Math.floor(inboundBase + (Math.random() * 40) - 20);
+                document.querySelector('.metric-name:contains("Inbound Traffic")').closest('.metric').querySelector('.status-value').textContent = inbound + ' MB/s';
+                
+                const outboundBase = 145;
+                const outbound = Math.floor(outboundBase + (Math.random() * 30) - 15);
+                document.querySelector('.metric-name:contains("Outbound Traffic")').closest('.metric').querySelector('.status-value').textContent = outbound + ' MB/s';
+                
+                // Update active connections
+                const connectionsBase = 1254;
+                const connections = Math.floor(connectionsBase + (Math.random() * 200) - 100);
+                document.querySelector('.status-label:contains("Active Connections")').closest('.status-item').querySelector('.status-value').textContent = connections.toLocaleString();
+                
+                // Update timestamp
+                updateTimestamp();
+            }
+            
+            // Fix for querySelector with contains
+            document.querySelectorAll('.metric-name').forEach(el => {
+                if (el.textContent.includes('Inbound Traffic')) {
+                    const valueEl = el.closest('.metric').querySelector('.status-value');
+                    const inboundBase = 248;
+                    const inbound = Math.floor(inboundBase + (Math.random() * 40) - 20);
+                    valueEl.textContent = inbound + ' MB/s';
+                }
+                if (el.textContent.includes('Outbound Traffic')) {
+                    const valueEl = el.closest('.metric').querySelector('.status-value');
+                    const outboundBase = 145;
+                    const outbound = Math.floor(outboundBase + (Math.random() * 30) - 15);
+                    valueEl.textContent = outbound + ' MB/s';
+                }
+            });
+            
+            document.querySelectorAll('.status-label').forEach(el => {
+                if (el.textContent.includes('Active Connections')) {
+                    const valueEl = el.closest('.status-item').querySelector('.status-value');
+                    const connectionsBase = 1254;
+                    const connections = Math.floor(connectionsBase + (Math.random() * 200) - 100);
+                    valueEl.textContent = connections.toLocaleString();
+                }
+            });
+            
+            // Run updates every 3 seconds
+            setInterval(updateMetrics, 3000);
+            
+            // Initial update
+            updateMetrics();
+        </script>
+    </body>
+    </html>

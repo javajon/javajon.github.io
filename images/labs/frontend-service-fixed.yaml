@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: chaos-litmus-frontend-service-fixed
+  annotations:
+    meta.helm.sh/release-name: chaos
+    meta.helm.sh/release-namespace: litmus
+  labels:
+    app.kubernetes.io/component: litmus-frontend
+    app.kubernetes.io/instance: chaos
+    app.kubernetes.io/name: litmus
+    app.kubernetes.io/part-of: litmus
+    app.kubernetes.io/version: 2.7.2
+    litmuschaos.io/version: 2.7.0
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    nodePort: 31000
+    port: 9091
+    protocol: TCP
+    targetPort: 8185
+  selector:
+    app.kubernetes.io/component: litmus-frontend
+  sessionAffinity: None

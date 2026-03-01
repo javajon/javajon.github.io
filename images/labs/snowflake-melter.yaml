@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: snowflake-melter
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: snowflake-melter
+          containers:
+          - name: snowflake-melter
+            image: $IMAGE
+          restartPolicy: OnFailure

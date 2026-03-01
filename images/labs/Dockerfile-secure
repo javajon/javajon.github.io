@@ -1,0 +1,29 @@
+# Start from a Node.js long-term support (Active LTS)
+FROM node:16
+
+# Create app directory and set as working directory
+WORKDIR /usr/src/app
+
+# Create a non-root user
+RUN groupadd -g 999 appuser && \
+    useradd -r -u 999 -g appuser appuser
+
+# Create home directory for appuser and set correct permissions
+RUN mkdir -p /home/appuser && chown -R appuser:appuser /home/appuser
+ENV HOME /home/appuser
+
+# Copy package files, install dependencies, and copy app files
+COPY --chown=appuser:appuser package*.json ./
+RUN npm install && npm install express
+
+# Apply security updates
+RUN apt-get update && apt-get -y upgrade
+
+# Copy app files
+COPY --chown=appuser:appuser . .
+
+# Switch to non-root user
+USER appuser
+
+# The default command to run when starting the container 
+CMD [ "npm", "start" ]

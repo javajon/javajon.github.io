@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      {{selector}}
+  template:
+    metadata:
+      labels:
+        {{selector}}
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.29-alpine
+        ports:
+        - containerPort: {{container port}}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-nginx
+spec:
+  ports:
+  - port: {{service port}}
+    protocol: TCP
+  selector:
+    {{selector}}
+  type: ClusterIP

@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: word
+  namespace: message-app
+spec:
+  serviceName: word-service
+  replicas: 5
+  selector:
+    matchLabels:
+      app: word
+  template:
+    metadata:
+      labels:
+        app: word
+    spec:
+      containers:
+      - name: word
+        image: nginx:1.29-alpine
+        ports:
+        - containerPort: 80
+          name: web
+        volumeMounts:
+        - name: word-content
+          mountPath: /usr/share/nginx/html
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 5
+      initContainers:
+      - name: init-word
+        image: busybox
+        command:
+        - sh
+        - -c
+        - |
+          ORDINAL=${HOSTNAME##*-}
+          if [ "$ORDINAL" = "0" ]; then
+            echo "If you" > /content/index.html
+          elif [ "$ORDINAL" = "1" ]; then
+            echo "don't know" > /content/index.html
+          elif [ "$ORDINAL" = "2" ]; then
+            echo "where you are" > /content/index.html
+          elif [ "$ORDINAL" = "3" ]; then
+            echo "going, you might" > /content/index.html
+          elif [ "$ORDINAL" = "4" ]; then
+            echo "wind up someplace else." > /content/index.html
+          fi
+        volumeMounts:
+        - name: word-content
+          mountPath: /content
+  volumeClaimTemplates:
+  - metadata:
+      name: word-content
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi

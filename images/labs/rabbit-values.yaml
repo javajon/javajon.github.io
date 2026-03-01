@@ -1,0 +1,41 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: my-rabbitmq
+  namespace: rabbitmq
+spec:
+  replicas: 3
+
+  service:
+    type: NodePort
+
+  persistence:
+    storage: "0"
+
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 250m
+      memory: 512Mi
+
+  rabbitmq:
+    additionalConfig: |
+      default_user = guest
+      default_pass = guest
+
+  override:
+    service:
+      spec:
+        ports:
+          - name: management
+            port: 15672
+            targetPort: 15672
+            nodePort: 31672
+          - name: amqp
+            port: 5672
+            targetPort: 5672
+          - name: prometheus
+            port: 15692
+            targetPort: 15692

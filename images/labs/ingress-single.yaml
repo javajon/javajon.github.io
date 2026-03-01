@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: single-route
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /webapp1
+        pathType: Prefix
+        backend:
+          service:
+            name: webapp1-svc
+            port: 
+              number: 80

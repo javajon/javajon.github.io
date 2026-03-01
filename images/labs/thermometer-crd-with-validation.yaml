@@ -1,0 +1,53 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: thermometers.d2iq.com
+spec:
+  group: d2iq.com
+
+  scope: Namespaced
+
+  names:
+    kind: Thermometer
+    plural: thermometers
+    shortNames:
+      - trm
+      - trms
+
+  versions:
+  - name: v1beta1  
+    served: true
+    storage: true
+    schema:
+      openAPIV3Schema:
+        type: object
+        description: Thermometer is the Schema for the Thermometer API.
+        properties:
+          apiVersion:
+            type: string
+          kind:
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: Thermometer Spec defines the desired state of Thermometer. Unit of [Celsius | Fahrenheit] required. 
+            type: object
+            properties:
+              unit:
+                description: Units in Celsius or Fahrenheit
+                type: string
+                anyOf: [{"pattern": "^Celsius"}, {"pattern": "^Fahrenheit"}]
+            required: ["unit"]
+          status:
+            description: Thermometer Status filled in by a temperature sensor service.
+            type: object
+            properties:
+              temperature:
+                type: number
+    additionalPrinterColumns:
+    - name: Unit
+      type: string
+      jsonPath: .spec.unit
+    - name: Temperature
+      type: number
+      jsonPath: .status.temperature

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: namespace-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: namespace-dashboard
+  template:
+    metadata:
+      labels:
+        app: namespace-dashboard
+    spec:
+      volumes:
+        - name: html-output
+          emptyDir: {}
+      containers:
+        - name: namespace-lister
+          image: $IMAGE
+          volumeMounts:
+            - name: html-output
+              mountPath: /app/html
+        - name: nginx
+          image: nginx:1.29-alpine
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: html-output
+              mountPath: /usr/share/nginx/html

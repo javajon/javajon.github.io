@@ -1,0 +1,73 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: health-data-validator
+  labels:
+    app: health-data-validator
+    department: medical-records
+    environment: production
+  annotations:
+    kubernetes.io/description: "Nightly health records validation job"
+spec:
+  ttlSecondsAfterFinished: 3600
+  backoffLimit: 100
+  completions: 1
+  parallelism: 1
+  template:
+    metadata:
+      labels:
+        app: health-data-validator
+        department: medical-records
+        environment: production
+    spec:
+      restartPolicy: Never  # Changed from OnFailure to Never
+      containers:
+        - name: validator
+          image: python:3.13.3-slim
+          command: ["python", "/scripts/validate-records.py"]
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "200m"
+          volumeMounts:
+            - name: scripts-volume
+              mountPath: /scripts
+            - name: data-volume
+              mountPath: /data
+          env:
+            - name: VALIDATION_LEVEL
+              value: "strict"
+            - name: MAX_RECORDS
+              value: "500"
+            - name: LOG_LEVEL
+              value: "info"
+      volumes:
+        - name: scripts-volume
+          configMap:
+            name: health-data-validator-script
+            defaultMode: 0777
+        - name: data-volume
+          emptyDir: {}
+      initContainers:
+        - name: sample-data-loader
+          image: busybox:latest
+          command: ["sh", "-c", "cp /tmp/sample/record-sample.json /data/records.json"]
+          volumeMounts:
+            - name: data-volume
+              mountPath: /data
+            - name: sample-data
+              mountPath: /tmp/sample
+      volumes:
+        - name: scripts-volume
+          configMap:
+            name: health-data-validator-script
+            defaultMode: 0777
+        - name: data-volume
+          emptyDir: {}
+        - name: sample-data
+          configMap:
+            name: sample-records
+            defaultMode: 0444

@@ -1,0 +1,20 @@
+# Minimal Kibana values file for Helm
+# Service configuration
+service:
+  type: NodePort
+  nodePort: 31000
+
+# Resource configuration
+resources:
+  requests:
+    memory: "1Gi"
+  limits:
+    memory: "1Gi"
+
+# Disable strict CSP only
+kibanaConfig:
+  kibana.yml: |
+    csp.strict: false
+
+# For a cleaner learning experience
+telemetryEnabled: false

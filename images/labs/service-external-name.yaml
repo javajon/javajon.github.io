@@ -1,0 +1,9 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: country-service
+spec:
+  type: ExternalName
+  externalName: www.geognos.com
+  # http://www.geognos.com/api/en/countries/info/_.json
+

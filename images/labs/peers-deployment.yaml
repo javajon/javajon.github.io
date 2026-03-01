@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tools-one
+  labels:
+    name: tools
+spec:
+  containers:
+  - name: tools
+    image: mbentley/bind-tools
+    command: ["/bin/sh", "-ec", "sleep 60000"]
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tools-two
+  labels:
+    name: tools
+spec:
+  containers:
+  - name: tools
+    image: mbentley/bind-tools
+    command: ["/bin/sh", "-ec", "sleep 60000"]
