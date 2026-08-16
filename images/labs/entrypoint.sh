@@ -22,14 +22,25 @@ else
     CLUSTER_ID=$(cat $SHARE_DIR/cluster_id)
 fi
 
-sed -e "s+^node.id=.*+node.id=$NODE_ID+" \
--e "s+^controller.quorum.voters=.*+controller.quorum.voters=$CONTROLLER_QUORUM_VOTERS+" \
--e "s+^listeners=.*+listeners=$LISTENERS+" \
--e "s+^advertised.listeners=.*+advertised.listeners=$ADVERTISED_LISTENERS+" \
--e "s+^log.dirs=.*+log.dirs=$SHARE_DIR/$NODE_ID+" \
-/opt/kafka/config/kraft/server.properties > server.properties.updated \
-&& mv server.properties.updated /opt/kafka/config/kraft/server.properties
+# Kafka 4 removed config/kraft/ - ZooKeeper mode is gone, so the shipped
+# config/server.properties is already KRaft - and replaced controller.quorum.voters with
+# controller.quorum.bootstrap.servers. A sed for a line that no longer exists silently
+# does nothing, which would leave this broker with no quorum at all, so delete whichever
+# quorum key is present and append the one this StatefulSet needs. Static voters are
+# still supported in 4.x and are the right choice for fixed peers.
+CONFIG=/opt/kafka/config/server.properties
 
-kafka-storage.sh format -t $CLUSTER_ID -c /opt/kafka/config/kraft/server.properties
+sed -i \
+  -e "s+^node.id=.*+node.id=$NODE_ID+" \
+  -e "s+^listeners=.*+listeners=$LISTENERS+" \
+  -e "s+^advertised.listeners=.*+advertised.listeners=$ADVERTISED_LISTENERS+" \
+  -e "s+^log.dirs=.*+log.dirs=$SHARE_DIR/$NODE_ID+" \
+  -e "/^controller.quorum.bootstrap.servers=/d" \
+  -e "/^controller.quorum.voters=/d" \
+  "$CONFIG"
 
-exec kafka-server-start.sh /opt/kafka/config/kraft/server.properties
+echo "controller.quorum.voters=$CONTROLLER_QUORUM_VOTERS" >> "$CONFIG"
+
+kafka-storage.sh format -t $CLUSTER_ID -c "$CONFIG"
+
+exec kafka-server-start.sh "$CONFIG"

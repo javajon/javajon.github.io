@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: shiny-wordcloud
-        image: flaviobarros/shiny-wordcloud
+        image: flaviobarros/shiny-wordcloud@sha256:ad7c50074f0197cf6d2188e2b92ec52557af728670101eb909360aa1e8db200d
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80

@@ -1,8 +1,13 @@
+# The service account the learner signs in to Headlamp with.
+#
+# Kept separate from the chart's own service account so the token script does not depend
+# on chart-internal naming. The namespace is headlamp; it was kubernetes-dashboard until
+# these labs moved off the retired dashboard project.
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: admin-user
-  namespace: kubernetes-dashboard
+  namespace: headlamp
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -14,5 +19,5 @@ roleRef:
   name: cluster-admin
 subjects:
 - kind: ServiceAccount
-  name: kubernetes-dashboard
-  namespace: kubernetes-dashboard
+  name: admin-user
+  namespace: headlamp

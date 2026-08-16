@@ -36,7 +36,7 @@ metadata:
 spec:
   containers:
     - name: nfs-server-container
-      image: cpuguy83/nfs-server
+      image: cpuguy83/nfs-server@sha256:d0fdc431b66160598534c5dc69c216c3a73b95423f877d7e205c1064297a7636
       securityContext:
         privileged: true
       # Pass the paths to share to the Docker image

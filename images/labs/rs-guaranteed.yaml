@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: kuard-deployment
+  name: whoami-deployment
   labels:
-    app: kuard
+    app: whoami
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: kuard
+      app: whoami
   template:
     metadata:
       labels:
-        app: kuard
+        app: whoami
     spec:
       containers:
-      - image: gcr.io/kuar-demo/kuard-amd64:blue
-        name: kuard
+      - image: traefik/whoami:v1.11
+        name: whoami
         resources:
           requests:
             cpu: "1000m"

@@ -44,16 +44,9 @@ spec:
               value: "500"
             - name: LOG_LEVEL
               value: "info"
-      volumes:
-        - name: scripts-volume
-          configMap:
-            name: health-data-validator-script
-            defaultMode: 0777
-        - name: data-volume
-          emptyDir: {}
       initContainers:
         - name: sample-data-loader
-          image: busybox:latest
+          image: busybox:1.37
           command: ["sh", "-c", "cp /tmp/sample/record-sample.json /data/records.json"]
           volumeMounts:
             - name: data-volume

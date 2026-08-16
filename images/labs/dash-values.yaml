@@ -1,12 +1,50 @@
-image:
-  tag: v2.5.0
-
-protocolHttp: true
-
-extraArgs:
-  - --enable-insecure-login
+# Headlamp chart values for the MicroK8s quickstart.
+#
+# MicroK8s 1.36 REMOVED the dashboard addon and `microk8s dashboard-proxy` along with it,
+# following the upstream retirement of the Kubernetes Dashboard project. Headlamp is the
+# CNCF project that succeeded it, and is what the sibling quickstarts - k3s, kubeadm,
+# KubeKey, kind - already install.
+#
+# This file deliberately DIFFERS from the dash-values.yaml in those labs, in one place.
+# Do not sync it across without reading the note on scheduling below.
 
 service:
   type: NodePort
+  port: 80
+  # The lab's Headlamp tab points at port 30000 on the session host.
   nodePort: 30000
-  externalPort: 80
+
+clusterRoleBinding:
+  create: true
+  clusterRoleName: cluster-admin
+
+# Prefer the control-plane node, do not require it.
+#
+# The sibling labs pin Headlamp with a REQUIRED nodeAffinity on
+# node-role.kubernetes.io/control-plane. MicroK8s does not set node-role labels at all -
+# `kubectl get nodes` reports ROLES as <none> on every node - so that expression matches
+# nothing here and the Pod would sit Pending forever.
+#
+# Matching on the hostname instead, and preferred rather than required: the browser proxy
+# reaches the control plane, so that is where the dashboard is most useful, but a lab that
+# names its node differently still gets a running Headlamp rather than a Pending one.
+affinity:
+  nodeAffinity:
+    preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        preference:
+          matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - controlplane
+
+# MicroK8s does not taint its control-plane node, so these are no-ops here. They are kept
+# so this file stays readable next to its siblings, where they matter.
+tolerations:
+  - key: "node-role.kubernetes.io/control-plane"
+    operator: "Exists"
+    effect: "NoSchedule"
+  - key: "node-role.kubernetes.io/master"
+    operator: "Exists"
+    effect: "NoSchedule"

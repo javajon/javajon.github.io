@@ -5,7 +5,15 @@ metadata:
         app: iris-classifier
     name: iris-classifier
 spec:
-    replicas: 3
+    # One replica, not three.
+    #
+    # Three replicas taught nothing here that one does not - the scaling lesson has its
+    # own labs, and the next step's prose only ever said "notice the three Pods". What it
+    # cost was real: every replica pays the image pull, and this lab's registry runs
+    # INSIDE the same cluster, so the node is serving and consuming the same bytes. The
+    # readiness gate that waits for AVAILABLE failed six times out of seven runs, and the
+    # lab has taken 22 to 47 minutes against a 60 minute session.
+    replicas: 1
     selector:
         matchLabels:
             app: iris-classifier

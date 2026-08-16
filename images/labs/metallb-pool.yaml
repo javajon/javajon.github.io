@@ -1,0 +1,26 @@
+# The addresses MetalLB is allowed to hand out, and how it announces them.
+#
+# ${LB_RANGE} is substituted at apply time with a range on this cluster's own subnet.
+# That matters: in layer 2 mode MetalLB answers ARP for these addresses on the node's
+# network, so an address from some unrelated range would be assigned and then be
+# unreachable - a Service that looks perfectly healthy and answers nothing.
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: lab-pool
+  namespace: metallb-system
+spec:
+  addresses:
+    - ${LB_RANGE}
+---
+# Layer 2 mode. One node at a time takes ownership of each address and answers ARP for it.
+# The alternative, BGP mode, peers with a router - realistic in a datacentre, and not
+# something a single lab cluster can demonstrate.
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: lab-l2
+  namespace: metallb-system
+spec:
+  ipAddressPools:
+    - lab-pool

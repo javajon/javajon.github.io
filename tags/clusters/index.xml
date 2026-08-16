@@ -3,7 +3,7 @@
 &lt;p&gt;In this lab, you will learn how to:&lt;/p&gt;
 &lt;p&gt;    ☐ Use the kubectl command-line tool&lt;/p&gt;
 &lt;p&gt;    ☐ Inspect the health of a running cluster&lt;/p&gt;
-&lt;p&gt;    ☐ Access the administration dashboard&lt;/p&gt;
+&lt;p&gt;    ☐ Access the Headlamp administration dashboard&lt;/p&gt;
 &lt;p&gt;    ☐ Create, update, read and delete (CRUD) a basic Kubernetes resource&lt;/p&gt;</description></item><item><title>K3s, Lightweight Kubernetes</title><link>https://www.dijure.com/labs/lab_k3s-quickstart/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.dijure.com/labs/lab_k3s-quickstart/</guid><description>&lt;p&gt;In this lab you&amp;rsquo;ll learn how to bootstrap a Kubernetes cluster using K3s.&lt;/p&gt;
 &lt;p&gt;For developers and operations, a powerful time-saver is to use the same common techniques and tooling wherever Kubernetes runs. Kubernetes installations are often targeted for vast collections of generic VMs with a commercial cloud service. There is also a large community of IoT and edge computing engineers targeting Kubernetes to eclectic hardware.&lt;/p&gt;
 &lt;img align="right" src="https://www.dijure.com/images/labs/k3s.png" width="200" /&gt;

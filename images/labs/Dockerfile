@@ -1,5 +1,5 @@
 # ARGS at this level referenced only by FROMs
-ARG BASE_IMAGE=python:3.8.5-alpine3.12
+ARG BASE_IMAGE=python:3.12-alpine
 
 # --------------------------------------
 # Build dependencies in build stage

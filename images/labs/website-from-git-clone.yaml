@@ -9,7 +9,7 @@ spec:
   - name: html
     emptyDir: {}
   containers:
-  - image: nginx
+  - image: nginx:1.29-alpine
     name: website-from-repo
     volumeMounts:
     - name: html

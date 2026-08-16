@@ -12,13 +12,13 @@ spec:
   containers:
 
   - name: first
-    image: nginx
+    image: nginx:1.30-alpine
     volumeMounts:
     - name: shared-data
       mountPath: /usr/share/nginx/html
 
   - name: second
-    image: debian
+    image: debian:13-slim
     volumeMounts:
     - name: shared-data
       mountPath: /pod-data

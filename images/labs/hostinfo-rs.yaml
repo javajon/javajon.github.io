@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  labels:
+    app: hostinfo
+    version: "2"
+  name: hostinfo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hostinfo
+      version: "2"
+  template:
+    metadata:
+      labels:
+        app: hostinfo
+        version: "2"
+    spec:
+      containers:
+        - name: hostinfo
+          image: "registry.k8s.io/e2e-test-images/agnhost:2.53"
+          args: ["netexec", "--http-port=8080"]
+          ports:
+            - containerPort: 8080

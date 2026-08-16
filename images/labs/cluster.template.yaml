@@ -3,9 +3,11 @@ kind: Cluster
 metadata:
   name: sample
 spec:
+  # One host, wearing every hat. KubeKey is built to lay clusters down across machines, and
+  # the shape of that is in finish.md - the only difference is more entries here and more
+  # names under roleGroups.
   hosts:
   - {name: controlplane, address: $CP_NODE_IP, internalAddress: $CP_NODE_IP, user: root}
-  - {name: node01,       address: $WK_NODE_IP, internalAddress: $WK_NODE_IP, user: root}
   roleGroups:
     etcd:
     - controlplane
@@ -13,15 +15,14 @@ spec:
     - controlplane
     worker:
     - controlplane
-    - node01
   controlPlaneEndpoint:
-    ## Internal loadbalancer for apiservers 
+    ## Internal loadbalancer for apiservers
     # internalLoadbalancer: haproxy
     domain: controlplane
     address: ""
     port: 6443
   kubernetes:
-    version: v1.23.0
+    version: v1.32.8
     clusterName: cluster.local
   network:
     plugin: calico
@@ -37,4 +38,3 @@ spec:
     registryMirrors: []
     insecureRegistries: []
   addons: []
-

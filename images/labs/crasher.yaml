@@ -8,7 +8,7 @@ spec:
   restartPolicy: Always
   containers:
     - name: container-a
-      image: chentex/random-logger
+      image: chentex/random-logger:v1.0.1
       livenessProbe:
         initialDelaySeconds: 3
         periodSeconds: 10

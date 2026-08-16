@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: shiny-server
-        image: openanalytics/shinyproxy-dash-for-r-demo
+        image: openanalytics/shinyproxy-dash-for-r-demo@sha256:e63d81eb54ddaee899c1997bbc9d897e4452199a8e98ca55f123798d61eec1a2
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8050

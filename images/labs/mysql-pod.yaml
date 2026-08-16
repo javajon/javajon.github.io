@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: mysql
-    image: openshift/mysql-55-centos7
+    image: mysql:8.4
     env:
       - name: MYSQL_ROOT_PASSWORD
         value: yourpassword
@@ -22,7 +22,7 @@ spec:
         name: mysql
     volumeMounts:
       - name: mysql-persistent-storage
-        mountPath: /var/lib/mysql/data
+        mountPath: /var/lib/mysql
   volumes:
     - name: mysql-persistent-storage
       persistentVolumeClaim:

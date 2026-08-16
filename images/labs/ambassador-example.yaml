@@ -1,0 +1,48 @@
+# AMBASSADOR: a pod composite that is NOT a sidecar.
+#
+# The app talks to localhost:9000 and nothing else. The ambassador container listens
+# there and forwards to the real service, so the app never learns the service's
+# address, its port, or whether there is TLS in the way.
+#
+# That is the whole test. The app's request PASSES THROUGH this container. It sits in
+# the transaction, so it is a composite - an ambassador - and calling it a sidecar
+# would hide the thing that matters most about it.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ambassador-config
+data:
+  default.conf: |
+    server {
+      listen 9000;
+      location / {
+        proxy_pass http://sidecar-pod.default.svc.cluster.local:80;
+      }
+    }
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ambassador-pod
+  labels:
+    app: ambassador-pod
+spec:
+  containers:
+
+  # The primary application. Its entire view of the network is localhost:9000.
+  - name: app
+    image: nginx:1.30-alpine
+    command: ["sh", "-c", "while true; do sleep 3600; done"]
+
+  # The ambassador. Outbound requests go THROUGH it, which is what disqualifies it
+  # from being a sidecar.
+  - name: ambassador
+    image: nginx:1.30-alpine
+    volumeMounts:
+    - name: ambassador-conf
+      mountPath: /etc/nginx/conf.d
+
+  volumes:
+  - name: ambassador-conf
+    configMap:
+      name: ambassador-config

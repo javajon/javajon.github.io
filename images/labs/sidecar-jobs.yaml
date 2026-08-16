@@ -1,0 +1,52 @@
+# Two Jobs that do exactly the same work. The ONLY difference is how the helper
+# container is declared, and that difference decides whether the Job can ever finish.
+#
+# Both have a worker that does five seconds of work and exits, and a helper that runs
+# forever - a log shipper, a proxy, a metrics agent. Every real sidecar looks like this:
+# it has no idea when the work is done, so it never stops on its own.
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: classic-sidecar-job
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+
+      - name: worker
+        image: debian:13-slim
+        command: ["/bin/sh", "-c", "echo 'worker: doing the job'; sleep 5; echo 'worker: done'"]
+
+      # An ordinary second container. Kubernetes counts it as part of the work, so the
+      # Job is not finished until it exits - and it never exits.
+      - name: helper
+        image: debian:13-slim
+        command: ["/bin/sh", "-c", "while true; do echo 'helper: still here'; sleep 5; done"]
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: native-sidecar-job
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+
+      - name: worker
+        image: debian:13-slim
+        command: ["/bin/sh", "-c", "echo 'worker: doing the job'; sleep 5; echo 'worker: done'"]
+
+      # The same helper, declared as a native sidecar. The kubelet knows it is a
+      # companion rather than part of the work, so when the worker exits the kubelet
+      # stops the sidecar and the Job completes.
+      initContainers:
+
+      - name: helper
+        image: debian:13-slim
+        restartPolicy: Always
+        command: ["/bin/sh", "-c", "while true; do echo 'helper: still here'; sleep 5; done"]

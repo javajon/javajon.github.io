@@ -1,5 +1,5 @@
 # Start from a Node.js long-term support (Active LTS)
-FROM node:16
+FROM node:24
 
 # Create app directory and set as working directory
 WORKDIR /usr/src/app
@@ -10,7 +10,7 @@ RUN groupadd -g 999 appuser && \
 
 # Create home directory for appuser and set correct permissions
 RUN mkdir -p /home/appuser && chown -R appuser:appuser /home/appuser
-ENV HOME /home/appuser
+ENV HOME=/home/appuser
 
 # Copy package files, install dependencies, and copy app files
 COPY --chown=appuser:appuser package*.json ./

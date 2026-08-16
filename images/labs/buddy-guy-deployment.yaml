@@ -14,7 +14,7 @@ spec:
     spec:
       initContainers:
       - name: config-copier
-        image: alpine
+        image: alpine:3.22
         volumeMounts:
         - name: config-volume
           mountPath: "/config"

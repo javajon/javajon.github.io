@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: web-show
-          image: pingcap/web-show
+          image: pingcap/web-show@sha256:2041f8c8ed9379a415e12ce8f0c05dfe4d8c739b5a67335a80c0b5b94097bff9
           imagePullPolicy: Always
           command:
             - /usr/local/bin/web-show

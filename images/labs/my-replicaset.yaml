@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: chentex/random-logger
+        image: chentex/random-logger:v1.0.1

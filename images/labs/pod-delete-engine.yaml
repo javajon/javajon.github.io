@@ -1,0 +1,54 @@
+# The ChaosEngine that binds the pod-delete fault to this lab's nginx Deployment.
+#
+# This used to be fetched from
+#   https://hub.litmuschaos.io/api/chaos/$LITMUS_VERSION?file=charts/generic/pod-delete/engine.yaml
+# That endpoint is retired: it answers 200 for every version with an error message as the
+# body rather than YAML, so `kubectl apply -f` was handed prose.
+#
+# It is kept as a lab asset rather than pointed at the upstream file, because upstream's
+# engine.yaml now ships with an EMPTY appinfo block:
+#
+#   appinfo:
+#     appns: ''
+#     applabel: ''
+#     appkind: ''
+#
+# which targets nothing. This lab needs the engine aimed at the nginx Deployment the
+# learner created in an earlier step, and the prose says so ("will target the nginx Pod"),
+# so the targeting belongs in the lab rather than in a file someone else maintains.
+#
+# chaosServiceAccount must match the ServiceAccount in pod-delete-rbac.yaml.
+---
+apiVersion: litmuschaos.io/v1alpha1
+kind: ChaosEngine
+metadata:
+  name: nginx-chaos
+  namespace: default
+spec:
+  appinfo:
+    appns: 'default'
+    applabel: 'app=nginx'
+    appkind: 'deployment'
+  # It can be active/stop
+  engineState: 'active'
+  chaosServiceAccount: pod-delete-sa
+  experiments:
+    - name: pod-delete
+      spec:
+        components:
+          env:
+            # set chaos duration (in sec) as desired
+            - name: TOTAL_CHAOS_DURATION
+              value: '30'
+
+            # set chaos interval (in sec) as desired
+            - name: CHAOS_INTERVAL
+              value: '10'
+
+            # pod failures without '--force' & default terminationGracePeriodSeconds
+            - name: FORCE
+              value: 'false'
+
+            ## percentage of total pods to target
+            - name: PODS_AFFECTED_PERC
+              value: ''

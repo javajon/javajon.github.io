@@ -6,7 +6,7 @@ metadata:
 spec:
   name: nodeinfo
   handler: node main.js
-  image: functions/nodeinfo
+  image: functions/nodeinfo@sha256:62b8327af342a7890c8f0d4800f0fd193abd81bb41778785bc91e8225fb9b949
   labels:
     com.openfaas.scale.min: "2"
     com.openfaas.scale.max: "15"

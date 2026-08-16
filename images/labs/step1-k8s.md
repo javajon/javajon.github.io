@@ -21,18 +21,18 @@ For this lab, we've just started a fresh Kubernetes cluster for you. Verify that
 
 The <a href="https://helm.sh/">Helm</a> package manager used for installing applications on Kubernetes is also available:
 
-<!-- Wait for the "True"s for the 6 deployments related to the dashboard stack. The URL in the following paragraph is supposed to keep trying but it often fails with 500 failure on Cypress followLink. This is a hack to avoid the http get request failures. -->
-<div data-test-delay-until="kubectl get deployments -n kubernetes-dashboard -o custom-columns=STATUS:&quot;.status.conditions[?(@.type=='Available')].status&quot; | awk &quot;BEGIN{count=0} /True/{count++} END{exit (count==6?0:1)}&quot;">
+<!-- Wait for the "True" on the single Headlamp deployment. The URL in the following paragraph is supposed to keep trying but it often fails with 500 failure on Cypress followLink. This is a hack to avoid the http get request failures. -->
+<div data-test-timeout="10m" data-test-delay-until="kubectl get deployments -n headlamp -o custom-columns=STATUS:&quot;.status.conditions[?(@.type=='Available')].status&quot; | grep -q True">
 
 `helm version --short`{{execute}}
 
 </div>
 
-<img align="right" src="./assets/k8s-dash.png" width="250" />
+<img align="right" src="./assets/headlamp.png" width="250" />
 
-## Kubernetes Dashboard ##
+## Headlamp Dashboard ##
 
-You can administer your cluster with the `kubectl` command-line tool or use the <a href="https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com/" data-test-timeout="180s">Kubernetes Dashboard</a>. If the link shows an error, wait briefly for the Dashboard to initialize.
+You can administer your cluster with the `kubectl` command-line tool or use <a href="https://headlamp.dev/">Headlamp</a>, the web dashboard that succeeded the retired Kubernetes Dashboard project. Open it from the <a href="https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com/" data-test-timeout="180s">Headlamp</a> tab above this command line. If the link shows an error, wait briefly for Headlamp to initialize.
 
 Use this script to create a _Bearer Token_ to access the protected Dashboard:
 

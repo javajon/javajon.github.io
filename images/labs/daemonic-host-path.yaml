@@ -14,14 +14,14 @@ spec:
       labels:
         name: log-writer
     spec:
-      tolerations:
-      # this toleration is to have the DaemonSet runnable on control-plane nodes
-      # remove it if your control-plane nodes can't run pods
-      - key: node-role.kubernetes.io/master
-        effect: NoSchedule
+      # No tolerations. A control-plane node carries the taint
+      # node-role.kubernetes.io/control-plane:NoSchedule, so this DaemonSet lands on
+      # the worker Nodes only - which is what you want for a log collector.
+      # (Before Kubernetes 1.24 that taint was spelled node-role.kubernetes.io/master.
+      # Manifests still carrying the old key tolerate a taint that no longer exists.)
       containers:
       - name: log-writer
-        image: busybox
+        image: busybox:1.37
         args:
           - /bin/sh
           - -c

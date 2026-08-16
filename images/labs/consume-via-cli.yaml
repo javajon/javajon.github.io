@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: consuming-container
-      image: registry.k8s.io/busybox
+      image: busybox:1.37
       command: [ "/bin/sh", "-c", "echo $(PROPERTY_ONE_KEY); echo $(UCS_INFO); env" ]
       env:
         - name: PROPERTY_ONE_KEY

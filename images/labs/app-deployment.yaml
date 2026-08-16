@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: katacoda/docker-http-server:latest
+        image: katacoda/docker-http-server@sha256:76dc8a47fd019f80f2a3163aba789faf55b41b2fb06397653610c754cb12d3ee
         ports:
         - name: webport
           containerPort: 80

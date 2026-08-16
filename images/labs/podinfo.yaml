@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podinfo
+  labels:
+    app: podinfo
+spec:
+  containers:
+  - image: ghcr.io/stefanprodan/podinfo:6.14.1
+    name: podinfo
+    env:
+    - name: PODINFO_PORT
+      value: "8080"
+    - name: SECRET_USERNAME
+      valueFrom:
+        secretKeyRef:
+          name: db-creds
+          key: username
+    - name: SECRET_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: db-creds
+          key: password
+    ports:
+    - containerPort: 8080
+      name: http
+      protocol: TCP

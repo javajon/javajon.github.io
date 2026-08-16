@@ -1,5 +1,5 @@
 # The wrong way to package a Python application in a container
-FROM python:3
+FROM python:3.13
 
 COPY fibonacci.py /
 

@@ -1,0 +1,48 @@
+# The SAME workload as sidecar-example.yaml, expressed with the native sidecar API.
+#
+# The helper moved out of containers and into initContainers, and it gained one field:
+# restartPolicy: Always. That field is the whole difference. It tells the kubelet this
+# init container is not a run-once task but a long-running companion, so the kubelet
+# starts it, waits for it to report started, and only then starts the app containers.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: native-sidecar-pod
+  labels:
+    app: native-sidecar-pod
+spec:
+  volumes:
+  - name: shared-data
+    emptyDir: {}
+
+  containers:
+
+  - name: web
+    image: nginx:1.30-alpine
+    volumeMounts:
+    - name: shared-data
+      mountPath: /usr/share/nginx/html
+
+  # Listed after containers, but STARTED BEFORE THEM. Ordering here comes from the
+  # section a container is declared in, not from where it sits in the file.
+  initContainers:
+
+  - name: content-writer
+    image: debian:13-slim
+    volumeMounts:
+    - name: shared-data
+      mountPath: /pod-data
+    command: ["/bin/sh"]
+    args:
+      - "-c"
+      - >
+        echo "content-writer starting: seeding index.html before nginx starts";
+        echo "<h1>Served by a native sidecar</h1>" > /pod-data/index.html;
+        while true; do
+          echo "Hello from the native sidecar. My time is:" >> /pod-data/index.html;
+          date >> /pod-data/index.html;
+          sleep 1;
+        done
+    # Remove this one line and content-writer becomes an ordinary init container: it
+    # would run that loop forever and nginx would never start at all.
+    restartPolicy: Always

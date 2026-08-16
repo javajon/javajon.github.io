@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: consuming-container
-      image: registry.k8s.io/busybox
+      image: busybox:1.37
       command: [ "/bin/sh", "-c", "env" ]
       envFrom:
       - configMapRef:
