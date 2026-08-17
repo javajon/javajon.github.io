@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-17T03:03:37.210Z",
+  "generated": "2026-08-17T03:39:36.144Z",
   "summary": {
     "labs": 84,
     "live": 74,
     "passing": 0,
-    "failing": 3,
-    "blocked": 0,
+    "failing": 2,
+    "blocked": 1,
     "untested": 71,
     "dependenciesBehind": 10,
     "dependencyChecksFailing": 0
@@ -281,11 +281,11 @@
       "course": "Fund. Week 1",
       "verdict": "FAIL",
       "mins": 5,
-      "at": "08-17 02:51",
+      "at": "08-17 03:27",
       "lastPass": null,
-      "lastFail": "08-17 02:51",
-      "step": "step1-k8s.md:41",
-      "error": "expected output never appeared.",
+      "lastFail": "08-17 03:27",
+      "step": "step2-first.md:73",
+      "error": "the command was accepted but the cluster never reached the expected sta",
       "versions": [
         {
           "kind": "image",
@@ -1454,13 +1454,13 @@
       "status": "Live",
       "users": 4930,
       "course": "Fund. Week 1",
-      "verdict": "FAIL",
-      "mins": 15,
-      "at": "08-17 03:01",
+      "verdict": "STALE-PUBLISH",
+      "mins": 7,
+      "at": "08-17 03:29",
       "lastPass": null,
       "lastFail": "08-17 03:01",
-      "step": "step1-k8s.md:41",
-      "error": "expected output never appeared.",
+      "step": null,
+      "error": "the page offers: kubectl run nginx-one --image=nginx:1.29",
       "versions": [
         {
           "kind": "image",
@@ -2092,12 +2092,12 @@
       "users": 1465,
       "course": "Fund. Week 2",
       "verdict": "FAIL",
-      "mins": 3,
-      "at": "08-17 02:49",
+      "mins": 14,
+      "at": "08-17 03:37",
       "lastPass": null,
-      "lastFail": "08-17 02:49",
-      "step": null,
-      "error": "locator.click: Timeout 14911ms exceeded.",
+      "lastFail": "08-17 03:37",
+      "step": "step4-pods.md:55",
+      "error": "expected output never appeared.",
       "versions": [
         {
           "kind": "image",
@@ -2143,24 +2143,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "37 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1360
+      "durationMs": 1364
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "50 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4607
+      "durationMs": 5686
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 786",
-      "durationMs": 110292
+      "durationMs": 138083
     }
   ],
-  "depsGenerated": "2026-08-17T03:03:36.487Z",
+  "depsGenerated": "2026-08-17T03:39:35.386Z",
   "versions": [
     {
       "kind": "image",
@@ -2515,21 +2515,21 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.28.0_alpines.21_slim",
       "suggested": null,
       "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
       "labs": [
         "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
       ]
     },
     {
@@ -2643,5 +2643,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-17T03:03:36.480Z"
+  "versionsGenerated": "2026-08-17T03:39:35.378Z"
 }
