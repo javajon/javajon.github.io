@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17T11:57:07.649Z",
+  "generated": "2026-08-17T12:11:31.852Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -302,16 +302,16 @@
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.14.2",
+          "current": "1.16.1",
           "suggested": null,
-          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
         },
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.16.1",
+          "current": "1.14.2",
           "suggested": null,
-          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
+          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
         }
       ]
     },
@@ -972,10 +972,10 @@
       "users": 0,
       "course": "Yes",
       "verdict": "FAIL",
-      "mins": 7,
-      "at": "08-17 11:52",
+      "mins": 10,
+      "at": "08-17 12:09",
       "lastPass": "14:30",
-      "lastFail": "08-17 11:52",
+      "lastFail": "08-17 12:09",
       "lastUpdated": null,
       "step": null,
       "error": "krash-headed-for-trouble step 5: step5-verify.sh still fails after applying step5-solution",
@@ -2227,24 +2227,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "38 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1347
+      "durationMs": 1352
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "50 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4497
+      "durationMs": 5847
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 786",
-      "durationMs": 114502
+      "durationMs": 127449
     }
   ],
-  "depsGenerated": "2026-08-17T11:57:06.104Z",
+  "depsGenerated": "2026-08-17T12:11:30.303Z",
   "versions": [
     {
       "kind": "image",
@@ -2589,6 +2589,16 @@
     {
       "kind": "image",
       "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
       "current": "1.14.2",
       "suggested": null,
       "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
@@ -2599,11 +2609,11 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.16.1",
+      "current": "1.28.0_alpines.21_slim",
       "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
       "labs": [
-        "deployments"
+        "krash-elusive-app"
       ]
     },
     {
@@ -2630,16 +2640,6 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
       ]
     },
     {
@@ -2736,5 +2736,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-17T11:57:06.096Z"
+  "versionsGenerated": "2026-08-17T12:11:30.294Z"
 }
