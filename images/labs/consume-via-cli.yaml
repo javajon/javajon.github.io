@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: consuming-container
-      image: busybox:1.37
+      image: busybox:1.38
       command: [ "/bin/sh", "-c", "echo $(PROPERTY_ONE_KEY); echo $(UCS_INFO); env" ]
       env:
         - name: PROPERTY_ONE_KEY

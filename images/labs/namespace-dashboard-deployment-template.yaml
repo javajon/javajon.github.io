@@ -22,7 +22,7 @@ spec:
             - name: html-output
               mountPath: /app/html
         - name: nginx
-          image: nginx:1.29-alpine
+          image: nginx:1.30-alpine
           ports:
             - containerPort: 80
           volumeMounts:

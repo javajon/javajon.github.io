@@ -46,7 +46,7 @@ spec:
               value: "info"
       initContainers:
         - name: sample-data-loader
-          image: busybox:1.37
+          image: busybox:1.38
           command: ["sh", "-c", "cp /tmp/sample/record-sample.json /data/records.json"]
           volumeMounts:
             - name: data-volume

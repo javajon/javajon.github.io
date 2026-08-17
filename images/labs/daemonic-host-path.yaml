@@ -21,7 +21,7 @@ spec:
       # Manifests still carrying the old key tolerate a taint that no longer exists.)
       containers:
       - name: log-writer
-        image: busybox:1.37
+        image: busybox:1.38
         args:
           - /bin/sh
           - -c

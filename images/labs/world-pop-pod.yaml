@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: world-population-app
-      image: busybox:1.37
+      image: busybox:1.38
       command: [ "/bin/sh", "-c", "--" ]
       args: [ "while true; do sleep 5 && cat /etc/config/api.txt; done;" ]
       volumeMounts:

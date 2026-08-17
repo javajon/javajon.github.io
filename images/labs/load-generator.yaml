@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: load-generator
-        image: busybox:1.28
+        image: busybox:1.38
         command: ["/bin/sh", "-c"]
         args:
         - |

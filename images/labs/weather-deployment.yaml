@@ -71,19 +71,19 @@ spec:
               value: "80"
       initContainers:
         - name: weather-dashboard
-          image: alpine:3.22
+          image: alpine:3.24
           command: ['sh', '-c', 'mkdir -p /data/html && echo "<html><head><title>Weather Dashboard</title><meta charset=\"UTF-8\"><meta http-equiv=\"refresh\" content=\"30\"><style>body{font-family:Arial,sans-serif;margin:40px;line-height:1.6;} h1{color:white;background-color:#3498db;padding:15px;border-radius:5px;}</style></head><body><h1>Weather Dashboard</h1><p>Loading weather data for Reykjavík...</p></body></html>" > /data/html/index.html']
           volumeMounts:
             - name: html-content
               mountPath: /data/html
         - name: config-initializer
-          image: busybox:1.37
+          image: busybox:1.38
           command: ['sh', '-c', 'echo "server { listen 80; server_name localhost; location / { root /usr/share/nginx/html; index index.html; } }" > /config/default.conf']
           volumeMounts:
             - name: nginx-config
               mountPath: /config
         - name: weather-sidecar
-          image: alpine:3.22
+          image: alpine:3.24
           restartPolicy: Always
           command: ['sh', '-c', 'apk add --no-cache curl jq && while true; do TIMESTAMP=$(date); WEATHER_DATA=$(curl -s "https://api.openweathermap.org/data/2.5/weather?q=Reykjavik&units=metric&appid=YOUR_API_KEY_HERE" || echo "{\"main\":{\"temp\":5,\"humidity\":65},\"wind\":{\"speed\":8},\"weather\":[{\"main\":\"Cloudy\"}]}"); if [ $? -eq 0 ] && [ "$(echo $WEATHER_DATA | grep -c error)" -eq 0 ]; then TEMP=$(echo $WEATHER_DATA | jq -r ".main.temp // 5"); HUMIDITY=$(echo $WEATHER_DATA | jq -r ".main.humidity // 65"); WIND=$(echo $WEATHER_DATA | jq -r ".wind.speed // 8"); CONDITION=$(echo $WEATHER_DATA | jq -r ".weather[0].main // \"Cloudy\""); else TEMP=5; HUMIDITY=65; WIND=8; CONDITION="Cloudy (fallback)"; fi; echo "<html><head><title>Reykjavík Weather</title><meta charset=\"UTF-8\"><meta http-equiv=\"refresh\" content=\"30\"><style>body{font-family:Arial,sans-serif;margin:40px;line-height:1.6;background-color:#f8f9fa;} h1{color:white;background-color:#3498db;padding:15px;border-radius:5px;text-align:center;box-shadow:0 2px 5px rgba(0,0,0,0.1);} table{border-collapse:collapse;width:100%;margin-top:20px;box-shadow:0 2px 5px rgba(0,0,0,0.1);} th,td{text-align:left;padding:12px;border-bottom:1px solid #ddd;} th{background-color:#ebf5fb;color:#2874a6;} tr:hover{background-color:#f5f5f5;}</style></head><body><h1>Reykjavík Weather Dashboard</h1><p>Last updated: $TIMESTAMP</p><table><tr><th>Weather Metrics</th><th>Current Values</th></tr><tr><td>Temperature</td><td>${TEMP}°C</td></tr><tr><td>Humidity</td><td>${HUMIDITY}%</td></tr><tr><td>Wind Speed</td><td>${WIND} m/s</td></tr><tr><td>Condition</td><td>${CONDITION}</td></tr></table><p><small>Data source: OpenWeatherMap API</small></p></body></html>" > /data/html/index.html; sleep 300; done']
           volumeMounts:

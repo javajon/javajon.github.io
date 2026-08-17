@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx:1.29-alpine
+    image: nginx:1.30-alpine
     volumeMounts:
     - name: nginx-data
       mountPath: /usr/share/nginx/html

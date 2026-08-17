@@ -14,7 +14,7 @@ spec:
     spec:
       initContainers:
       - name: config-copier
-        image: alpine:3.22
+        image: alpine:3.24
         volumeMounts:
         - name: config-volume
           mountPath: "/config"
@@ -22,7 +22,7 @@ spec:
           mountPath: "/config-web"
       containers:
       - name: buddy-guy
-        image: nginx:1.29-alpine
+        image: nginx:1.30-alpine
         ports:
         - containerPort: 80
         env:

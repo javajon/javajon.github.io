@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: kcat
-        image: confluentinc/cp-kafkacat:7.0.1
+        image: confluentinc/cp-kafkacat:7.1.16
         command: ["/bin/sh"]
         args: ["-c", "trap : TERM INT; sleep infinity & wait"]

@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: consuming-container
-      image: busybox:1.37
+      image: busybox:1.38
       command: [ "/bin/sh","-c","cat /etc/config/keys" ]
       volumeMounts:
       - name: config-volume

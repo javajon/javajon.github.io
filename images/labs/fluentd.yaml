@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: fluentd
-        image: fluent/fluentd:v1.17-1
+        image: fluent/fluentd:v1.19-2
         resources:
           limits:
             memory: 200Mi
