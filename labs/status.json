@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-17T12:47:14.806Z",
+  "generated": "2026-08-17T13:04:29.903Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 60,
-    "failing": 1,
+    "passing": 61,
+    "failing": 0,
     "blocked": 13,
     "untested": 0,
     "dependenciesBehind": 10,
@@ -302,16 +302,16 @@
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.14.2",
+          "current": "1.16.1",
           "suggested": null,
-          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
         },
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.16.1",
+          "current": "1.14.2",
           "suggested": null,
-          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
+          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
         }
       ]
     },
@@ -1010,14 +1010,14 @@
       "status": "Live",
       "users": 0,
       "course": "Yes",
-      "verdict": "FAIL",
-      "mins": 21,
-      "at": "08-17 12:45",
-      "lastPass": "08-16 09:25",
+      "verdict": "PASS",
+      "mins": 14,
+      "at": "08-17 13:02",
+      "lastPass": "08-17 13:02",
       "lastFail": "08-17 12:45",
       "lastUpdated": null,
       "step": null,
-      "error": "krash-invisible-barrier step 5: the lab's own step5-solution.sh exited 2.",
+      "error": null,
       "versions": [
         {
           "kind": "image",
@@ -2227,24 +2227,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "38 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1534
+      "durationMs": 1520
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "50 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4534
+      "durationMs": 4632
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 786",
-      "durationMs": 125508
+      "durationMs": 113509
     }
   ],
-  "depsGenerated": "2026-08-17T12:47:13.181Z",
+  "depsGenerated": "2026-08-17T13:04:28.374Z",
   "versions": [
     {
       "kind": "image",
@@ -2300,21 +2300,21 @@
     {
       "kind": "image",
       "name": "library/redis",
-      "current": "7.4-alpine",
-      "suggested": "8.10-alpine",
-      "held": null,
-      "labs": [
-        "volumes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/redis",
       "current": "6.0.6-alpine",
       "suggested": "8.10.0-alpine",
       "held": null,
       "labs": [
         "puzzler-run-app-voting"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "7.4-alpine",
+      "suggested": "8.10-alpine",
+      "held": null,
+      "labs": [
+        "volumes"
       ]
     },
     {
@@ -2589,9 +2589,9 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.14.2",
+      "current": "1.16.1",
       "suggested": null,
-      "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
       "labs": [
         "deployments"
       ]
@@ -2599,19 +2599,9 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
+      "current": "1.14.2",
       "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
       "labs": [
         "deployments"
       ]
@@ -2640,6 +2630,16 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
       ]
     },
     {
@@ -2698,21 +2698,21 @@
     {
       "kind": "image",
       "name": "registry.k8s.io/echoserver",
-      "current": "1.10",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "first-cluster"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "registry.k8s.io/echoserver",
       "current": "1.9",
       "suggested": null,
       "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
       "labs": [
         "first-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/echoserver",
+      "current": "1.10",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "first-cluster"
       ]
     },
     {
@@ -2736,5 +2736,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-17T12:47:13.173Z"
+  "versionsGenerated": "2026-08-17T13:04:28.366Z"
 }
