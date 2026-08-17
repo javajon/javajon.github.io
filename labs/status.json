@@ -1,13 +1,13 @@
 {
-  "generated": "2026-08-17T11:01:15.427Z",
+  "generated": "2026-08-17T11:39:57.835Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 54,
-    "failing": 7,
+    "passing": 57,
+    "failing": 4,
     "blocked": 13,
     "untested": 0,
-    "dependenciesBehind": 9,
+    "dependenciesBehind": 10,
     "dependencyChecksFailing": 0
   },
   "labs": [
@@ -531,14 +531,14 @@
       "status": "Live",
       "users": 1325,
       "course": "Intrm. Week 1",
-      "verdict": "FAIL",
-      "mins": 16,
-      "at": "08-17 10:25",
-      "lastPass": "08-15 02:08",
+      "verdict": "PASS",
+      "mins": 13,
+      "at": "08-17 11:17",
+      "lastPass": "08-17 11:17",
       "lastFail": "08-17 10:25",
       "lastUpdated": null,
-      "step": "step6-ingress-routing-multiple.md:39",
-      "error": "expected output never appeared.",
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "image",
@@ -940,10 +940,10 @@
       "users": 0,
       "course": "Yes",
       "verdict": "FAIL",
-      "mins": 14,
-      "at": "08-17 10:58",
+      "mins": 10,
+      "at": "08-17 11:25",
       "lastPass": "14:20",
-      "lastFail": "08-17 10:58",
+      "lastFail": "08-17 11:25",
       "lastUpdated": null,
       "step": null,
       "error": "krash-false-start step 5: the lab's own step5-solution.sh exited 1.",
@@ -972,10 +972,10 @@
       "users": 0,
       "course": "Yes",
       "verdict": "FAIL",
-      "mins": 6,
-      "at": "08-17 10:52",
+      "mins": 7,
+      "at": "08-17 11:24",
       "lastPass": "14:30",
-      "lastFail": "08-17 10:52",
+      "lastFail": "08-17 11:24",
       "lastUpdated": null,
       "step": null,
       "error": "krash-headed-for-trouble step 5: step5-verify.sh still fails after applying step5-solution",
@@ -1011,13 +1011,13 @@
       "users": 0,
       "course": "Yes",
       "verdict": "FAIL",
-      "mins": 10,
-      "at": "08-17 10:56",
+      "mins": 12,
+      "at": "08-17 11:37",
       "lastPass": "08-16 09:25",
-      "lastFail": "08-17 10:56",
+      "lastFail": "08-17 11:37",
       "lastUpdated": null,
       "step": "step5.md:45",
-      "error": "command exited 1, expected 28.",
+      "error": "the step's own readiness gate never passed.",
       "versions": [
         {
           "kind": "image",
@@ -1686,14 +1686,14 @@
       "status": "Live",
       "users": 863,
       "course": "MS Testing",
-      "verdict": "FAIL",
-      "mins": 31,
-      "at": "08-17 10:45",
-      "lastPass": "08-15 04:14",
+      "verdict": "PASS",
+      "mins": 20,
+      "at": "08-17 11:25",
+      "lastPass": "08-17 11:25",
       "lastFail": "08-17 10:45",
       "lastUpdated": null,
-      "step": "step10-readiness.md:76",
-      "error": "the step's own readiness gate never passed.",
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "chart",
@@ -2174,14 +2174,14 @@
       "status": "Live",
       "users": 1465,
       "course": "Fund. Week 2",
-      "verdict": "FAIL",
-      "mins": 20,
-      "at": "08-17 10:46",
-      "lastPass": "08-14 21:50",
+      "verdict": "PASS",
+      "mins": 9,
+      "at": "08-17 11:14",
+      "lastPass": "08-17 11:14",
       "lastFail": "08-17 10:46",
       "lastUpdated": null,
-      "step": "step7-cluster.md:75",
-      "error": "expected output never appeared.",
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "image",
@@ -2227,24 +2227,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "38 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1378
+      "durationMs": 1348
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "50 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 5437
+      "durationMs": 4539
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 786",
-      "durationMs": 112817
+      "durationMs": 120745
     }
   ],
-  "depsGenerated": "2026-08-17T11:01:13.356Z",
+  "depsGenerated": "2026-08-17T11:39:56.105Z",
   "versions": [
     {
       "kind": "image",
@@ -2292,6 +2292,16 @@
       "name": "library/postgres",
       "current": "9.5",
       "suggested": "17.11",
+      "held": null,
+      "labs": [
+        "puzzler-run-app-voting"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "6.0.6-alpine",
+      "suggested": "8.10.0-alpine",
       "held": null,
       "labs": [
         "puzzler-run-app-voting"
@@ -2589,6 +2599,26 @@
     {
       "kind": "image",
       "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
       "current": "1.30-alpine",
       "suggested": null,
       "held": null,
@@ -2610,26 +2640,6 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
       ]
     },
     {
@@ -2673,16 +2683,6 @@
       "held": null,
       "labs": [
         "redis"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/redis",
-      "current": "6.0.6-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "puzzler-run-app-voting"
       ]
     },
     {
@@ -2736,5 +2736,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-17T11:01:13.350Z"
+  "versionsGenerated": "2026-08-17T11:39:56.098Z"
 }
