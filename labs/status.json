@@ -1,0 +1,2647 @@
+{
+  "generated": "2026-08-17T03:03:37.210Z",
+  "summary": {
+    "labs": 84,
+    "live": 74,
+    "passing": 0,
+    "failing": 3,
+    "blocked": 0,
+    "untested": 71,
+    "dependenciesBehind": 10,
+    "dependencyChecksFailing": 0
+  },
+  "labs": [
+    {
+      "slug": "basics",
+      "title": "Kubernetes Observability: Basics",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078982/",
+      "status": "Live",
+      "users": 2949,
+      "course": "Fund. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "bentoml-iris",
+      "title": "Kubernetes Machine Learning: BentoML to Kubernetes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098105754/",
+      "status": "Live",
+      "users": 293,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "cdc-with-k8s",
+      "title": "Kubernetes Pipelines: Consumer-Driven Contracts with Kubernetes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098101169/",
+      "status": "Live",
+      "users": 785,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "chaos-mesh",
+      "title": "Kubernetes Chaos: Chaos Mesh",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098101206/",
+      "status": "Live",
+      "users": 538,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "chaoskube",
+      "title": "Kubernetes Chaos: Chaoskube",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492083948/",
+      "status": "Live",
+      "users": 373,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/ghost",
+          "current": "3.11.0-alpine",
+          "suggested": "4.48.9-alpine",
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "cli-logging",
+      "title": "Kubernetes Fundamentals: Kubernetes Logs",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492090199/",
+      "status": "Live",
+      "users": 3147,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "chentex/random-logger",
+          "current": "v1.0.1",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "configmap-secret",
+      "title": "Kubernetes Fundamentals: ConfigMaps and Secrets",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078869/",
+      "status": "Live",
+      "users": 2145,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "ghcr.io/stefanprodan/podinfo",
+          "current": "6.14.1",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "connectivity",
+      "title": "Kubernetes Fundamentals: Pods to Services Communication",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078838/",
+      "status": "Live",
+      "users": 1762,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "curlimages/curl",
+          "current": "8.21.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "container-intro",
+      "title": "Kubernetes Containers: Creating and Running Containers",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135188/",
+      "status": "Disabled",
+      "users": 509,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "crds",
+      "title": "Kubernetes Extensibility: Custom Resource Definitions",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492083849/",
+      "status": "Live",
+      "users": 1009,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "daemonsets",
+      "title": "Kubernetes Fundamentals: DaemonSets",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135881/",
+      "status": "Live",
+      "users": 309,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "fluent/fluentd",
+          "current": "v1.19-2",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "deployments",
+      "title": "Kubernetes Fundamentals: Deployments",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135867/",
+      "status": "Live",
+      "users": 1144,
+      "course": "Fund. Week 1",
+      "verdict": "FAIL",
+      "mins": 5,
+      "at": "08-17 02:51",
+      "lastPass": null,
+      "lastFail": "08-17 02:51",
+      "step": "step1-k8s.md:41",
+      "error": "expected output never appeared.",
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.14.2",
+          "suggested": null,
+          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.16.1",
+          "suggested": null,
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
+        }
+      ]
+    },
+    {
+      "slug": "distillation",
+      "title": "Kubernetes Fundamentals: Distilled JRE Apps in Containers",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078883/",
+      "status": "Live",
+      "users": 958,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "joxit/docker-registry-ui",
+          "current": "1.5-static",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "docker-kind",
+      "title": "Kubernetes Fundamentals: Kubernetes in Docker (kind)",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135140/",
+      "status": "Live",
+      "users": 1366,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "headlamp",
+          "current": "0.44.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "efk",
+      "title": "Kubernetes Observability: Logging with EFK",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078999/",
+      "status": "Live",
+      "users": 1715,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "registry.k8s.io/kubernetes-dashboard-amd64",
+          "current": "v1.10.0",
+          "suggested": "v1.10.1",
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "first-app",
+      "title": "Kubernetes Fundamentals: First Kubernetes Application",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078821/",
+      "status": "Live",
+      "users": 20684,
+      "course": "Fund. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "registry.k8s.io/echoserver",
+          "current": "1.10",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "first-cluster",
+      "title": "Kubernetes Fundamentals: Experience First Cluster",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098109790/",
+      "status": "Live",
+      "users": 4935,
+      "course": "Fund. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "registry.k8s.io/echoserver",
+          "current": "1.10",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "go",
+      "title": "Kubernetes Containers: Go Apps in Containers on Kubernetes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492090144/",
+      "status": "Live",
+      "users": 3342,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "helm",
+      "title": "Kubernetes Pipelines: Helm",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078968/",
+      "status": "Live",
+      "users": 13683,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "helmfile",
+      "title": "Kubernetes Tools: Helmfile",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098131739/",
+      "status": "Disabled",
+      "users": 265,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "hpa",
+      "title": "Kubernetes Observability: Scaling Your Applications, Automatically",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492079002/",
+      "status": "Live",
+      "users": 2250,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "ingress-nginx",
+      "title": "Kubernetes Networking: Ingress with NGINX",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098131708/",
+      "status": "Live",
+      "users": 1325,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "curlimages/curl",
+          "current": "8.21.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "istio-intro",
+      "title": "Kubernetes Applications: Istio",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098101183/",
+      "status": "Live",
+      "users": 1334,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "istio-sandbox",
+      "title": "Kubernetes Networking: Exploring Istio",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098105792/",
+      "status": "Live",
+      "users": 4448,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "istio-traffic-management",
+      "title": "Kubernetes Networking: Istio Traffic Management",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098105785/",
+      "status": "Disabled",
+      "users": 931,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "curlimages/curl",
+          "current": "8.21.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "jobs",
+      "title": "Kubernetes Fundamentals: Jobs",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078852/",
+      "status": "Live",
+      "users": 2897,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "k3s-quickstart",
+      "title": "Kubernetes Fundamentals: K3s, Lightweight Kubernetes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098131753/",
+      "status": "Live",
+      "users": 808,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "headlamp",
+          "current": "0.44.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "k9s",
+      "title": "Kubernetes Tools: K9s",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098131722/",
+      "status": "Live",
+      "users": 305,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "kafka-quickstart",
+      "title": "Kubernetes Applications: Kafka Quickstart",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135157/",
+      "status": "Live",
+      "users": 427,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "confluentinc/cp-kafkacat",
+          "current": "7.1.16",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "keda",
+      "title": "Kubernetes Observability: Scaling with KEDA",
+      "url": null,
+      "status": "Unpublished",
+      "users": null,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "ghcr.io/kedacore/rabbitmq-client",
+          "current": "v1.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "knative",
+      "title": "Kubernetes Serverless: Knative",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098101176/",
+      "status": "Live",
+      "users": 1692,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "jmalloc/echo-server",
+          "current": "0.3.6",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "joxit/docker-registry-ui",
+          "current": "1.5-static",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "kotlin-to-k8s",
+      "title": "Kubernetes Containers: Kotlin to Kubernetes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492090168/",
+      "status": "Live",
+      "users": 744,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-comm-breakdown",
+      "title": "The Communication Breakdown",
+      "url": "https://learning.oreilly.com/scenarios/~/9798341644021",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-configuration-conundrum",
+      "title": "Configuration Conundrum",
+      "url": "https://learning.oreilly.com/scenarios/~/9798341644151",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/alpine",
+          "current": "3.24",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-elusive-app",
+      "title": "The Elusive App",
+      "url": "https://learning.oreilly.com/scenarios/~/9798341643697",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/alpine",
+          "current": "3.24",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.28.0_alpines.21_slim",
+          "suggested": null,
+          "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it"
+        }
+      ]
+    },
+    {
+      "slug": "krash-false-positive-news",
+      "title": "False Positive News",
+      "url": "https://learning.oreilly.com/interactive-lab/-/9798341644212/",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-false-start",
+      "title": "The False Start",
+      "url": "https://learning.oreilly.com/scenarios/~/9798341643987",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/node",
+          "current": "16-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-headed-for-trouble",
+      "title": "Headed for Trouble",
+      "url": "https://learning.oreilly.com/interactive-lab/-/9798341644182/",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/python",
+          "current": "3.13.3-slim",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-invisible-barrier",
+      "title": "The Invisible Barrier",
+      "url": "https://learning.oreilly.com/scenarios/~/9798341644120",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/python",
+          "current": "3.13.3-slim",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-no-soup-for-you",
+      "title": "No Soup for You",
+      "url": "https://learning.oreilly.com/interactive-lab/-/9798341644168/",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-perpetual-machine",
+      "title": "The Perpetual Machine",
+      "url": "https://learning.oreilly.com/interactive-lab/-/9798341644205/lab/",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/python",
+          "current": "3.13.3-slim",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-resource-roulette",
+      "title": "Resource Roulette",
+      "url": "https://learning.oreilly.com/scenarios/~/9798341643710",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-scaling-stalemate",
+      "title": "Scaling Stalemate",
+      "url": "https://learning.oreilly.com/scenarios/~/9798341643994",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/python",
+          "current": "3.13.3-slim",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-silent-stats",
+      "title": "The Silent Stats",
+      "url": "https://learning.oreilly.com/interactive-lab/-/9798341652880/",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-stay-in-your-lane",
+      "title": "Stay In Your Lane",
+      "url": "https://learning.oreilly.com/interactive-lab/-/9798341644038/",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-tiptoe-through-the-meanies",
+      "title": "Tiptoe Through the Meanies",
+      "url": "https://learning.oreilly.com/interactive-lab/~/9798341644236/",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "krash-vanishing-info",
+      "title": "Vanishing Information",
+      "url": "https://learning.oreilly.com/interactive-lab/~/9798341644229/",
+      "status": "Live",
+      "users": 0,
+      "course": "Yes",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "kube-api",
+      "title": "Kubernetes Fundamentals: Kubernetes API",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492083917/",
+      "status": "Live",
+      "users": 4105,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "kube-monkey",
+      "title": "Kubernetes Chaos: Kube Monkey",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492083931/",
+      "status": "Live",
+      "users": 1006,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/ghost",
+          "current": "3.11.0-alpine",
+          "suggested": "4.48.9-alpine",
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "kubeadm-quickstart",
+      "title": "Kubernetes Fundamentals: kubeadm Quickstart",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135201/",
+      "status": "Disabled",
+      "users": 430,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "headlamp",
+          "current": "0.44.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "kubebuilder",
+      "title": "Kubernetes Extensibility: Develop an Operator with Kubebuilder",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492083870/",
+      "status": "Disabled",
+      "users": 1182,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "kubectl-plugin-dev",
+      "title": "Kubernetes Extensibility: Kubectl CLI Plugin Development",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492083863/",
+      "status": "Live",
+      "users": 262,
+      "course": "Intrm. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "kubectl-plugins",
+      "title": "Kubernetes Extensibility: Kubectl CLI Plugins",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492083856/",
+      "status": "Live",
+      "users": 509,
+      "course": "Intrm. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "kubeinvaders",
+      "title": "Kubernetes Chaos: KubeInvaders",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492083924/",
+      "status": "Live",
+      "users": 423,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "kubekey-quickstart",
+      "title": "Kubernetes Fundamentals: KubeKey Quickstart",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135218/",
+      "status": "Live",
+      "users": 120,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "headlamp",
+          "current": "0.44.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "litmus",
+      "title": "Kubernetes Chaos: Litmus",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098101213/",
+      "status": "Live",
+      "users": 428,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "microk8s-quickstart",
+      "title": "Kubernetes Fundamentals: MicroK8s Quickstart",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135195/",
+      "status": "Live",
+      "users": 289,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "headlamp",
+          "current": "0.44.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "minikube",
+      "title": "Kubernetes Fundamentals: Minikube",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078814/",
+      "status": "Live",
+      "users": 4936,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "nginx",
+      "title": "Kubernetes Applications: Nginx",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078890/",
+      "status": "Live",
+      "users": 4930,
+      "course": "Fund. Week 1",
+      "verdict": "FAIL",
+      "mins": 15,
+      "at": "08-17 03:01",
+      "lastPass": null,
+      "lastFail": "08-17 03:01",
+      "step": "step1-k8s.md:41",
+      "error": "expected output never appeared.",
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "node-to-k8s",
+      "title": "Kubernetes Containers: Node.js to Kubernetes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492090175/",
+      "status": "Live",
+      "users": 2363,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "nuclio",
+      "title": "Kubernetes Serverless: Nuclio",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078944/",
+      "status": "Live",
+      "users": 315,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "oci",
+      "title": "Kubernetes Containers: Decomposing Container Images",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492090137/",
+      "status": "Live",
+      "users": 3117,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "openfaas",
+      "title": "Kubernetes Serverless: OpenFaaS",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078937/",
+      "status": "Live",
+      "users": 617,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "stefanprodan/faas-grafana",
+          "current": "4.6.3",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "operator-sdk-go",
+      "title": "Kubernetes Extensibility: Operator SDK with Go",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135904/",
+      "status": "Disabled",
+      "users": 375,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "pods",
+      "title": "Kubernetes Fundamentals: Pods",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135850/",
+      "status": "Live",
+      "users": 1449,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "ghcr.io/stefanprodan/podinfo",
+          "current": "6.14.1",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "probes",
+      "title": "Kubernetes Fundamentals: Health Checks with Probes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098105747/",
+      "status": "Live",
+      "users": 863,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "prometheus-grafana",
+      "title": "Kubernetes Observability: Prometheus and Grafana",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098131746/",
+      "status": "Live",
+      "users": 1776,
+      "course": "Intrm. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "pure-chaos",
+      "title": "Kubernetes Chaos: Pure Chaos",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098101190/",
+      "status": "Live",
+      "users": 497,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "chentex/random-logger",
+          "current": "v1.0.1",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "python",
+      "title": "Kubernetes Pipelines: Python Pipeline to Kubernetes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492090182/",
+      "status": "Live",
+      "users": 2272,
+      "course": "Intrm. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "joxit/docker-registry-ui",
+          "current": "1.5-static",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "r-shiny",
+      "title": "Kubernetes Applications: Shiny R",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078906/",
+      "status": "Live",
+      "users": 1475,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "rabbitmq",
+      "title": "Kubernetes Applications: RabbitMQ",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078913/",
+      "status": "Live",
+      "users": 2854,
+      "course": "Fund. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/rabbitmq",
+          "current": "3.13-management",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "redis",
+      "title": "Kubernetes Applications: Storage with Redis",
+      "url": null,
+      "status": "Unpublished",
+      "users": null,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "quay.io/opstree/redis",
+          "current": "v6.2.5",
+          "suggested": "v8.6.2",
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "quay.io/opstree/redis-exporter",
+          "current": "1.0",
+          "suggested": "2.0",
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "gcr.io/google_samples/gb-frontend",
+          "current": "v5",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/redis",
+          "current": "8-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "registries",
+      "title": "Kubernetes Pipelines: Registries",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078951/",
+      "status": "Live",
+      "users": 736,
+      "course": "Intrm. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry-ui",
+          "current": "1.1.3",
+          "suggested": "1.1.4",
+          "held": null
+        },
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "replicasets",
+      "title": "Kubernetes Fundamentals: ReplicaSets",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135874/",
+      "status": "Live",
+      "users": 413,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "chentex/random-logger",
+          "current": "v1.0.1",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "registry.k8s.io/e2e-test-images/agnhost",
+          "current": "2.61",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "resource-requests-compute",
+      "title": "Kubernetes Fundamentals: Resource Requests for Compute",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098135898/",
+      "status": "Disabled",
+      "users": 597,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "traefik/whoami",
+          "current": "v1.12",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "rust-to-k8s",
+      "title": "Kubernetes Containers: Rust to Kubernetes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492090151/",
+      "status": "Live",
+      "users": 1391,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "service-discovery",
+      "title": "Kubernetes Networking: Service Discovery",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098109783/",
+      "status": "Live",
+      "users": 1013,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "ellerbrock/alpine-bash-curl-ssl",
+          "current": "0.3.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "service-external",
+      "title": "Not published",
+      "url": null,
+      "status": "Unpublished",
+      "users": null,
+      "course": "Intrm. Week 1",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "curlimages/curl",
+          "current": "8.21.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "sidecar",
+      "title": "Kubernetes Fundamentals: Sidecar Containers",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078845/",
+      "status": "Live",
+      "users": 1620,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/debian",
+          "current": "13-slim",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "snippets-pet",
+      "title": "Kubernetes Tools: Pet, a CLI Snippet Manager",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098105778/",
+      "status": "Live",
+      "users": 227,
+      "course": "No",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "sonarqube",
+      "title": "Kubernetes Pipelines: SonarQube",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078975/",
+      "status": "Live",
+      "users": 1572,
+      "course": "MS Testing",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": []
+    },
+    {
+      "slug": "springboot-to-k8s",
+      "title": "Kubernetes Fundamentals: Spring Boot to Kubernetes",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492078876/",
+      "status": "Live",
+      "users": 3004,
+      "course": "Fund. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "tekton",
+      "title": "Kubernetes Pipelines: Tekton Pipelines",
+      "url": "https://learning.oreilly.com/scenarios/~/9781492083900/",
+      "status": "Live",
+      "users": 1542,
+      "course": "Intrm. Week 2",
+      "verdict": null,
+      "mins": null,
+      "at": null,
+      "lastPass": null,
+      "lastFail": null,
+      "step": null,
+      "error": null,
+      "versions": [
+        {
+          "kind": "chart",
+          "name": "docker-registry",
+          "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "joxit/docker-registry-ui",
+          "current": "1.5-static",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    },
+    {
+      "slug": "volumes",
+      "title": "Kubernetes Fundamentals: Volumes and Mounts",
+      "url": "https://learning.oreilly.com/scenarios/~/9781098105730/",
+      "status": "Live",
+      "users": 1465,
+      "course": "Fund. Week 2",
+      "verdict": "FAIL",
+      "mins": 3,
+      "at": "08-17 02:49",
+      "lastPass": null,
+      "lastFail": "08-17 02:49",
+      "step": null,
+      "error": "locator.click: Timeout 14911ms exceeded.",
+      "versions": [
+        {
+          "kind": "image",
+          "name": "alpine/git",
+          "current": "1.0.17",
+          "suggested": "2.54.0",
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/mysql",
+          "current": "8.4",
+          "suggested": "26.7",
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/redis",
+          "current": "7.4-alpine",
+          "suggested": "8.10-alpine",
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.30-alpine",
+          "suggested": null,
+          "held": null
+        }
+      ]
+    }
+  ],
+  "deps": [
+    {
+      "id": "images",
+      "title": "Container images",
+      "ok": true,
+      "summary": "37 resolve, 0 aging, 1 planted, 0 broken",
+      "durationMs": 1360
+    },
+    {
+      "id": "charts",
+      "title": "Helm chart versions",
+      "ok": true,
+      "summary": "50 pinned chart(s) checked, 0 problem(s)",
+      "durationMs": 4607
+    },
+    {
+      "id": "links",
+      "title": "Links in lab text",
+      "ok": true,
+      "summary": "0 link(s) failed of 786",
+      "durationMs": 110292
+    }
+  ],
+  "depsGenerated": "2026-08-17T03:03:36.487Z",
+  "versions": [
+    {
+      "kind": "image",
+      "name": "alpine/git",
+      "current": "1.0.17",
+      "suggested": "2.54.0",
+      "held": null,
+      "labs": [
+        "volumes"
+      ]
+    },
+    {
+      "kind": "chart",
+      "name": "docker-registry-ui",
+      "current": "1.1.3",
+      "suggested": "1.1.4",
+      "held": null,
+      "labs": [
+        "registries"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/ghost",
+      "current": "3.11.0-alpine",
+      "suggested": "4.48.9-alpine",
+      "held": null,
+      "labs": [
+        "chaoskube",
+        "kube-monkey"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/mysql",
+      "current": "8.4",
+      "suggested": "26.7",
+      "held": null,
+      "labs": [
+        "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/postgres",
+      "current": "9.5",
+      "suggested": "17.11",
+      "held": null,
+      "labs": [
+        "puzzler-run-app-voting"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "6.0.6-alpine",
+      "suggested": "8.10.0-alpine",
+      "held": null,
+      "labs": [
+        "puzzler-run-app-voting"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "7.4-alpine",
+      "suggested": "8.10-alpine",
+      "held": null,
+      "labs": [
+        "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "quay.io/opstree/redis",
+      "current": "v6.2.5",
+      "suggested": "v8.6.2",
+      "held": null,
+      "labs": [
+        "redis"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "quay.io/opstree/redis-exporter",
+      "current": "1.0",
+      "suggested": "2.0",
+      "held": null,
+      "labs": [
+        "redis"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/kubernetes-dashboard-amd64",
+      "current": "v1.10.0",
+      "suggested": "v1.10.1",
+      "held": null,
+      "labs": [
+        "efk"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "chentex/random-logger",
+      "current": "v1.0.1",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "cli-logging",
+        "pure-chaos",
+        "replicasets"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "confluentinc/cp-kafkacat",
+      "current": "7.1.16",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "kafka-quickstart"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "curlimages/curl",
+      "current": "8.21.0",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "connectivity",
+        "ingress-nginx",
+        "ingress-with-tls",
+        "istio-traffic-management",
+        "service-external"
+      ]
+    },
+    {
+      "kind": "chart",
+      "name": "docker-registry",
+      "current": "3.0.0",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "bentoml-iris",
+        "cdc-with-k8s",
+        "go",
+        "jobs",
+        "kafka-quickstart",
+        "knative",
+        "kotlin-to-k8s",
+        "krash-comm-breakdown",
+        "krash-false-positive-news",
+        "krash-no-soup-for-you",
+        "krash-resource-roulette",
+        "krash-silent-stats",
+        "krash-tiptoe-through-the-meanies",
+        "krash-vanishing-info",
+        "node-to-k8s",
+        "nuclio",
+        "openfaas",
+        "operator-sdk-go",
+        "probes",
+        "pure-chaos",
+        "python",
+        "registries",
+        "rust-to-k8s",
+        "springboot-to-k8s",
+        "tekton"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "ellerbrock/alpine-bash-curl-ssl",
+      "current": "0.3.0",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "service-discovery"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "fluent/fluentd",
+      "current": "v1.19-2",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "daemonsets"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "gcr.io/google_samples/gb-frontend",
+      "current": "v5",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "redis"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "ghcr.io/consul-up/birdwatcher-backend",
+      "current": "1.0.1",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "mesh-consul"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "ghcr.io/consul-up/birdwatcher-frontend",
+      "current": "1.0.0",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "mesh-consul"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "ghcr.io/kedacore/rabbitmq-client",
+      "current": "v1.0",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "keda"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "ghcr.io/stefanprodan/podinfo",
+      "current": "6.14.1",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "configmap-secret",
+        "pods"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "hashicorp/consul-api-gateway",
+      "current": "0.5.5",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "mesh-consul"
+      ]
+    },
+    {
+      "kind": "chart",
+      "name": "headlamp",
+      "current": "0.44.0",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "docker-kind",
+        "k3s-quickstart",
+        "kubeadm-quickstart",
+        "kubekey-quickstart",
+        "microk8s-quickstart"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "javanxd/shiny-beehive",
+      "current": "firsttry",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "puzzler-run-app-yaml"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "jmalloc/echo-server",
+      "current": "0.3.6",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "knative"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "joxit/docker-registry-ui",
+      "current": "1.5-static",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "distillation",
+        "knative",
+        "python",
+        "tekton"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/alpine",
+      "current": "3.24",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "krash-configuration-conundrum",
+        "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/busybox",
+      "current": "1.38",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "configmap-secret",
+        "hpa",
+        "k9s",
+        "keda",
+        "krash-elusive-app",
+        "krash-headed-for-trouble",
+        "krash-perpetual-machine",
+        "krash-scaling-stalemate",
+        "krash-silent-stats",
+        "puzzler-hpa",
+        "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/debian",
+      "current": "13-slim",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "sidecar"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.14.2",
+      "suggested": null,
+      "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
+      "labs": [
+        "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.30-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "chaos-mesh",
+        "chaoskube",
+        "daemonsets",
+        "ingress-with-tls",
+        "krash-configuration-conundrum",
+        "krash-false-start",
+        "krash-headed-for-trouble",
+        "krash-invisible-barrier",
+        "krash-no-soup-for-you",
+        "krash-stay-in-your-lane",
+        "kube-monkey",
+        "kubectl-plugin-dev",
+        "kubectl-plugins",
+        "nginx",
+        "resource-requests-compute",
+        "sidecar",
+        "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "16-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "krash-false-start"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/python",
+      "current": "3.13.3-slim",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "krash-headed-for-trouble",
+        "krash-invisible-barrier",
+        "krash-perpetual-machine",
+        "krash-scaling-stalemate"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/rabbitmq",
+      "current": "3.13-management",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "rabbitmq"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "8-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "redis"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/e2e-test-images/agnhost",
+      "current": "2.61",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "replicasets"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/echoserver",
+      "current": "1.10",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "first-app",
+        "first-cluster"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "stefanprodan/faas-grafana",
+      "current": "4.6.3",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "openfaas"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "traefik/whoami",
+      "current": "v1.12",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "resource-requests-compute"
+      ]
+    }
+  ],
+  "versionsGenerated": "2026-08-17T03:03:36.480Z"
+}
