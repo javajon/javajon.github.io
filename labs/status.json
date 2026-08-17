@@ -1,13 +1,13 @@
 {
-  "generated": "2026-08-17T09:54:23.227Z",
+  "generated": "2026-08-17T11:01:15.427Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 48,
-    "failing": 13,
+    "passing": 54,
+    "failing": 7,
     "blocked": 13,
     "untested": 0,
-    "dependenciesBehind": 10,
+    "dependenciesBehind": 9,
     "dependencyChecksFailing": 0
   },
   "labs": [
@@ -18,14 +18,14 @@
       "status": "Live",
       "users": 2949,
       "course": "Fund. Week 1",
-      "verdict": "FAIL",
-      "mins": 7,
-      "at": "08-17 04:44",
-      "lastPass": "08-14 23:35",
+      "verdict": "PASS",
+      "mins": 18,
+      "at": "08-17 10:13",
+      "lastPass": "08-17 10:13",
       "lastFail": "08-17 04:44",
       "lastUpdated": null,
-      "step": "step3-kubectl.md:21",
-      "error": "expected output never appeared.",
+      "step": null,
+      "error": null,
       "versions": []
     },
     {
@@ -241,14 +241,14 @@
       "status": "Live",
       "users": 1009,
       "course": "Intrm. Week 1",
-      "verdict": "FAIL",
-      "mins": 15,
-      "at": "08-17 05:26",
-      "lastPass": "08-15 11:32",
+      "verdict": "PASS",
+      "mins": 13,
+      "at": "08-17 10:09",
+      "lastPass": "08-17 10:09",
       "lastFail": "08-17 05:26",
       "lastUpdated": null,
-      "step": "step6-validation.md:64",
-      "error": "expected output never appeared.",
+      "step": null,
+      "error": null,
       "versions": []
     },
     {
@@ -290,28 +290,28 @@
       "status": "Live",
       "users": 1144,
       "course": "Fund. Week 1",
-      "verdict": "FAIL",
-      "mins": 14,
-      "at": "08-17 05:31",
-      "lastPass": "08-15 00:43",
+      "verdict": "PASS",
+      "mins": 13,
+      "at": "08-17 10:10",
+      "lastPass": "08-17 10:10",
       "lastFail": "08-17 05:31",
       "lastUpdated": null,
-      "step": "step2-first.md:73",
-      "error": "the command was accepted but the cluster never reached the expected sta",
+      "step": null,
+      "error": null,
       "versions": [
-        {
-          "kind": "image",
-          "name": "library/nginx",
-          "current": "1.16.1",
-          "suggested": null,
-          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
-        },
         {
           "kind": "image",
           "name": "library/nginx",
           "current": "1.14.2",
           "suggested": null,
           "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+        },
+        {
+          "kind": "image",
+          "name": "library/nginx",
+          "current": "1.16.1",
+          "suggested": null,
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
         }
       ]
     },
@@ -409,9 +409,9 @@
         {
           "kind": "image",
           "name": "registry.k8s.io/echoserver",
-          "current": "1.10",
+          "current": "1.9",
           "suggested": null,
-          "held": null
+          "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it"
         }
       ]
     },
@@ -532,12 +532,12 @@
       "users": 1325,
       "course": "Intrm. Week 1",
       "verdict": "FAIL",
-      "mins": 14,
-      "at": "08-17 06:12",
+      "mins": 16,
+      "at": "08-17 10:25",
       "lastPass": "08-15 02:08",
-      "lastFail": "08-17 06:12",
+      "lastFail": "08-17 10:25",
       "lastUpdated": null,
-      "step": "step3-deploy-ingress-controller.md:23",
+      "step": "step6-ingress-routing-multiple.md:39",
       "error": "expected output never appeared.",
       "versions": [
         {
@@ -573,14 +573,14 @@
       "status": "Live",
       "users": 4448,
       "course": "Intrm. Week 1",
-      "verdict": "FAIL",
-      "mins": 8,
-      "at": "08-17 06:15",
-      "lastPass": "19:20",
+      "verdict": "PASS",
+      "mins": 6,
+      "at": "08-17 10:17",
+      "lastPass": "08-17 10:17",
       "lastFail": "08-17 06:15",
       "lastUpdated": null,
-      "step": "step4-integrations.md:103",
-      "error": "expected output never appeared.",
+      "step": null,
+      "error": null,
       "versions": []
     },
     {
@@ -940,10 +940,10 @@
       "users": 0,
       "course": "Yes",
       "verdict": "FAIL",
-      "mins": 11,
-      "at": "08-17 07:06",
+      "mins": 14,
+      "at": "08-17 10:58",
       "lastPass": "14:20",
-      "lastFail": "08-17 07:06",
+      "lastFail": "08-17 10:58",
       "lastUpdated": null,
       "step": null,
       "error": "krash-false-start step 5: the lab's own step5-solution.sh exited 1.",
@@ -972,10 +972,10 @@
       "users": 0,
       "course": "Yes",
       "verdict": "FAIL",
-      "mins": 9,
-      "at": "08-17 07:06",
+      "mins": 6,
+      "at": "08-17 10:52",
       "lastPass": "14:30",
-      "lastFail": "08-17 07:06",
+      "lastFail": "08-17 10:52",
       "lastUpdated": null,
       "step": null,
       "error": "krash-headed-for-trouble step 5: step5-verify.sh still fails after applying step5-solution",
@@ -1011,13 +1011,13 @@
       "users": 0,
       "course": "Yes",
       "verdict": "FAIL",
-      "mins": 7,
-      "at": "08-17 07:05",
+      "mins": 10,
+      "at": "08-17 10:56",
       "lastPass": "08-16 09:25",
-      "lastFail": "08-17 07:05",
+      "lastFail": "08-17 10:56",
       "lastUpdated": null,
-      "step": null,
-      "error": "krash-invisible-barrier step 5: step5-verify.sh still fails after applying step5-solution.",
+      "step": "step5.md:45",
+      "error": "command exited 1, expected 28.",
       "versions": [
         {
           "kind": "image",
@@ -1687,13 +1687,13 @@
       "users": 863,
       "course": "MS Testing",
       "verdict": "FAIL",
-      "mins": 14,
-      "at": "08-17 08:34",
+      "mins": 31,
+      "at": "08-17 10:45",
       "lastPass": "08-15 04:14",
-      "lastFail": "08-17 08:34",
+      "lastFail": "08-17 10:45",
       "lastUpdated": null,
-      "step": "step7-startup.md:114",
-      "error": "the command was accepted but the cluster never reached the expected",
+      "step": "step10-readiness.md:76",
+      "error": "the step's own readiness gate never passed.",
       "versions": [
         {
           "kind": "chart",
@@ -1728,14 +1728,14 @@
       "status": "Live",
       "users": 497,
       "course": "MS Testing",
-      "verdict": "FAIL",
-      "mins": 5,
-      "at": "08-17 08:40",
-      "lastPass": "20:18",
+      "verdict": "PASS",
+      "mins": 8,
+      "at": "08-17 10:25",
+      "lastPass": "08-17 10:25",
       "lastFail": "08-17 08:40",
       "lastUpdated": null,
-      "step": "step3-install.md:13",
-      "error": "the command was accepted but the cluster never reached the expected s",
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "image",
@@ -1760,14 +1760,14 @@
       "status": "Live",
       "users": 2272,
       "course": "Intrm. Week 2",
-      "verdict": "FAIL",
-      "mins": 24,
-      "at": "08-17 09:05",
-      "lastPass": "08-15 12:52",
+      "verdict": "PASS",
+      "mins": 19,
+      "at": "08-17 10:44",
+      "lastPass": "08-17 10:44",
       "lastFail": "08-17 09:05",
       "lastUpdated": null,
-      "step": "step13-pipeline-run.md:31",
-      "error": "expected output never appeared.",
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "chart",
@@ -2175,12 +2175,12 @@
       "users": 1465,
       "course": "Fund. Week 2",
       "verdict": "FAIL",
-      "mins": 11,
-      "at": "08-17 09:46",
+      "mins": 20,
+      "at": "08-17 10:46",
       "lastPass": "08-14 21:50",
-      "lastFail": "08-17 09:46",
+      "lastFail": "08-17 10:46",
       "lastUpdated": null,
-      "step": "step4-pods.md:55",
+      "step": "step7-cluster.md:75",
       "error": "expected output never appeared.",
       "versions": [
         {
@@ -2226,25 +2226,25 @@
       "id": "images",
       "title": "Container images",
       "ok": true,
-      "summary": "37 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1240
+      "summary": "38 resolve, 0 aging, 1 planted, 0 broken",
+      "durationMs": 1378
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "50 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 5244
+      "durationMs": 5437
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 786",
-      "durationMs": 110340
+      "durationMs": 112817
     }
   ],
-  "depsGenerated": "2026-08-17T09:54:18.575Z",
+  "depsGenerated": "2026-08-17T11:01:13.356Z",
   "versions": [
     {
       "kind": "image",
@@ -2292,16 +2292,6 @@
       "name": "library/postgres",
       "current": "9.5",
       "suggested": "17.11",
-      "held": null,
-      "labs": [
-        "puzzler-run-app-voting"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/redis",
-      "current": "6.0.6-alpine",
-      "suggested": "8.10.0-alpine",
       "held": null,
       "labs": [
         "puzzler-run-app-voting"
@@ -2589,31 +2579,11 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.14.2",
       "suggested": null,
       "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
       "labs": [
         "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
       ]
     },
     {
@@ -2640,6 +2610,26 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
       ]
     },
     {
@@ -2687,6 +2677,16 @@
     },
     {
       "kind": "image",
+      "name": "library/redis",
+      "current": "6.0.6-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "puzzler-run-app-voting"
+      ]
+    },
+    {
+      "kind": "image",
       "name": "registry.k8s.io/e2e-test-images/agnhost",
       "current": "2.61",
       "suggested": null,
@@ -2702,8 +2702,17 @@
       "suggested": null,
       "held": null,
       "labs": [
-        "first-app",
         "first-cluster"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/echoserver",
+      "current": "1.9",
+      "suggested": null,
+      "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
+      "labs": [
+        "first-app"
       ]
     },
     {
@@ -2727,5 +2736,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-17T09:54:18.568Z"
+  "versionsGenerated": "2026-08-17T11:01:13.350Z"
 }
