@@ -1,14 +1,14 @@
 {
-  "generated": "2026-08-17T13:04:29.903Z",
+  "generated": "2026-08-17T15:44:14.841Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 61,
+    "passing": 64,
     "failing": 0,
-    "blocked": 13,
+    "blocked": 10,
     "untested": 0,
     "dependenciesBehind": 10,
-    "dependencyChecksFailing": 0
+    "dependencyChecksFailing": 1
   },
   "labs": [
     {
@@ -302,16 +302,16 @@
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.16.1",
+          "current": "1.14.2",
           "suggested": null,
-          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
+          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
         },
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.14.2",
+          "current": "1.16.1",
           "suggested": null,
-          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
         }
       ]
     },
@@ -506,14 +506,14 @@
       "status": "Live",
       "users": 2250,
       "course": "Fund. Week 2",
-      "verdict": "STALE-PUBLISH",
-      "mins": 9,
-      "at": "08-17 06:06",
-      "lastPass": "08-14 21:02",
+      "verdict": "PASS",
+      "mins": 12,
+      "at": "08-17 15:23",
+      "lastPass": "08-17 15:23",
       "lastFail": "18:28",
       "lastUpdated": null,
       "step": null,
-      "error": "the page offers: kubectl run -i --tty load-generator --im",
+      "error": null,
       "versions": [
         {
           "kind": "image",
@@ -819,13 +819,13 @@
       "users": 0,
       "course": "Yes",
       "verdict": "STALE-PUBLISH",
-      "mins": 4,
-      "at": "08-17 06:50",
+      "mins": 8,
+      "at": "08-17 15:26",
       "lastPass": "08-16 00:55",
       "lastFail": "08-16 00:09",
       "lastUpdated": null,
       "step": null,
-      "error": "(6816h newer)",
+      "error": "(6837h newer)",
       "versions": [
         {
           "kind": "chart",
@@ -915,13 +915,13 @@
       "users": 0,
       "course": "Yes",
       "verdict": "STALE-PUBLISH",
-      "mins": 5,
-      "at": "08-17 06:55",
+      "mins": 8,
+      "at": "08-17 15:32",
       "lastPass": "08-16 00:56",
       "lastFail": "08-16 00:24",
       "lastUpdated": null,
       "step": null,
-      "error": "(6816h newer)",
+      "error": "(6837h newer)",
       "versions": [
         {
           "kind": "chart",
@@ -1044,12 +1044,12 @@
       "course": "Yes",
       "verdict": "STALE-PUBLISH",
       "mins": 5,
-      "at": "08-17 07:10",
+      "at": "08-17 15:32",
       "lastPass": "08-16 00:14",
       "lastFail": "08-15 23:10",
       "lastUpdated": null,
       "step": null,
-      "error": "(6823h newer)",
+      "error": "(6837h newer)",
       "versions": [
         {
           "kind": "chart",
@@ -1107,13 +1107,13 @@
       "users": 0,
       "course": "Yes",
       "verdict": "STALE-PUBLISH",
-      "mins": 12,
-      "at": "08-17 07:18",
+      "mins": 4,
+      "at": "08-17 15:35",
       "lastPass": null,
       "lastFail": "08-16 00:48",
       "lastUpdated": null,
       "step": null,
-      "error": "(6816h newer)",
+      "error": "(6837h newer)",
       "versions": [
         {
           "kind": "chart",
@@ -1132,13 +1132,13 @@
       "users": 0,
       "course": "Yes",
       "verdict": "STALE-PUBLISH",
-      "mins": 7,
-      "at": "08-17 07:18",
+      "mins": 8,
+      "at": "08-17 15:40",
       "lastPass": null,
       "lastFail": "08-16 09:19",
       "lastUpdated": null,
       "step": null,
-      "error": "(7204h newer)",
+      "error": "(7219h newer)",
       "versions": [
         {
           "kind": "image",
@@ -1164,13 +1164,13 @@
       "users": 0,
       "course": "Yes",
       "verdict": "STALE-PUBLISH",
-      "mins": 5,
-      "at": "08-17 07:19",
+      "mins": 8,
+      "at": "08-17 15:40",
       "lastPass": "08-16 00:23",
       "lastFail": "08-15 23:09",
       "lastUpdated": null,
       "step": null,
-      "error": "(6823h newer)",
+      "error": "(6837h newer)",
       "versions": [
         {
           "kind": "chart",
@@ -1246,13 +1246,13 @@
       "users": 0,
       "course": "Yes",
       "verdict": "STALE-PUBLISH",
-      "mins": 8,
-      "at": "08-17 07:28",
+      "mins": 5,
+      "at": "08-17 15:40",
       "lastPass": "08-16 00:42",
       "lastFail": "14:57",
       "lastUpdated": null,
       "step": null,
-      "error": "(6816h newer)",
+      "error": "(6837h newer)",
       "versions": [
         {
           "kind": "chart",
@@ -1411,14 +1411,14 @@
       "status": "Live",
       "users": 423,
       "course": "MS Testing",
-      "verdict": "STALE-PUBLISH",
-      "mins": 17,
-      "at": "08-17 07:54",
-      "lastPass": "19:06",
+      "verdict": "PASS",
+      "mins": 6,
+      "at": "08-17 15:17",
+      "lastPass": "08-17 15:17",
       "lastFail": "15:51",
       "lastUpdated": null,
       "step": null,
-      "error": "the page offers: kubectl create deployment nginx --image=",
+      "error": null,
       "versions": []
     },
     {
@@ -1470,14 +1470,14 @@
       "status": "Live",
       "users": 289,
       "course": "No",
-      "verdict": "STALE-PUBLISH",
-      "mins": 16,
-      "at": "08-17 08:09",
-      "lastPass": "08-16 10:27",
+      "verdict": "PASS",
+      "mins": 18,
+      "at": "08-17 15:30",
+      "lastPass": "08-17 15:30",
       "lastFail": "08-15 21:52",
       "lastUpdated": null,
       "step": null,
-      "error": "the page offers: kubectl create deployment my-nginx --ima",
+      "error": null,
       "versions": [
         {
           "kind": "chart",
@@ -2227,24 +2227,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "38 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1520
+      "durationMs": 1489
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "50 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4632
+      "durationMs": 5797
     },
     {
       "id": "links",
       "title": "Links in lab text",
-      "ok": true,
-      "summary": "0 link(s) failed of 786",
-      "durationMs": 113509
+      "ok": false,
+      "summary": "33 link(s) failed of 786",
+      "durationMs": 202363
     }
   ],
-  "depsGenerated": "2026-08-17T13:04:28.374Z",
+  "depsGenerated": "2026-08-17T15:44:13.056Z",
   "versions": [
     {
       "kind": "image",
@@ -2589,16 +2589,6 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.14.2",
       "suggested": null,
       "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
@@ -2640,6 +2630,16 @@
       "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
       "labs": [
         "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
       ]
     },
     {
@@ -2698,21 +2698,21 @@
     {
       "kind": "image",
       "name": "registry.k8s.io/echoserver",
-      "current": "1.9",
-      "suggested": null,
-      "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
-      "labs": [
-        "first-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "registry.k8s.io/echoserver",
       "current": "1.10",
       "suggested": null,
       "held": null,
       "labs": [
         "first-cluster"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/echoserver",
+      "current": "1.9",
+      "suggested": null,
+      "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
+      "labs": [
+        "first-app"
       ]
     },
     {
@@ -2736,5 +2736,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-17T13:04:28.366Z"
+  "versionsGenerated": "2026-08-17T15:44:13.049Z"
 }
