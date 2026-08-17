@@ -1013,3 +1013,214 @@ img.single-img-top,
     position: relative;
     top: 3px;
     color: #ff0000; }
+
+/* Lab status surfaces: the per-lab badge, the estate table, the dependency table.
+ *
+ * Colour carries meaning here, so it is never the ONLY carrier: every state also has a
+ * word. A reader who cannot separate the green from the amber still reads "Passing" and
+ * "Awaiting publish".
+ */
+.labstat {
+  --ok: #1a7f4b;
+  --bad: #b3261e;
+  --warn: #8a6100;
+  --unknown: #5f6b7a;
+  --line: #e3e7ec; }
+
+/* ---- the badge on a lab page ------------------------------------------------ */
+.labstat-badge {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 2rem;
+  font-size: 0.95rem; }
+
+.labstat-badge[hidden] {
+  display: none; }
+
+.labstat-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700; }
+
+.labstat-dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  flex: 0 0 auto; }
+
+.labstat-ok .labstat-dot {
+  background: var(--ok); }
+
+.labstat-bad .labstat-dot {
+  background: var(--bad); }
+
+.labstat-warn .labstat-dot {
+  background: var(--warn); }
+
+.labstat-unknown .labstat-dot {
+  background: var(--unknown); }
+
+.labstat-ok .labstat-state {
+  color: var(--ok); }
+
+.labstat-bad .labstat-state {
+  color: var(--bad); }
+
+.labstat-warn .labstat-state {
+  color: var(--warn); }
+
+.labstat-unknown .labstat-state {
+  color: var(--unknown); }
+
+.labstat-meta {
+  margin: 0.5rem 0 0;
+  color: #5f6b7a;
+  font-size: 0.85rem;
+  line-height: 1.7; }
+
+.labstat-meta dt {
+  display: inline;
+  font-weight: 600; }
+
+.labstat-meta dd {
+  display: inline;
+  margin: 0 1.25rem 0 0.35rem; }
+
+/* ---- tallies ---------------------------------------------------------------- */
+.labstat-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.75rem; }
+
+.labstat-tile {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  text-align: center; }
+
+.labstat-tile b {
+  display: block;
+  font-size: 1.75rem;
+  line-height: 1.2; }
+
+.labstat-tile span {
+  font-size: 0.8rem;
+  color: #5f6b7a;
+  text-transform: uppercase;
+  letter-spacing: 0.04em; }
+
+/* ---- tables ----------------------------------------------------------------- */
+/* Wide tables scroll inside their own box; the page itself must never scroll sideways. */
+.labstat-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.labstat-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem; }
+
+.labstat-table th,
+.labstat-table td {
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  white-space: nowrap; }
+
+.labstat-table td.wrap {
+  white-space: normal; }
+
+.labstat-table thead th {
+  border-bottom-width: 2px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5f6b7a;
+  cursor: pointer;
+  user-select: none; }
+
+.labstat-table thead th::after {
+  content: '';
+  opacity: 0.4;
+  margin-left: 0.35rem; }
+
+.labstat-table thead th[aria-sort="ascending"]::after {
+  content: '\25B2';
+  opacity: 1; }
+
+.labstat-table thead th[aria-sort="descending"]::after {
+  content: '\25BC';
+  opacity: 1; }
+
+.labstat-table tbody tr:hover {
+  background: #f7f9fb; }
+
+.labstat-pill {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid currentColor; }
+
+.labstat-pill.ok {
+  color: var(--ok); }
+
+.labstat-pill.bad {
+  color: var(--bad); }
+
+.labstat-pill.warn {
+  color: var(--warn); }
+
+.labstat-pill.unknown {
+  color: var(--unknown); }
+
+.labstat-err {
+  color: #5f6b7a;
+  font-size: 0.82rem; }
+
+.labstat-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em; }
+
+.labstat-note {
+  color: #5f6b7a;
+  font-size: 0.85rem; }
+
+.labstat-held {
+  color: var(--warn);
+  font-size: 0.82rem; }
+
+.labstat-filters {
+  margin-bottom: 1rem; }
+
+.labstat-filters button {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.25rem 0.85rem;
+  margin: 0 0.35rem 0.35rem 0;
+  font-size: 0.85rem;
+  cursor: pointer; }
+
+.labstat-filters button[aria-pressed="true"] {
+  background: #1a2b45;
+  color: #fff;
+  border-color: #1a2b45; }
+
+@media (prefers-color-scheme: dark) {
+  .labstat {
+    --line: #2a3340;
+    --ok: #4ade80;
+    --bad: #f87171;
+    --warn: #fbbf24;
+    --unknown: #94a3b8; }
+  .labstat-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.04); }
+  .labstat-filters button {
+    background: transparent;
+    color: inherit; } }
