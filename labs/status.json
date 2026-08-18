@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-18T09:06:19.451Z",
+  "generated": "2026-08-18T16:55:21.603Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 63,
-    "failing": 1,
+    "passing": 64,
+    "failing": 0,
     "blocked": 10,
     "untested": 0,
     "dependenciesBehind": 10,
@@ -302,16 +302,16 @@
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.14.2",
+          "current": "1.16.1",
           "suggested": null,
-          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
         },
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.16.1",
+          "current": "1.14.2",
           "suggested": null,
-          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
+          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
         }
       ]
     },
@@ -506,14 +506,14 @@
       "status": "Live",
       "users": 2250,
       "course": "Fund. Week 2",
-      "verdict": "FAIL",
-      "mins": 7,
-      "at": "08-18 06:35",
-      "lastPass": "08-17 15:23",
+      "verdict": "PASS",
+      "mins": 10,
+      "at": "08-18 16:53",
+      "lastPass": "08-18 16:53",
       "lastFail": "08-18 06:35",
-      "lastUpdated": "2026-08-17T11:09:21-04:00",
+      "lastUpdated": "2026-08-18T12:33:10-04:00",
       "step": null,
-      "error": "terminal never reached a settled prompt within 90000ms.",
+      "error": null,
       "versions": [
         {
           "kind": "image",
@@ -2227,24 +2227,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "38 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1377
+      "durationMs": 1432
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "50 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 5611
+      "durationMs": 5769
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 786",
-      "durationMs": 116405
+      "durationMs": 118665
     }
   ],
-  "depsGenerated": "2026-08-18T09:06:16.695Z",
+  "depsGenerated": "2026-08-18T16:55:20.151Z",
   "versions": [
     {
       "kind": "image",
@@ -2300,21 +2300,21 @@
     {
       "kind": "image",
       "name": "library/redis",
-      "current": "7.4-alpine",
-      "suggested": "8.10-alpine",
-      "held": null,
-      "labs": [
-        "volumes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/redis",
       "current": "6.0.6-alpine",
       "suggested": "8.10.0-alpine",
       "held": null,
       "labs": [
         "puzzler-run-app-voting"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "7.4-alpine",
+      "suggested": "8.10-alpine",
+      "held": null,
+      "labs": [
+        "volumes"
       ]
     },
     {
@@ -2589,16 +2589,6 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.14.2",
-      "suggested": null,
-      "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.16.1",
       "suggested": null,
       "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
@@ -2614,6 +2604,16 @@
       "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
       "labs": [
         "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.14.2",
+      "suggested": null,
+      "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
+      "labs": [
+        "deployments"
       ]
     },
     {
@@ -2698,21 +2698,21 @@
     {
       "kind": "image",
       "name": "registry.k8s.io/echoserver",
-      "current": "1.10",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "first-cluster"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "registry.k8s.io/echoserver",
       "current": "1.9",
       "suggested": null,
       "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
       "labs": [
         "first-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/echoserver",
+      "current": "1.10",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "first-cluster"
       ]
     },
     {
@@ -2736,5 +2736,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-18T09:06:16.688Z"
+  "versionsGenerated": "2026-08-18T16:55:20.143Z"
 }
