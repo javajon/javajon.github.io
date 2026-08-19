@@ -11,4 +11,6 @@
 &lt;a href="https://expressjs.com/" target="_blank" &gt;Express.js&lt;/a&gt;
  web interface&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Both applications communicate via gRPC. The UI will present the standard create, read, update, and delete actions (CRUD).&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Both applications communicate via gRPC. The UI will present the standard create, read, update, and delete actions (CRUD).&lt;/p&gt;</description></item><item><title>The Communication Breakdown</title><link>https://www.dijure.com/labs/lab_krash-comm-breakdown/</link><pubDate>Fri, 14 Aug 2026 15:21:36 -0400</pubDate><guid>https://www.dijure.com/labs/lab_krash-comm-breakdown/</guid><description>&lt;img align="right" src="https://www.dijure.com/images/labs/Gemini_Generated_Image_fp456yfp456yfp45.jpg" width="25%"/&gt;
+&lt;p&gt;This lab is part of a series that challenges your skills with running applications on Kubernetes. Each lab presents you with a common problem often encountered when deploying and running applications on Kubernetes.&lt;/p&gt;
+&lt;p&gt;In this lab, you are provided with a working Kubernetes cluster with a multiservice healthcare application. You will be challenged with debugging communication issues between the frontend patient portal and the backend medical results service. Your goal is to find the problems and get the application to function normally.&lt;/p&gt;</description></item></channel></rss>
