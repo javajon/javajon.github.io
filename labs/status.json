@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-19T18:10:44.988Z",
+  "generated": "2026-08-19T18:28:09.337Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 63,
-    "failing": 1,
+    "passing": 64,
+    "failing": 0,
     "blocked": 10,
     "untested": 0,
     "dependenciesBehind": 10,
@@ -1361,14 +1361,14 @@
       "status": "Live",
       "users": 262,
       "course": "Intrm. Week 2",
-      "verdict": "FAIL",
-      "mins": 9,
-      "at": "08-19 16:02",
-      "lastPass": "08-16 00:16",
+      "verdict": "PASS",
+      "mins": 14,
+      "at": "08-19 18:25",
+      "lastPass": "08-19 18:25",
       "lastFail": "08-19 16:02",
-      "lastUpdated": "2026-08-16T20:59:12-04:00",
-      "step": "step6-test.md:9",
-      "error": "expected output never appeared.",
+      "lastUpdated": "2026-08-19T13:09:48-04:00",
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "image",
@@ -2227,24 +2227,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "38 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1364
+      "durationMs": 1307
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "50 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 5845
+      "durationMs": 4949
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 786",
-      "durationMs": 123560
+      "durationMs": 135210
     }
   ],
-  "depsGenerated": "2026-08-19T18:10:40.804Z",
+  "depsGenerated": "2026-08-19T18:28:07.501Z",
   "versions": [
     {
       "kind": "image",
@@ -2599,6 +2599,16 @@
     {
       "kind": "image",
       "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
       "current": "1.30-alpine",
       "suggested": null,
       "held": null,
@@ -2630,16 +2640,6 @@
       "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
       "labs": [
         "krash-elusive-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
       ]
     },
     {
@@ -2736,5 +2736,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-19T18:10:40.797Z"
+  "versionsGenerated": "2026-08-19T18:28:07.493Z"
 }
