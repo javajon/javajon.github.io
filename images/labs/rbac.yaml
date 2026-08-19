@@ -1,30 +1,27 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: snowflake-melter
-  namespace: default
+  name: namespace-lister
+  namespace: namespace-dashboard
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: snowflake-melter
+  name: namespace-lister
 rules:
-- apiGroups: [""]
-  resources: ["namespaces"]
-  verbs: ["list"]
-- apiGroups: [""]
-  resources: ["pods"]
-  verbs: ["list", "delete"]
+  - apiGroups: [""]
+    resources: ["namespaces"]
+    verbs: ["get", "list"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: snowflake-melter
+  name: namespace-lister-binding
 subjects:
-- kind: ServiceAccount
-  name: snowflake-melter
-  namespace: default
+  - kind: ServiceAccount
+    name: namespace-lister
+    namespace: namespace-dashboard
 roleRef:
   kind: ClusterRole
-  name: snowflake-melter
+  name: namespace-lister
   apiGroup: rbac.authorization.k8s.io

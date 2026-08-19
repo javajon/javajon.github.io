@@ -15,6 +15,27 @@ spec:
       labels:
         app: climate-dashboard
     spec:
+      # nginx resolves a proxy_pass hostname ONCE, at startup, and refuses to boot if it
+      # cannot: "[emerg] host not found in upstream". So if this Pod starts before the
+      # engine's Service has a DNS record, the container exits, restarts, and backs off -
+      # and a kubectl exec into it fails with "container not found" instead of running the
+      # curl this lab asks for. That is what made step 5 report exit 1 where it expects
+      # curl's 28, and why the lab failed at a different place on each run.
+      #
+      # Waiting for the NAME to resolve is safe here and does not leak the puzzle: the
+      # barrier is an Ingress NetworkPolicy on the engine Pods, so DNS still answers and
+      # only the connection to :8080 is dropped. Testing the port instead would hang
+      # forever, which is exactly the fault the learner is meant to find.
+      initContainers:
+      - name: wait-for-engine-dns
+        image: nginx:1.30-alpine
+        command: ['sh', '-c']
+        args:
+          - |
+            until getent hosts climate-model-engine.model-system.svc.cluster.local; do
+              echo "waiting for the engine Service to appear in DNS..."
+              sleep 2
+            done
       containers:
       - name: dashboard
         image: nginx:1.30-alpine

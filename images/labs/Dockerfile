@@ -1,46 +1,37 @@
-# ARGS at this level referenced only by FROMs
-ARG BASE_IMAGE=python:3.12-alpine
+ARG PYTHON="python:3.13.5-slim"
 
-# --------------------------------------
-# Build dependencies in build stage
-# --------------------------------------
-FROM ${BASE_IMAGE} AS builder
-    
+# Stage 1: Requirements generation
+FROM ${PYTHON} AS requirements-stage
+
+WORKDIR /tmp
+
+# Install pipreqs tool
+RUN pip install pipreqs
+
+# Copy the Python script
+COPY data-analyzer.py .
+
+# Generate requirements.txt
+# Note: pipreqs works on directories, not individual files
+RUN mkdir /tmp/app && \
+    cp data-analyzer.py /tmp/app/ && \
+    pipreqs /tmp/app --force && \
+    cp /tmp/app/requirements.txt .
+
+# Stage 2: Final application image
+FROM ${PYTHON}
+
 WORKDIR /app
 
-# Cache installed dependencies between builds
-COPY ./requirements.txt ./requirements.txt
-RUN pip install -r ./requirements.txt --user
+# Copy requirements and install dependencies
+COPY --from=requirements-stage /tmp/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# --------------------------------------
-# Create final container loaded with app
-# --------------------------------------
+# Copy application code
+COPY data-analyzer.py .
 
-FROM ${BASE_IMAGE}
+# Set environment variables
+ENV PYTHONUNBUFFERED=1
 
-LABEL scenario=pure-chaos
-
-ENV USER=docker GROUP=docker \
-    UID=12345 GID=23456 \
-    HOME=/app PYTHONUNBUFFERED=1
-
-# Create user/group
-RUN addgroup --gid "${GID}" "${GROUP}" \
-    && adduser \
-    --disabled-password \
-    --gecos "" \
-    --home "$(pwd)" \
-    --ingroup "${GROUP}" \
-    --no-create-home \
-    --uid "${UID}" \
-    "${USER}"
-
-WORKDIR ${HOME}
-
-# TODO, will switching user work?
-# USER ${USER}
-
-COPY --from=builder /root/.local /usr/local
-COPY --chown=${USER}:${GROUP} . .
-
-CMD ["python", "snowflake_melter.py"]
+# Run the application
+CMD ["python", "data-analyzer.py"]

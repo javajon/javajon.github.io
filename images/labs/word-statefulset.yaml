@@ -51,11 +51,25 @@ spec:
         volumeMounts:
         - name: word-content
           mountPath: /content
-  volumeClaimTemplates:
-  - metadata:
-      name: word-content
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      resources:
-        requests:
-          storage: 1Gi
+      # emptyDir, not a volumeClaimTemplate.
+      #
+      # This was a 1Gi ReadWriteOnce claim with no storageClassName, so it needed a default
+      # StorageClass with a dynamic provisioner - and this lab installs none. Only tekton
+      # and python do. On 2026-08-17 the claim never bound, so word-0 sat Pending, the
+      # StatefulSet never started word-1..4, word-service had <none> for endpoints, and a
+      # per-Pod DNS name exists only while that Pod IS an endpoint. The assembler duly
+      # reported five times over:
+      #
+      #   [Error: <urlopen error [Errno -2] Name or service not known>]
+      #
+      # which reads as a broken fix and was nothing of the sort: the solution had already
+      # made the Service headless and rewritten the URLs correctly, and both of the
+      # verify's declaration checks passed.
+      #
+      # Nothing here needs persistence. The content is five short strings the initContainer
+      # writes at start, regenerated on every restart, and storage is never mentioned
+      # anywhere in this lab - the lesson is stable StatefulSet hostnames and headless
+      # Services. A volume that outlives the Pod bought nothing and cost the whole lab.
+      volumes:
+      - name: word-content
+        emptyDir: {}
