@@ -3,7 +3,7 @@ This lab explores the basic techniques for observing the state of Kubernetes usi
 &lt;p&gt;In this lab, you will learn how to:&lt;/p&gt;
 &lt;p&gt;    ☐ Access metrics information produced by each cAdvisor in each Kubelet&lt;br&gt;
     ☐ Inspect resources using the &lt;em&gt;Resource Metrics API&lt;/em&gt;&lt;br&gt;
-    ☐ View metrics reported by Metrics Server&lt;/p&gt;</description></item><item><title>Prometheus and Grafana</title><link>https://www.dijure.com/labs/lab_prometheus-grafana/</link><pubDate>Sat, 15 Aug 2026 19:58:26 -0400</pubDate><guid>https://www.dijure.com/labs/lab_prometheus-grafana/</guid><description>&lt;img align="right" src="https://www.dijure.com/images/labs/grafana_logo.png" width="20" /&gt;
+    ☐ View metrics reported by Metrics Server&lt;/p&gt;</description></item><item><title>Prometheus and Grafana</title><link>https://www.dijure.com/labs/lab_prometheus-grafana/</link><pubDate>Sat, 15 Aug 2026 19:58:26 -0400</pubDate><guid>https://www.dijure.com/labs/lab_prometheus-grafana/</guid><description>&lt;img align="right" src="https://www.dijure.com/images/labs/grafana_logo.png" width="200" /&gt;
 &lt;img align="right" src="https://www.dijure.com/images/labs/prometheus_logo.png" width="30%" /&gt;
 &lt;p&gt;This lab introduces you to observing the metrics of your cluster and applications. You&amp;rsquo;ll install and use the common stack of Prometheus and Grafana. Both of these applications have a large set of features and configuration options. This lab will keep you focused on just the key important features to get you started.&lt;/p&gt;
 &lt;p&gt;This lab is inspired by the VMWare Tanzu article 

@@ -1,46 +1,42 @@
-# Headlamp chart values for the MicroK8s quickstart.
+# Headlamp chart values for the quickstart labs.
 #
-# MicroK8s 1.36 REMOVED the dashboard addon and `microk8s dashboard-proxy` along with it,
-# following the upstream retirement of the Kubernetes Dashboard project. Headlamp is the
-# CNCF project that succeeded it, and is what the sibling quickstarts - k3s, kubeadm,
-# KubeKey, kind - already install.
-#
-# This file deliberately DIFFERS from the dash-values.yaml in those labs, in one place.
-# Do not sync it across without reading the note on scheduling below.
+# These labs used to install kubernetes/dashboard. That project is retired and its chart
+# repository, https://kubernetes.github.io/dashboard/, now answers 404 - so `helm repo add`
+# failed and the whole dashboard step was dead for the learner. Headlamp is the CNCF
+# project that succeeded it, and is what the rest of these labs already use.
 
 service:
   type: NodePort
   port: 80
-  # The lab's Headlamp tab points at port 30000 on the session host.
+  # The lab's dashboard tab points at port 30000 on the session host.
   nodePort: 30000
 
 clusterRoleBinding:
   create: true
   clusterRoleName: cluster-admin
 
-# Prefer the control-plane node, do not require it.
+# Keep Headlamp on the control-plane node.
 #
-# The sibling labs pin Headlamp with a REQUIRED nodeAffinity on
-# node-role.kubernetes.io/control-plane. MicroK8s does not set node-role labels at all -
-# `kubectl get nodes` reports ROLES as <none> on every node - so that expression matches
-# nothing here and the Pod would sit Pending forever.
+# On these lab images the CNI answers a NodePort only on the node actually running the
+# backing Pod, and the browser proxy reaches the control plane. A Pod scheduled onto a
+# worker leaves port 30000 dead in the tab.
 #
-# Matching on the hostname instead, and preferred rather than required: the browser proxy
-# reaches the control plane, so that is where the dashboard is most useful, but a lab that
-# names its node differently still gets a running Headlamp rather than a Pending one.
+# nodeAffinity with Exists rather than a nodeSelector, because the label's VALUE differs
+# between distributions: kubeadm sets node-role.kubernetes.io/control-plane to an empty
+# string, k3s sets it to "true". A nodeSelector compares values and would match only one
+# of them; Exists matches both.
 affinity:
   nodeAffinity:
-    preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 100
-        preference:
-          matchExpressions:
-            - key: kubernetes.io/hostname
-              operator: In
-              values:
-                - controlplane
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: node-role.kubernetes.io/control-plane
+              operator: Exists
 
-# MicroK8s does not taint its control-plane node, so these are no-ops here. They are kept
-# so this file stays readable next to its siblings, where they matter.
+# Both taint keys, because these images span Kubernetes versions: kubeadm taints the
+# control plane node-role.kubernetes.io/master through 1.23 and
+# node-role.kubernetes.io/control-plane from 1.24 on. Tolerating a taint that is not
+# present is a no-op.
 tolerations:
   - key: "node-role.kubernetes.io/control-plane"
     operator: "Exists"

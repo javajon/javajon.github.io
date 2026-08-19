@@ -6,7 +6,7 @@
 &lt;/ul&gt;
 &lt;p&gt;The application consists of two applications. The server application is the model running as a microservice, written in Kotlin. The client application is a small 
 &lt;a href="https://expressjs.com/" target="_blank" &gt;Express&lt;/a&gt;
- web interface. Both applications communicate via gRPC. The UI will present the standard create, read, update, and delete actions (CRUD).&lt;/p&gt;</description></item><item><title>Distilled JRE Apps in Containers</title><link>https://www.dijure.com/labs/lab_distillation/</link><pubDate>Sat, 15 Aug 2026 22:04:12 -0400</pubDate><guid>https://www.dijure.com/labs/lab_distillation/</guid><description>&lt;img align="right" src="https://www.dijure.com/images/labs/java-distillation.png" width="40" /&gt;
+ web interface. Both applications communicate via gRPC. The UI will present the standard create, read, update, and delete actions (CRUD).&lt;/p&gt;</description></item><item><title>Distilled JRE Apps in Containers</title><link>https://www.dijure.com/labs/lab_distillation/</link><pubDate>Sat, 15 Aug 2026 22:04:12 -0400</pubDate><guid>https://www.dijure.com/labs/lab_distillation/</guid><description>&lt;img align="right" src="https://www.dijure.com/images/labs/java-distillation.png" width="33%" /&gt;
 &lt;p&gt;The lab walks through a series of steps for distilling a container to its minimum to support your Java application.&lt;/p&gt;
 &lt;p&gt;For years one of Java&amp;rsquo;s strengths is &lt;em&gt;write once, run anywhere&lt;/em&gt; 
 &lt;a href="https://en.wikipedia.org/wiki/Write_once,_run_anywhere" target="_blank" &gt;(WORA)&lt;/a&gt;

@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on Dijure | Digital Architectures with a hint of Java</title><link>https://www.dijure.com/tags/tools/</link><description>Recent content in Tools on Dijure | Digital Architectures with a hint of Java</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright © 2026 by Dijure LLC · All rights reserved · Some design elements by Themefisher. Select images from Unsplash. Created using Hugo.</copyright><lastBuildDate>Sun, 16 Aug 2026 12:46:53 -0400</lastBuildDate><atom:link href="https://www.dijure.com/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Basics</title><link>https://www.dijure.com/labs/lab_basics/</link><pubDate>Sun, 16 Aug 2026 12:46:53 -0400</pubDate><guid>https://www.dijure.com/labs/lab_basics/</guid><description>&lt;img src="https://www.dijure.com/images/labs/headlamp.png" width="50%" style='float: right; padding: 5px 5px 5px 5px;' /&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools on Dijure | Digital Architectures with a hint of Java</title><link>https://www.dijure.com/tags/tools/</link><description>Recent content in Tools on Dijure | Digital Architectures with a hint of Java</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright © 2026 by Dijure LLC · All rights reserved · Some design elements by Themefisher. Select images from Unsplash. Created using Hugo.</copyright><lastBuildDate>Tue, 18 Aug 2026 21:28:31 -0400</lastBuildDate><atom:link href="https://www.dijure.com/tags/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>K9s</title><link>https://www.dijure.com/labs/lab_k9s/</link><pubDate>Tue, 18 Aug 2026 21:28:31 -0400</pubDate><guid>https://www.dijure.com/labs/lab_k9s/</guid><description>&lt;img align="right" src="https://www.dijure.com/images/labs/k9s.png" width="200" /&gt;
+&lt;p&gt;This lab introduces you to 
+&lt;a href="https://k9scli.io/" target="_blank" &gt;K9s&lt;/a&gt;
+ and a handful of helpful features.&lt;/p&gt;
+&lt;p&gt;K9s is a terminal- and text-based user interface 
+&lt;a href="https://en.wikipedia.org/wiki/Text-based_user_interface" target="_blank" &gt;(TUI)&lt;/a&gt;
+ to interact with your Kubernetes clusters. This project aims to make it easier to navigate, observe, and manage your deployed applications in the wild. K9s continually watches Kubernetes for changes and offers subsequent commands to interact with your observed resources.&lt;/p&gt;
+&lt;p&gt;With K9s you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;View the Kubernetes cluster state through a text-based dashboard&lt;/li&gt;
+&lt;li&gt;Switch view between clusters and namespaces contexts&lt;/li&gt;
+&lt;li&gt;Quickly inspect objects such as descriptions and logs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this lab, you will learn how to:&lt;/p&gt;</description></item><item><title>Basics</title><link>https://www.dijure.com/labs/lab_basics/</link><pubDate>Sun, 16 Aug 2026 12:46:53 -0400</pubDate><guid>https://www.dijure.com/labs/lab_basics/</guid><description>&lt;img src="https://www.dijure.com/images/labs/headlamp.png" width="50%" style='float: right; padding: 5px 5px 5px 5px;' /&gt;
 This lab explores the basic techniques for observing the state of Kubernetes using metrics.
 &lt;p&gt;In this lab, you will learn how to:&lt;/p&gt;
 &lt;p&gt;    ☐ Access metrics information produced by each cAdvisor in each Kubelet&lt;br&gt;
@@ -21,20 +34,7 @@ This lab explores the basic techniques for observing the state of Kubernetes usi
 &lt;p&gt;As a developer of containers and Kubernetes solutions, there is often a need to publish and pull containers through a private registry. When we are prototyping or testing it&amp;rsquo;s handy to set up a local registry that just you or a small group can leverage. Kubernetes is ideal for hosting this solution.&lt;/p&gt;
 &lt;p&gt;The Registry is a stateless, highly scalable server-side application that stores and lets you distribute container images. The Registry is open-source, under the permissive 
 &lt;a href="http://en.wikipedia.org/wiki/Apache_License" target="_blank" &gt;Apache license&lt;/a&gt;
-.&lt;/p&gt;</description></item><item><title>K9s</title><link>https://www.dijure.com/labs/lab_k9s/</link><pubDate>Fri, 14 Aug 2026 12:37:01 -0400</pubDate><guid>https://www.dijure.com/labs/lab_k9s/</guid><description>&lt;p&gt;&lt;img align="right" src="https://www.dijure.com/images/labs/k9s.png" width="200" /&gt;&lt;img&gt;&lt;/p&gt;
-&lt;p&gt;This lab introduces you to 
-&lt;a href="https://k9scli.io/" target="_blank" &gt;K9s&lt;/a&gt;
- and a handful of helpful features.&lt;/p&gt;
-&lt;p&gt;K9s is a terminal- and text-based user interface 
-&lt;a href="https://en.wikipedia.org/wiki/Text-based_user_interface" target="_blank" &gt;(TUI)&lt;/a&gt;
- to interact with your Kubernetes clusters. This project aims to make it easier to navigate, observe, and manage your deployed applications in the wild. K9s continually watches Kubernetes for changes and offers subsequent commands to interact with your observed resources.&lt;/p&gt;
-&lt;p&gt;With K9s you can:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;View the Kubernetes cluster state through a text-based dashboard&lt;/li&gt;
-&lt;li&gt;Switch view between clusters and namespaces contexts&lt;/li&gt;
-&lt;li&gt;Quickly inspect objects such as descriptions and logs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In this lab, you will learn how to:&lt;/p&gt;</description></item><item><title>Kubernetes API</title><link>https://www.dijure.com/labs/lab_kube-api/</link><pubDate>Fri, 14 Aug 2026 10:57:02 -0400</pubDate><guid>https://www.dijure.com/labs/lab_kube-api/</guid><description>&lt;p&gt;&lt;img src="https://www.dijure.com/images/labs/kubernetes.png" alt="Kubernetes" title="Kubernetes"&gt;&lt;/p&gt;
+.&lt;/p&gt;</description></item><item><title>Kubernetes API</title><link>https://www.dijure.com/labs/lab_kube-api/</link><pubDate>Fri, 14 Aug 2026 10:57:02 -0400</pubDate><guid>https://www.dijure.com/labs/lab_kube-api/</guid><description>&lt;p&gt;&lt;img src="https://www.dijure.com/images/labs/kubernetes.png" alt="Kubernetes" title="Kubernetes"&gt;&lt;/p&gt;
 &lt;p&gt;This lab takes you through the basics of accessing and exploring the Kubernetes API. The API is used to create, read, update, and delete (
 &lt;a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" target="_blank" &gt;CRUD&lt;/a&gt;
 ) a Kubernetes object or resource.&lt;/p&gt;

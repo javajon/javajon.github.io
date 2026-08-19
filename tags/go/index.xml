@@ -7,7 +7,7 @@
     ☐ Run a Go microservice on Kubernetes&lt;/p&gt;</description></item><item><title>Operator SDK with Go</title><link>https://www.dijure.com/labs/lab_operator-sdk-go/</link><pubDate>Sun, 16 Aug 2026 15:06:26 -0400</pubDate><guid>https://www.dijure.com/labs/lab_operator-sdk-go/</guid><description>&lt;p&gt;In this lab, you will experience what it&amp;rsquo;s like to create and run a Kubernetes Operator that manages a custom resource. The Operator is created using the Operator SDK tool along with some Go code. This lab closely follows the Operator SDK documentation for 
 &lt;a href="https://sdk.operatorframework.io/docs/building-operators/golang/" target="_blank" &gt;building an Operator using Go&lt;/a&gt;
 .&lt;/p&gt;
-&lt;img align="right" src="https://www.dijure.com/images/labs/operatorsdk.png" width="20" /&gt;
+&lt;img align="right" src="https://www.dijure.com/images/labs/operatorsdk.png" width="200" /&gt;
 &lt;p&gt;The 
 &lt;a href="https://sdk.operatorframework.io/" target="_blank" &gt;Operator SDK&lt;/a&gt;
  is a component of the Operator Framework, an open source tool kit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way.&lt;/p&gt;</description></item><item><title>Develop an Operator with Kubebuilder</title><link>https://www.dijure.com/labs/lab_kubebuilder/</link><pubDate>Fri, 14 Aug 2026 20:01:42 -0400</pubDate><guid>https://www.dijure.com/labs/lab_kubebuilder/</guid><description>&lt;img align="right" src="https://www.dijure.com/images/labs/kubebuilder.png" width="200" /&gt;
