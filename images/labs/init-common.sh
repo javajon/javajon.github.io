@@ -92,6 +92,18 @@ alias cat='f(){
   unset -f f
   return $status
 }; f'
+
+# `clear` removes itself from the shell history, so `history` shows the learner's own
+# commands and not the tidy-up between steps. Deleting by the entry's real number rather
+# than $((HISTCMD-1)): that idiom was in clear.sh for a long time and, measured on bash 5,
+# deletes the PREVIOUS command while leaving the clear itself in place.
+clear() {
+  command clear
+  local n
+  n=$(history 1 | awk '{print $1}')
+  [ -n "$n" ] && history -d "$n" 2>/dev/null
+  return 0
+}
 EOT
 
 source '~/.bashrc'
