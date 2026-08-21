@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MicroK8s on Dijure | Digital Architectures with a hint of Java</title><link>https://www.dijure.com/tags/microk8s/</link><description>Recent content in MicroK8s on Dijure | Digital Architectures with a hint of Java</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright © 2026 by Dijure LLC · All rights reserved · Some design elements by Themefisher. Select images from Unsplash. Created using Hugo.</copyright><lastBuildDate>Sun, 16 Aug 2026 08:47:48 -0400</lastBuildDate><atom:link href="https://www.dijure.com/tags/microk8s/index.xml" rel="self" type="application/rss+xml"/><item><title>MicroK8s Quickstart</title><link>https://www.dijure.com/labs/lab_microk8s-quickstart/</link><pubDate>Sun, 16 Aug 2026 08:47:48 -0400</pubDate><guid>https://www.dijure.com/labs/lab_microk8s-quickstart/</guid><description>&lt;p&gt;In this lab, you&amp;rsquo;ll learn how to bootstrap a Kubernetes cluster using MicroK8s.&lt;/p&gt;
+&lt;img align="right" src="https://www.dijure.com/images/labs/microk8s.png" width="200" /&gt;
+&lt;p&gt;
+&lt;a href="https://microk8s.io/" target="_blank" &gt;MicroK8s&lt;/a&gt;
+ is a great way to run and familiarize yourself with Kubernetes. It&amp;rsquo;s single-package, fully conformant, lightweight Kubernetes that works on 42 flavors of Linux, perfect for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Developer workstations&lt;/li&gt;
+&lt;li&gt;IoT&lt;/li&gt;
+&lt;li&gt;Edge computing&lt;/li&gt;
+&lt;li&gt;Rapid testing, experimentation, and learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Why MicroK8s? Because it&amp;rsquo;s:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Small&lt;/strong&gt;: Developers want the smallest K8s for laptop and workstation development. MicroK8s provides a standalone K8s compatible with Azure Kubernetes Service, Amazon Elastic Kubernetes Service, and Google Kubernetes Engine when you run it on Ubuntu.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simple&lt;/strong&gt;: Minimize administration and operations with a single-package install that has no moving parts, for simplicity and certainty. All dependencies and batteries included.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Secure&lt;/strong&gt;: Updates are available for all security issues and can be applied immediately or scheduled to suit your maintenance cycle.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Current&lt;/strong&gt;: MicroK8s tracks upstream and releases beta, release candidate, and final bits the same day as upstream K8s. You can track the latest K8s or stick to any release version from 1.10 onward.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Comprehensive&lt;/strong&gt;: MicroK8s includes a curated collection of manifests for common K8s capabilities and services (e.g., meshes, observability, ingress, auto updates, and 
+&lt;a href="https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units" target="_blank" &gt;GPGPU&lt;/a&gt;
+ bindings).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this lab, you will learn how to:&lt;/p&gt;</description></item></channel></rss>

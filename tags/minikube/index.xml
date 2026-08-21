@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minikube on Dijure | Digital Architectures with a hint of Java</title><link>https://www.dijure.com/tags/minikube/</link><description>Recent content in Minikube on Dijure | Digital Architectures with a hint of Java</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright © 2026 by Dijure LLC · All rights reserved · Some design elements by Themefisher. Select images from Unsplash. Created using Hugo.</copyright><lastBuildDate>Sat, 15 Aug 2026 17:29:38 -0400</lastBuildDate><atom:link href="https://www.dijure.com/tags/minikube/index.xml" rel="self" type="application/rss+xml"/><item><title>Minikube</title><link>https://www.dijure.com/labs/lab_minikube/</link><pubDate>Sat, 15 Aug 2026 17:29:38 -0400</pubDate><guid>https://www.dijure.com/labs/lab_minikube/</guid><description>&lt;p&gt;&lt;img src="https://www.dijure.com/images/labs/minikube.png" alt="minikube" title="minikube"&gt;
+&lt;img src="https://www.dijure.com/images/labs/kubernetes.png" alt="Kubernetes" title="Kubernetes"&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://kubernetes.io/docs/setup/minikube/" target="_blank" &gt;minikube&lt;/a&gt;
+ is a method for creating a local, single-node Kubernetes cluster for development and testing. Setup is completely automated and doesn’t require a cloud provider account.&lt;/p&gt;
+&lt;p&gt;You are highly encouraged to install minikube on your local development machines such as a laptop.&lt;/p&gt;
+&lt;p&gt;In this lab, you will learn how to:&lt;/p&gt;
+&lt;p&gt;    ☐ Install minikube&lt;br&gt;
+    ☐ Configure minikube&lt;br&gt;
+    ☐ Differentiate the minikube CLI tool from the Kubernetes KubeCtl tool&lt;br&gt;
+    ☐ Inspect a cluster&lt;br&gt;
+    ☐ Use addons&lt;/p&gt;</description></item></channel></rss>
