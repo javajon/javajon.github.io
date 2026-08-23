@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-23T14:25:25.915Z",
+  "generated": "2026-08-23T16:42:58.107Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 56,
+    "passing": 57,
     "failing": 0,
-    "blocked": 18,
+    "blocked": 17,
     "untested": 0,
     "dependenciesBehind": 0,
     "dependencyChecksFailing": 0
@@ -70,8 +70,8 @@
       "lastPass": "08-23 13:39",
       "lastFail": "08-22 12:01",
       "lastUpdated": "2026-08-21T21:33:51-04:00",
-      "publishedAt": "2026-08-23T13:11:44.519266Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -124,8 +124,8 @@
       "lastPass": "08-23 13:27",
       "lastFail": "08-22 03:38",
       "lastUpdated": "2026-08-21T21:33:51-04:00",
-      "publishedAt": "2026-08-23T11:58:47.320491Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -326,16 +326,16 @@
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.16.1",
+          "current": "1.14.2",
           "suggested": null,
-          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
+          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
         },
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.14.2",
+          "current": "1.16.1",
           "suggested": null,
-          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
         }
       ]
     },
@@ -473,16 +473,16 @@
       "status": "Live",
       "users": 3342,
       "course": "Fund. Week 2",
-      "verdict": "READY-TIMEOUT",
-      "mins": 26,
-      "at": "08-23 13:37",
-      "lastPass": "08-23 04:28",
+      "verdict": "PASS",
+      "mins": 14,
+      "at": "08-23 16:41",
+      "lastPass": "08-23 16:41",
       "lastFail": "08-22 03:43",
       "lastUpdated": "2026-08-21T21:22:47-04:00",
-      "publishedAt": "2026-08-23T13:17:19.832971Z",
+      "publishedAt": "2026-08-23T16:13:15.212526Z",
       "publishLagHours": 0,
       "step": null,
-      "error": "(harness could not confirm the shell)",
+      "error": null,
       "versions": [
         {
           "kind": "chart",
@@ -506,8 +506,8 @@
       "lastPass": "08-23 13:39",
       "lastFail": "08-22 03:48",
       "lastUpdated": "2026-08-21T21:22:47-04:00",
-      "publishedAt": "2026-08-23T11:58:02.137253Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1461,8 +1461,8 @@
       "lastPass": "08-23 13:52",
       "lastFail": "08-22 03:55",
       "lastUpdated": "2026-08-21T21:21:17-04:00",
-      "publishedAt": "2026-08-23T12:41:27.170912Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1894,8 +1894,8 @@
       "lastPass": "08-23 13:58",
       "lastFail": "08-22 04:02",
       "lastUpdated": "2026-08-21T21:21:17-04:00",
-      "publishedAt": "2026-08-23T12:06:55.120440Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2124,8 +2124,8 @@
       "lastPass": "08-23 14:04",
       "lastFail": "18:43",
       "lastUpdated": "2026-08-21T21:21:17-04:00",
-      "publishedAt": "2026-08-23T12:06:46.193807Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2304,8 +2304,8 @@
       "lastPass": "08-23 14:11",
       "lastFail": "08-23 06:44",
       "lastUpdated": "2026-08-21T21:21:17-04:00",
-      "publishedAt": "2026-08-23T12:06:40.951143Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2338,8 +2338,8 @@
       "lastPass": "08-23 14:23",
       "lastFail": "08-17 10:46",
       "lastUpdated": "2026-08-21T21:21:17-04:00",
-      "publishedAt": "2026-08-23T14:00:24.647248Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2484,24 +2484,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1252
+      "durationMs": 1172
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 5406
+      "durationMs": 5489
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 741",
-      "durationMs": 92952
+      "durationMs": 105945
     }
   ],
-  "depsGenerated": "2026-08-23T14:25:24.104Z",
+  "depsGenerated": "2026-08-23T16:42:56.905Z",
   "versions": [
     {
       "kind": "image",
@@ -2754,9 +2754,9 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.16.1",
+      "current": "1.14.2",
       "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
       "labs": [
         "deployments"
       ]
@@ -2764,9 +2764,9 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.14.2",
+      "current": "1.16.1",
       "suggested": null,
-      "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
       "labs": [
         "deployments"
       ]
@@ -2892,21 +2892,21 @@
     {
       "kind": "image",
       "name": "registry.k8s.io/echoserver",
-      "current": "1.10",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "first-cluster"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "registry.k8s.io/echoserver",
       "current": "1.9",
       "suggested": null,
       "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
       "labs": [
         "first-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/echoserver",
+      "current": "1.10",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "first-cluster"
       ]
     },
     {
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-23T14:25:24.096Z"
+  "versionsGenerated": "2026-08-23T16:42:56.896Z"
 }
