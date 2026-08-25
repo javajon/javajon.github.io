@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T06:25:28.742Z",
+  "generated": "2026-08-25T06:08:43.666Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -242,7 +242,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:00",
+      "at": "08-25 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -521,7 +521,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:00",
+      "at": "08-25 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -632,7 +632,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:01",
+      "at": "08-25 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -686,7 +686,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "08-24 06:03",
+      "at": "08-25 06:03",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
@@ -774,7 +774,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:01",
+      "at": "08-25 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1009,8 +1009,8 @@
       "lastPass": "08-19 15:16",
       "lastFail": "08-22 03:50",
       "lastUpdated": "2026-08-21T22:09:16-04:00",
-      "publishedAt": "2025-10-20T19:35:34.139253Z",
-      "publishLagHours": 7327,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "published 2025-10-20, but this test needs 2026-08-13",
       "versions": [
@@ -1043,8 +1043,8 @@
       "lastPass": "08-20 08:10",
       "lastFail": "08-22 03:50",
       "lastUpdated": "2026-08-21T22:09:16-04:00",
-      "publishedAt": "2025-10-21T15:37:24.535338Z",
-      "publishLagHours": 7307,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "published 2025-10-21, but this test needs 2026-08-13",
       "versions": [
@@ -1078,16 +1078,16 @@
       "status": "Live",
       "users": 0,
       "course": "Yes",
-      "verdict": "READY-TIMEOUT",
-      "mins": 5,
-      "at": "08-24 06:09",
+      "verdict": "VERSION-MISMATCH",
+      "mins": 1,
+      "at": "08-25 06:03",
       "lastPass": "08-20 08:17",
       "lastFail": "08-22 03:51",
       "lastUpdated": "2026-08-21T22:09:16-04:00",
       "publishedAt": "2025-09-11T22:02:08.249881Z",
       "publishLagHours": 8260,
       "step": null,
-      "error": "(harness could not confirm the shell)",
+      "error": "published 2025-09-11, but this test needs 2026-08-13",
       "versions": [
         {
           "kind": "image",
@@ -1152,8 +1152,8 @@
       "lastPass": "08-20 08:21",
       "lastFail": "08-22 06:06",
       "lastUpdated": "2026-08-21T22:09:16-04:00",
-      "publishedAt": "2025-10-21T16:03:46.801447Z",
-      "publishLagHours": 7306,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "published 2025-10-21, but this test needs 2026-08-13",
       "versions": [
@@ -1207,16 +1207,16 @@
       "status": "Live",
       "users": 0,
       "course": "Yes",
-      "verdict": "READY-TIMEOUT",
-      "mins": 19,
-      "at": "08-24 06:23",
+      "verdict": "VERSION-MISMATCH",
+      "mins": 1,
+      "at": "08-25 06:03",
       "lastPass": null,
       "lastFail": "08-22 03:55",
       "lastUpdated": "2026-08-21T22:09:16-04:00",
-      "publishedAt": null,
-      "publishLagHours": null,
+      "publishedAt": "2025-10-20T20:29:49.844903Z",
+      "publishLagHours": 7326,
       "step": null,
-      "error": "(harness could not confirm the shell)",
+      "error": "published 2025-10-20, but this test needs 2026-08-13",
       "versions": [
         {
           "kind": "image",
@@ -1247,8 +1247,8 @@
       "lastPass": "08-16 00:23",
       "lastFail": "08-22 03:53",
       "lastUpdated": "2026-08-21T22:09:16-04:00",
-      "publishedAt": "2025-11-05T17:45:02.918109Z",
-      "publishLagHours": 6944,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "published 2025-11-05, but this test needs 2026-08-13",
       "versions": [
@@ -1275,16 +1275,16 @@
       "status": "Live",
       "users": 0,
       "course": "Yes",
-      "verdict": "READY-TIMEOUT",
-      "mins": 5,
-      "at": "08-24 06:12",
+      "verdict": "VERSION-MISMATCH",
+      "mins": 1,
+      "at": "08-25 06:05",
       "lastPass": "08-20 08:32",
       "lastFail": "08-22 03:53",
       "lastUpdated": "2026-08-21T22:09:16-04:00",
       "publishedAt": "2025-10-23T19:49:54.663849Z",
       "publishLagHours": 7254,
       "step": null,
-      "error": "(harness could not confirm the shell)",
+      "error": "published 2025-10-23, but this test needs 2026-08-13",
       "versions": [
         {
           "kind": "image",
@@ -1329,16 +1329,16 @@
       "status": "Live",
       "users": 0,
       "course": "Yes",
-      "verdict": "READY-TIMEOUT",
-      "mins": 5,
-      "at": "08-24 06:14",
+      "verdict": "VERSION-MISMATCH",
+      "mins": 1,
+      "at": "08-25 06:05",
       "lastPass": "08-16 00:42",
       "lastFail": "08-22 06:08",
       "lastUpdated": "2026-08-21T22:09:16-04:00",
       "publishedAt": "2025-11-05T17:44:54.027770Z",
       "publishLagHours": 6944,
       "step": null,
-      "error": "(harness could not confirm the shell)",
+      "error": "published 2025-11-05, but this test needs 2026-08-13",
       "versions": [
         {
           "kind": "chart",
@@ -1411,7 +1411,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:12",
+      "at": "08-25 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1438,7 +1438,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:13",
+      "at": "08-25 06:04",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-08-21T22:21:02-04:00",
@@ -1530,7 +1530,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "08-24 06:15",
+      "at": "08-25 06:07",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
@@ -1756,7 +1756,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:14",
+      "at": "08-25 06:05",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1970,7 +1970,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:15",
+      "at": "08-25 06:05",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -2086,7 +2086,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:15",
+      "at": "08-25 06:06",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -2174,7 +2174,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "08-24 06:15",
+      "at": "08-25 06:06",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:21:02-04:00",
@@ -2484,24 +2484,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1230
+      "durationMs": 1267
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 5330
+      "durationMs": 4949
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 741",
-      "durationMs": 89224
+      "durationMs": 98984
     }
   ],
-  "depsGenerated": "2026-08-24T06:25:27.357Z",
+  "depsGenerated": "2026-08-25T06:08:42.408Z",
   "versions": [
     {
       "kind": "image",
@@ -2764,26 +2764,6 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.30-alpine",
       "suggested": null,
       "held": null,
@@ -2804,6 +2784,26 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
       ]
     },
     {
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-08-24T06:25:27.349Z"
+  "versionsGenerated": "2026-08-25T06:08:42.400Z"
 }
