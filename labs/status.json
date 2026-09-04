@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T06:07:12.478Z",
+  "generated": "2026-09-04T06:06:17.890Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -242,7 +242,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:00",
+      "at": "09-04 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -521,7 +521,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:00",
+      "at": "09-04 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -632,7 +632,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:01",
+      "at": "09-04 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -686,7 +686,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "09-03 06:04",
+      "at": "09-04 06:04",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
@@ -774,7 +774,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:02",
+      "at": "09-04 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1411,7 +1411,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:02",
+      "at": "09-04 06:02",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1438,7 +1438,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:02",
+      "at": "09-04 06:02",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-08-21T22:21:02-04:00",
@@ -1530,7 +1530,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "09-03 06:05",
+      "at": "09-04 06:04",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
@@ -1756,7 +1756,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:03",
+      "at": "09-04 06:03",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1970,7 +1970,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:03",
+      "at": "09-04 06:03",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -2086,7 +2086,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:04",
+      "at": "09-04 06:03",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -2174,7 +2174,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-03 06:04",
+      "at": "09-04 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:21:02-04:00",
@@ -2484,24 +2484,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1139
+      "durationMs": 1187
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4778
+      "durationMs": 4656
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 741",
-      "durationMs": 106533
+      "durationMs": 88950
     }
   ],
-  "depsGenerated": "2026-09-03T06:07:11.227Z",
+  "depsGenerated": "2026-09-04T06:06:16.682Z",
   "versions": [
     {
       "kind": "image",
@@ -2774,6 +2774,16 @@
     {
       "kind": "image",
       "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
       "current": "1.30-alpine",
       "suggested": null,
       "held": null,
@@ -2794,16 +2804,6 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
       ]
     },
     {
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-09-03T06:07:11.219Z"
+  "versionsGenerated": "2026-09-04T06:06:16.674Z"
 }
