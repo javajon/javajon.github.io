@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T10:23:26.336Z",
+  "generated": "2026-09-17T02:40:24.861Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -24,8 +24,8 @@
       "lastPass": "09-13 03:12",
       "lastFail": "09-15 06:05",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:41.450514Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step2-app.md:5",
       "error": "the command was accepted but the cluster never reached the expected state",
       "versions": []
@@ -70,8 +70,8 @@
       "lastPass": "09-15 06:31",
       "lastFail": "08-22 12:01",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:54:32.985091Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -97,8 +97,8 @@
       "lastPass": "09-15 06:14",
       "lastFail": "08-22 03:38",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:54:49.571726Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -124,8 +124,8 @@
       "lastPass": "09-15 06:17",
       "lastFail": "08-22 03:38",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:16.986811Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -158,8 +158,8 @@
       "lastPass": "09-15 06:31",
       "lastFail": "08-22 03:38",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:35.108137Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -185,8 +185,8 @@
       "lastPass": "09-15 06:24",
       "lastFail": "08-22 03:40",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:07.434199Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -219,8 +219,8 @@
       "lastPass": "09-15 06:28",
       "lastFail": "08-30 03:41",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:53.719590Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -242,7 +242,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 10:05",
+      "at": "09-17 02:33",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -265,8 +265,8 @@
       "lastPass": "09-15 06:38",
       "lastFail": "08-22 03:40",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:54.294909Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -284,8 +284,8 @@
       "lastPass": "09-15 06:37",
       "lastFail": "09-13 03:44",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:47.438628Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -318,8 +318,8 @@
       "lastPass": "09-13 03:56",
       "lastFail": "09-15 06:36",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:40.504470Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step2-first.md:7",
       "error": "the command was accepted but the cluster never reached the expected stat",
       "versions": [
@@ -406,8 +406,8 @@
       "lastPass": "09-15 06:46",
       "lastFail": "09-13 04:04",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:45.377685Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -425,8 +425,8 @@
       "lastPass": "09-15 06:47",
       "lastFail": "08-22 03:43",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:50.753169Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -452,8 +452,8 @@
       "lastPass": "09-15 06:42",
       "lastFail": "08-22 03:43",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:18.410038Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -479,8 +479,8 @@
       "lastPass": "09-15 07:00",
       "lastFail": "08-22 03:43",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:19.845051Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -506,8 +506,8 @@
       "lastPass": "09-15 07:05",
       "lastFail": "08-22 03:48",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:34.454827Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -521,7 +521,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 06:47",
+      "at": "09-17 02:33",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-14T12:58:40-04:00",
@@ -544,8 +544,8 @@
       "lastPass": "09-13 04:17",
       "lastFail": "09-15 07:02",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:49.641276Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step5-apply-hpa.md:33",
       "error": "the step's own readiness gate never passed.",
       "versions": [
@@ -571,8 +571,8 @@
       "lastPass": "09-15 07:18",
       "lastFail": "08-22 03:44",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:23.070898Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -598,8 +598,8 @@
       "lastPass": "09-15 07:16",
       "lastFail": "08-22 03:44",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:54:40.888692Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -617,8 +617,8 @@
       "lastPass": "09-15 07:12",
       "lastFail": "08-22 03:44",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:10.592277Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -632,7 +632,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 07:12",
+      "at": "09-17 02:34",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-14T12:58:40-04:00",
@@ -663,8 +663,8 @@
       "lastPass": "09-15 07:32",
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:02.536694Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -686,7 +686,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "09-15 10:07",
+      "at": "09-17 02:37",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
@@ -717,8 +717,8 @@
       "lastPass": "09-13 04:39",
       "lastFail": "09-15 07:26",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:26.347885Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step3-hello.md:30",
       "error": "the command was accepted but the cluster never reached the expected sta",
       "versions": [
@@ -744,8 +744,8 @@
       "lastPass": "08-30 04:44",
       "lastFail": "09-15 07:34",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:33.673226Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step4-test.md:69",
       "error": "the substitute for a TUI command exited 1, expected 0.",
       "versions": [
@@ -774,7 +774,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 10:07",
+      "at": "09-17 02:34",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -812,8 +812,8 @@
       "lastPass": "09-15 07:47",
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:54:37.030431Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -853,8 +853,8 @@
       "lastPass": "09-15 07:46",
       "lastFail": "08-22 03:48",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:25.409721Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -880,8 +880,8 @@
       "lastPass": "09-15 07:44",
       "lastFail": "08-22 03:48",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:56.433229Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -907,8 +907,8 @@
       "lastPass": "09-15 07:52",
       "lastFail": "09-13 05:06",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:58:08.909850Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -941,8 +941,8 @@
       "lastPass": "09-06 05:15",
       "lastFail": "09-15 07:52",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:38.736961Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "krash-elusive-app step 5: the lab's own step5-solution.sh exited 1.",
       "versions": [
@@ -982,8 +982,8 @@
       "lastPass": "09-15 08:05",
       "lastFail": "08-22 03:48",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:58:25.842794Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1009,8 +1009,8 @@
       "lastPass": "09-13 05:16",
       "lastFail": "09-15 08:05",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:46.754178Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "krash-false-start step 5: the lab's own step5-solution.sh exited 1.",
       "versions": [
@@ -1043,8 +1043,8 @@
       "lastPass": "09-15 07:59",
       "lastFail": "09-06 05:25",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:58:17.283546Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1084,8 +1084,8 @@
       "lastPass": "08-20 08:17",
       "lastFail": "09-15 08:02",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:58:05.207868Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step3.md:5",
       "error": "command exited 1, expected 0.",
       "versions": [
@@ -1118,8 +1118,8 @@
       "lastPass": "09-15 08:12",
       "lastFail": "09-13 05:32",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:58:13.400743Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1152,8 +1152,8 @@
       "lastPass": "09-13 05:33",
       "lastFail": "09-15 08:11",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:58:20.556850Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "krash-perpetual-machine step 5: the lab's own step5-solution.sh exited 1.",
       "versions": [
@@ -1186,8 +1186,8 @@
       "lastPass": null,
       "lastFail": "09-15 08:14",
       "lastUpdated": "2026-09-14T14:02:40-04:00",
-      "publishedAt": "2026-09-14T18:02:57.228733Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step5.md:28",
       "error": "the step's own readiness gate never passed.",
       "versions": [
@@ -1213,8 +1213,8 @@
       "lastPass": "08-30 05:36",
       "lastFail": "09-15 08:19",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:50.870711Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step5.md:13",
       "error": "the step's own readiness gate never passed.",
       "versions": [
@@ -1247,8 +1247,8 @@
       "lastPass": "08-16 00:23",
       "lastFail": "08-22 03:53",
       "lastUpdated": "2026-09-14T12:58:40-04:00",
-      "publishedAt": "2025-11-05T17:45:02.918109Z",
-      "publishLagHours": 7511,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "published 2025-11-05, but this test needs 2026-08-13",
       "versions": [
@@ -1281,8 +1281,8 @@
       "lastPass": "09-15 08:22",
       "lastFail": "08-22 03:53",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:58:00.406840Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1308,8 +1308,8 @@
       "lastPass": "08-20 08:45",
       "lastFail": "08-22 06:06",
       "lastUpdated": "2026-09-14T12:58:40-04:00",
-      "publishedAt": "2025-11-05T17:44:58.361537Z",
-      "publishLagHours": 7511,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "published 2025-11-05, but this test needs 2026-08-13",
       "versions": [
@@ -1335,8 +1335,8 @@
       "lastPass": "09-15 08:30",
       "lastFail": "08-30 06:01",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:58:32.808296Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1362,8 +1362,8 @@
       "lastPass": "09-15 08:26",
       "lastFail": null,
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:07.150881Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1381,8 +1381,8 @@
       "lastPass": "09-15 08:26",
       "lastFail": "08-22 03:55",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:13.477387Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1411,7 +1411,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 10:08",
+      "at": "09-17 02:35",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1438,7 +1438,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 08:26",
+      "at": "09-17 02:35",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-09-14T12:58:40-04:00",
@@ -1461,8 +1461,8 @@
       "lastPass": "08-23 13:52",
       "lastFail": "09-15 08:37",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:00.972743Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step8-pod-list.md:93",
       "error": "the command was accepted but the cluster never reached the expected",
       "versions": [
@@ -1488,8 +1488,8 @@
       "lastPass": "09-15 08:35",
       "lastFail": "09-13 05:57",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:57.763300Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1515,8 +1515,8 @@
       "lastPass": "09-15 08:36",
       "lastFail": "08-30 06:03",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:09.898307Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1528,16 +1528,16 @@
       "status": "Live",
       "users": 120,
       "course": "No",
-      "verdict": "UNPUBLISHED",
+      "verdict": "NO-ACCESS",
       "mins": 2,
-      "at": "09-15 10:10",
+      "at": "09-17 02:38",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
       "publishedAt": null,
       "publishLagHours": null,
       "step": null,
-      "error": "(404, no public URL)",
+      "error": "(403, account cannot open this lab)",
       "versions": [
         {
           "kind": "chart",
@@ -1561,8 +1561,8 @@
       "lastPass": "09-15 08:44",
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:54:53.977273Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1626,8 +1626,8 @@
       "lastPass": "09-15 08:41",
       "lastFail": "09-06 06:16",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:14.248569Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1653,8 +1653,8 @@
       "lastPass": "09-15 08:50",
       "lastFail": "09-06 06:40",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:28.227282Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1680,8 +1680,8 @@
       "lastPass": "09-15 08:53",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:27.279871Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1726,8 +1726,8 @@
       "lastPass": "09-15 08:58",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:24.197426Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1756,7 +1756,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 08:50",
+      "at": "09-17 02:36",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-09-14T12:58:40-04:00",
@@ -1787,8 +1787,8 @@
       "lastPass": "09-15 08:58",
       "lastFail": "08-22 04:02",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:36.991711Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1814,8 +1814,8 @@
       "lastPass": "09-15 09:14",
       "lastFail": "08-17 10:45",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:03.360796Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1841,8 +1841,8 @@
       "lastPass": "09-15 09:09",
       "lastFail": "08-22 04:02",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:29.679057Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1860,8 +1860,8 @@
       "lastPass": "09-13 06:49",
       "lastFail": "09-15 09:07",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:54:45.193312Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step3-install.md:13",
       "error": "the command was accepted but the cluster never reached the expected s",
       "versions": [
@@ -1894,8 +1894,8 @@
       "lastPass": "08-23 13:58",
       "lastFail": "09-15 09:29",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:31.843323Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step13-pipeline-run.md:36",
       "error": "expected output never appeared.",
       "versions": [
@@ -1928,8 +1928,8 @@
       "lastPass": "09-13 06:54",
       "lastFail": "09-15 09:15",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:17.616709Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step2.md:13",
       "error": "expected output never appeared.",
       "versions": []
@@ -1947,8 +1947,8 @@
       "lastPass": "09-15 09:20",
       "lastFail": "18:16",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:20.692128Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1970,7 +1970,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 09:15",
+      "at": "09-17 02:36",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-14T12:58:40-04:00",
@@ -2022,8 +2022,8 @@
       "lastPass": "09-15 09:37",
       "lastFail": "15:25",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:31.192048Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2056,8 +2056,8 @@
       "lastPass": "09-15 09:27",
       "lastFail": "08-22 06:10",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:44.095543Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2086,7 +2086,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 09:27",
+      "at": "09-17 02:36",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-09-14T12:58:40-04:00",
@@ -2124,8 +2124,8 @@
       "lastPass": "09-15 10:00",
       "lastFail": "18:43",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:22.679376Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2151,8 +2151,8 @@
       "lastPass": "09-15 09:39",
       "lastFail": "08-15 12:59",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:15.372175Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2174,7 +2174,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-15 09:37",
+      "at": "09-17 02:37",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-14T12:58:40-04:00",
@@ -2205,8 +2205,8 @@
       "lastPass": "09-13 07:19",
       "lastFail": "09-15 09:45",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:57.731337Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step3-deployment.md:31",
       "error": "the step's own readiness gate never passed.",
       "versions": [
@@ -2239,8 +2239,8 @@
       "lastPass": "09-15 09:54",
       "lastFail": "08-16 08:52",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:55:06.490605Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -2258,8 +2258,8 @@
       "lastPass": "09-15 09:54",
       "lastFail": "08-15 11:11",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:38.366031Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -2277,8 +2277,8 @@
       "lastPass": "09-15 10:05",
       "lastFail": null,
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:56:11.028097Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2304,8 +2304,8 @@
       "lastPass": "09-15 10:21",
       "lastFail": "09-13 07:56",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:57:04.315257Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2338,8 +2338,8 @@
       "lastPass": "09-15 10:15",
       "lastFail": "08-31 06:07",
       "lastUpdated": "2026-09-14T12:54:15-04:00",
-      "publishedAt": "2026-09-14T16:54:59.888199Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2484,24 +2484,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1262
+      "durationMs": 1173
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4752
+      "durationMs": 4637
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 741",
-      "durationMs": 91046
+      "durationMs": 120735
     }
   ],
-  "depsGenerated": "2026-09-15T10:23:21.275Z",
+  "depsGenerated": "2026-09-17T02:40:23.133Z",
   "versions": [
     {
       "kind": "image",
@@ -2764,26 +2764,6 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.30-alpine",
       "suggested": null,
       "held": null,
@@ -2804,6 +2784,26 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
       ]
     },
     {
@@ -2892,21 +2892,21 @@
     {
       "kind": "image",
       "name": "registry.k8s.io/echoserver",
-      "current": "1.9",
-      "suggested": null,
-      "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
-      "labs": [
-        "first-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "registry.k8s.io/echoserver",
       "current": "1.10",
       "suggested": null,
       "held": null,
       "labs": [
         "first-cluster"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/echoserver",
+      "current": "1.9",
+      "suggested": null,
+      "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
+      "labs": [
+        "first-app"
       ]
     },
     {
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-09-15T10:23:21.265Z"
+  "versionsGenerated": "2026-09-17T02:40:23.120Z"
 }
