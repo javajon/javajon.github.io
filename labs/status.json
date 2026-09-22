@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21T06:06:56.900Z",
+  "generated": "2026-09-22T06:06:32.086Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -242,7 +242,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:00",
+      "at": "09-22 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -521,7 +521,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:00",
+      "at": "09-22 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -632,7 +632,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:00",
+      "at": "09-22 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -686,7 +686,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "09-21 06:03",
+      "at": "09-22 06:04",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
@@ -774,7 +774,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:01",
+      "at": "09-22 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1247,8 +1247,8 @@
       "lastPass": "08-16 00:23",
       "lastFail": "08-22 03:53",
       "lastUpdated": "2026-09-17T22:47:01-04:00",
-      "publishedAt": "2025-11-05T17:45:02.918109Z",
-      "publishLagHours": 7593,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "published 2025-11-05, but this test needs 2026-08-13",
       "versions": [
@@ -1411,7 +1411,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:02",
+      "at": "09-22 06:02",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1438,7 +1438,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:02",
+      "at": "09-22 06:02",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1530,7 +1530,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "09-21 06:05",
+      "at": "09-22 06:04",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
@@ -1756,7 +1756,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:03",
+      "at": "09-22 06:03",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1970,7 +1970,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:04",
+      "at": "09-22 06:03",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2086,7 +2086,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:04",
+      "at": "09-22 06:03",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2174,7 +2174,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "09-21 06:04",
+      "at": "09-22 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2484,24 +2484,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1204
+      "durationMs": 1332
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4533
+      "durationMs": 4936
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": true,
       "summary": "0 link(s) failed of 741",
-      "durationMs": 87387
+      "durationMs": 105195
     }
   ],
-  "depsGenerated": "2026-09-21T06:06:55.029Z",
+  "depsGenerated": "2026-09-22T06:06:30.399Z",
   "versions": [
     {
       "kind": "image",
@@ -2764,21 +2764,21 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.16.1",
       "suggested": null,
       "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
       "labs": [
         "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
       ]
     },
     {
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-09-21T06:06:55.017Z"
+  "versionsGenerated": "2026-09-22T06:06:30.388Z"
 }
