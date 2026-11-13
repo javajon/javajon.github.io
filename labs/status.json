@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-13T06:20:53.482Z",
+  "generated": "2026-11-13T18:06:57.407Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 68,
-    "failing": 2,
+    "passing": 69,
+    "failing": 1,
     "blocked": 4,
     "untested": 0,
     "dependenciesBehind": 4,
@@ -976,16 +976,16 @@
       "status": "Live",
       "users": 0,
       "course": "Yes",
-      "verdict": "FAIL",
-      "mins": 11,
-      "at": "11-13 00:11",
-      "lastPass": "10-11 05:10",
+      "verdict": "PASS",
+      "mins": 10,
+      "at": "11-13 18:05",
+      "lastPass": "11-13 18:05",
       "lastFail": "11-13 00:11",
-      "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": null,
-      "publishLagHours": null,
-      "step": "step7.md:8",
-      "error": "expected output never appeared.",
+      "lastUpdated": "2026-11-13T10:26:47-05:00",
+      "publishedAt": "2026-11-13T15:27:11.844085Z",
+      "publishLagHours": 0,
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "chart",
@@ -1080,11 +1080,11 @@
       "course": "Yes",
       "verdict": "FAIL",
       "mins": 18,
-      "at": "11-13 06:19",
+      "at": "11-13 17:54",
       "lastPass": "08-20 08:17",
-      "lastFail": "11-13 06:19",
-      "lastUpdated": "2026-11-12T23:01:39-05:00",
-      "publishedAt": "2026-11-13T04:02:04.310176Z",
+      "lastFail": "11-13 17:54",
+      "lastUpdated": "2026-11-13T10:26:47-05:00",
+      "publishedAt": "2026-11-13T15:27:05.240917Z",
       "publishLagHours": 0,
       "step": "step3.md:16",
       "error": "the step's own readiness gate never passed.",
@@ -2484,24 +2484,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1305
+      "durationMs": 1296
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4669
+      "durationMs": 5248
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
       "summary": "4 link(s) failed of 741",
-      "durationMs": 102207
+      "durationMs": 108968
     }
   ],
-  "depsGenerated": "2026-11-13T06:20:52.181Z",
+  "depsGenerated": "2026-11-13T18:06:54.756Z",
   "versions": [
     {
       "kind": "image",
@@ -2764,16 +2764,6 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.30-alpine",
       "suggested": null,
       "held": null,
@@ -2794,6 +2784,16 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
       ]
     },
     {
@@ -2842,21 +2842,21 @@
     {
       "kind": "image",
       "name": "library/redis",
-      "current": "8-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "redis"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/redis",
       "current": "8.10-alpine",
       "suggested": null,
       "held": null,
       "labs": [
         "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "8-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "redis"
       ]
     },
     {
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-13T06:20:52.171Z"
+  "versionsGenerated": "2026-11-13T18:06:54.747Z"
 }
