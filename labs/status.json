@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T18:06:57.407Z",
+  "generated": "2026-11-13T18:42:35.915Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -982,8 +982,8 @@
       "lastPass": "11-13 18:05",
       "lastFail": "11-13 00:11",
       "lastUpdated": "2026-11-13T10:26:47-05:00",
-      "publishedAt": "2026-11-13T15:27:11.844085Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1079,14 +1079,14 @@
       "users": 0,
       "course": "Yes",
       "verdict": "FAIL",
-      "mins": 18,
-      "at": "11-13 17:54",
+      "mins": 9,
+      "at": "11-13 18:40",
       "lastPass": "08-20 08:17",
-      "lastFail": "11-13 17:54",
-      "lastUpdated": "2026-11-13T10:26:47-05:00",
-      "publishedAt": "2026-11-13T15:27:05.240917Z",
+      "lastFail": "11-13 18:40",
+      "lastUpdated": "2026-11-13T13:11:56-05:00",
+      "publishedAt": "2026-11-13T18:12:30.178074Z",
       "publishLagHours": 0,
-      "step": "step3.md:16",
+      "step": "step5.md:45",
       "error": "the step's own readiness gate never passed.",
       "versions": [
         {
@@ -2484,24 +2484,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1296
+      "durationMs": 1317
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 5248
+      "durationMs": 4353
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
       "summary": "4 link(s) failed of 741",
-      "durationMs": 108968
+      "durationMs": 102651
     }
   ],
-  "depsGenerated": "2026-11-13T18:06:54.756Z",
+  "depsGenerated": "2026-11-13T18:42:34.151Z",
   "versions": [
     {
       "kind": "image",
@@ -2842,21 +2842,21 @@
     {
       "kind": "image",
       "name": "library/redis",
-      "current": "8.10-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "volumes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/redis",
       "current": "8-alpine",
       "suggested": null,
       "held": null,
       "labs": [
         "redis"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "8.10-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "volumes"
       ]
     },
     {
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-13T18:06:54.747Z"
+  "versionsGenerated": "2026-11-13T18:42:34.141Z"
 }
