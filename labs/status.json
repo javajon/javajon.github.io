@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-13T02:33:07.550Z",
+  "generated": "2026-11-13T03:27:32.507Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 65,
-    "failing": 5,
+    "passing": 68,
+    "failing": 2,
     "blocked": 4,
     "untested": 0,
     "dependenciesBehind": 4,
@@ -24,8 +24,8 @@
       "lastPass": "11-12 22:27",
       "lastFail": "10-11 03:05",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:48.670508Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -43,8 +43,8 @@
       "lastPass": "11-12 22:34",
       "lastFail": "08-22 12:01",
       "lastUpdated": "2026-08-21T22:20:46-04:00",
-      "publishedAt": "2026-08-26T19:17:32.890433Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -64,16 +64,16 @@
       "status": "Live",
       "users": 785,
       "course": "MS Testing",
-      "verdict": "FAIL",
-      "mins": 6,
-      "at": "11-12 22:22",
-      "lastPass": "09-15 06:31",
+      "verdict": "PASS",
+      "mins": 19,
+      "at": "11-13 03:25",
+      "lastPass": "11-13 03:25",
       "lastFail": "11-12 22:22",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
       "publishedAt": "2026-09-18T02:51:38.759015Z",
       "publishLagHours": 0,
-      "step": "step6-consumer.md:30",
-      "error": "command exited 1, expected 0.",
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "chart",
@@ -97,8 +97,8 @@
       "lastPass": "11-12 22:34",
       "lastFail": "08-22 03:38",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:51:55.871545Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -124,8 +124,8 @@
       "lastPass": "11-12 22:38",
       "lastFail": "08-22 03:38",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:28.950303Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -158,8 +158,8 @@
       "lastPass": "11-12 22:51",
       "lastFail": "10-04 03:24",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:54.559565Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -185,8 +185,8 @@
       "lastPass": "11-12 22:41",
       "lastFail": "08-22 03:40",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:09.759987Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -219,8 +219,8 @@
       "lastPass": "11-12 22:42",
       "lastFail": "10-04 03:31",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:55.408054Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -265,8 +265,8 @@
       "lastPass": "11-12 22:52",
       "lastFail": "08-22 03:40",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:00.750094Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -284,8 +284,8 @@
       "lastPass": "11-12 22:47",
       "lastFail": "10-11 03:33",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:49.434991Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -318,8 +318,8 @@
       "lastPass": "11-12 23:00",
       "lastFail": "10-04 03:36",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:43.086896Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -352,8 +352,8 @@
       "lastPass": "11-12 23:04",
       "lastFail": "08-22 03:41",
       "lastUpdated": "2026-08-20T20:29:42-04:00",
-      "publishedAt": "2026-08-28T00:30:54.796052Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -379,8 +379,8 @@
       "lastPass": "11-12 23:00",
       "lastFail": "08-22 03:41",
       "lastUpdated": "2026-08-21T11:58:13-04:00",
-      "publishedAt": "2026-08-28T00:30:08.351746Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -406,8 +406,8 @@
       "lastPass": "11-12 23:08",
       "lastFail": "10-11 03:51",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:52.593157Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -425,8 +425,8 @@
       "lastPass": "11-12 23:09",
       "lastFail": "08-22 03:43",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:52.619560Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -452,8 +452,8 @@
       "lastPass": "11-12 23:09",
       "lastFail": "08-22 03:43",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:23.416483Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -479,8 +479,8 @@
       "lastPass": "11-12 23:25",
       "lastFail": "08-22 03:43",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:35.940343Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -506,8 +506,8 @@
       "lastPass": "11-12 23:25",
       "lastFail": "08-22 03:48",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:41.859184Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -544,8 +544,8 @@
       "lastPass": "11-12 23:21",
       "lastFail": "10-04 04:08",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:55.737706Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -571,8 +571,8 @@
       "lastPass": "11-12 23:33",
       "lastFail": "08-22 03:44",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:27.350454Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -598,8 +598,8 @@
       "lastPass": "11-12 23:38",
       "lastFail": "08-22 03:44",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:51:46.642623Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -617,8 +617,8 @@
       "lastPass": "11-12 23:32",
       "lastFail": "08-22 03:44",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:15.622651Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -663,8 +663,8 @@
       "lastPass": "11-12 23:50",
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:04.721033Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -717,8 +717,8 @@
       "lastPass": "11-12 23:43",
       "lastFail": "10-04 04:30",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:30.295105Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -744,8 +744,8 @@
       "lastPass": "11-12 23:46",
       "lastFail": "09-15 07:34",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:36.739201Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -806,16 +806,16 @@
       "status": "Live",
       "users": 1692,
       "course": "No",
-      "verdict": "FAIL",
-      "mins": 15,
-      "at": "11-12 23:58",
-      "lastPass": "10-11 04:47",
+      "verdict": "PASS",
+      "mins": 17,
+      "at": "11-13 03:06",
+      "lastPass": "11-13 03:06",
       "lastFail": "11-12 23:58",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
       "publishedAt": "2026-09-18T02:51:42.898435Z",
       "publishLagHours": 0,
-      "step": "step8-registry.md:47",
-      "error": "the step's own readiness gate never passed.",
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "chart",
@@ -853,8 +853,8 @@
       "lastPass": "11-12 23:57",
       "lastFail": "08-22 03:48",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:41.741283Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -880,8 +880,8 @@
       "lastPass": "11-13 00:00",
       "lastFail": "08-22 03:48",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:17.755389Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -907,8 +907,8 @@
       "lastPass": "11-13 00:05",
       "lastFail": "09-13 05:06",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:30.085490Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -941,8 +941,8 @@
       "lastPass": "11-13 00:08",
       "lastFail": "10-04 04:57",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:58.002860Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -982,8 +982,8 @@
       "lastPass": "10-11 05:10",
       "lastFail": "11-13 00:11",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:48.147658Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step7.md:8",
       "error": "expected output never appeared.",
       "versions": [
@@ -1009,8 +1009,8 @@
       "lastPass": "11-13 00:13",
       "lastFail": "10-11 05:04",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:06.377605Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1043,8 +1043,8 @@
       "lastPass": "11-13 00:15",
       "lastFail": "09-06 05:25",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:38.204309Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1084,8 +1084,8 @@
       "lastPass": "08-20 08:17",
       "lastFail": "11-13 00:14",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:26.462535Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step3.md:5",
       "error": "command exited 1, expected 0.",
       "versions": [
@@ -1118,8 +1118,8 @@
       "lastPass": "11-13 00:22",
       "lastFail": "09-13 05:32",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:34.337889Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1152,8 +1152,8 @@
       "lastPass": "11-13 00:23",
       "lastFail": "09-15 08:11",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:41.472214Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1186,8 +1186,8 @@
       "lastPass": "11-13 00:24",
       "lastFail": "10-11 05:21",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:01.732300Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1213,8 +1213,8 @@
       "lastPass": "11-13 00:30",
       "lastFail": "09-15 08:19",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:10.809009Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1247,8 +1247,8 @@
       "lastPass": "08-16 00:23",
       "lastFail": "08-22 03:53",
       "lastUpdated": "2026-09-17T22:47:01-04:00",
-      "publishedAt": "2025-11-05T17:45:02.918109Z",
-      "publishLagHours": 7593,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "published 2025-11-05, but this test needs 2026-08-13",
       "versions": [
@@ -1281,8 +1281,8 @@
       "lastPass": "11-13 00:31",
       "lastFail": "08-22 03:53",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:21.671582Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1308,8 +1308,8 @@
       "lastPass": "08-20 08:45",
       "lastFail": "08-22 06:06",
       "lastUpdated": "2026-09-17T22:47:01-04:00",
-      "publishedAt": "2025-11-05T17:44:58.361537Z",
-      "publishLagHours": 7593,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": "published 2025-11-05, but this test needs 2026-08-13",
       "versions": [
@@ -1335,8 +1335,8 @@
       "lastPass": "11-13 00:39",
       "lastFail": "10-04 05:45",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:55:56.048492Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1362,8 +1362,8 @@
       "lastPass": "11-13 00:37",
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:12.877787Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1381,8 +1381,8 @@
       "lastPass": "11-13 00:36",
       "lastFail": "08-22 03:55",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:19.509363Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1461,8 +1461,8 @@
       "lastPass": "11-13 00:47",
       "lastFail": "09-15 08:37",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:06.747654Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1488,8 +1488,8 @@
       "lastPass": "11-13 00:44",
       "lastFail": "09-13 05:57",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:03.741505Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1515,8 +1515,8 @@
       "lastPass": "11-13 00:45",
       "lastFail": "09-20 06:03",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:15.908699Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1561,8 +1561,8 @@
       "lastPass": "11-13 00:54",
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:51:59.764312Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1580,8 +1580,8 @@
       "lastPass": "11-13 01:06",
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T04:13:08-04:00",
-      "publishedAt": "2026-08-28T00:30:15.066836Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1607,8 +1607,8 @@
       "lastPass": "11-13 01:02",
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:37:56-04:00",
-      "publishedAt": "2026-08-28T00:30:29.731811Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1626,8 +1626,8 @@
       "lastPass": "11-13 00:58",
       "lastFail": "10-11 05:55",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:16.280580Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1653,8 +1653,8 @@
       "lastPass": "11-13 01:10",
       "lastFail": "09-06 06:40",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:47.785551Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1680,8 +1680,8 @@
       "lastPass": "11-13 01:10",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:28.580363Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1707,8 +1707,8 @@
       "lastPass": "11-13 01:17",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-08-20T20:29:42-04:00",
-      "publishedAt": "2026-08-28T00:31:55.357084Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1726,8 +1726,8 @@
       "lastPass": "11-13 01:25",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:25.865800Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1787,8 +1787,8 @@
       "lastPass": "11-13 01:17",
       "lastFail": "08-22 04:02",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:39.816959Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1814,8 +1814,8 @@
       "lastPass": "11-13 01:39",
       "lastFail": "10-04 06:52",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:09.136521Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1841,8 +1841,8 @@
       "lastPass": "11-13 01:23",
       "lastFail": "08-22 04:02",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:33.073309Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1860,8 +1860,8 @@
       "lastPass": "11-13 01:32",
       "lastFail": "09-20 06:53",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:51:51.143865Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1894,8 +1894,8 @@
       "lastPass": "11-13 01:43",
       "lastFail": "10-11 06:48",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:51.248625Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1928,8 +1928,8 @@
       "lastPass": "11-13 01:37",
       "lastFail": "10-11 06:38",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:19.546702Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1941,16 +1941,16 @@
       "status": "Live",
       "users": 2854,
       "course": "Fund. Week 1",
-      "verdict": "FAIL",
-      "mins": 12,
-      "at": "11-13 01:49",
-      "lastPass": "10-11 06:44",
+      "verdict": "PASS",
+      "mins": 5,
+      "at": "11-13 02:48",
+      "lastPass": "11-13 02:48",
       "lastFail": "11-13 01:49",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
       "publishedAt": "2026-09-18T02:53:22.559155Z",
       "publishLagHours": 0,
-      "step": "step1-k8s.md:27",
-      "error": "the step's own readiness gate never passed.",
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "image",
@@ -2022,8 +2022,8 @@
       "lastPass": "11-13 01:54",
       "lastFail": "15:25",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:31.837670Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2056,8 +2056,8 @@
       "lastPass": "11-13 01:50",
       "lastFail": "10-04 07:04",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:46.216867Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2124,8 +2124,8 @@
       "lastPass": "11-13 02:07",
       "lastFail": "10-11 06:58",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:38.816294Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2151,8 +2151,8 @@
       "lastPass": "11-13 02:01",
       "lastFail": "08-15 12:59",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:20.427482Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2205,8 +2205,8 @@
       "lastPass": "11-13 02:03",
       "lastFail": "10-11 07:02",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:59.361448Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2239,8 +2239,8 @@
       "lastPass": "11-13 02:17",
       "lastFail": "08-16 08:52",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:11.880508Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -2258,8 +2258,8 @@
       "lastPass": "11-13 02:12",
       "lastFail": "08-15 11:11",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:45.924429Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -2277,8 +2277,8 @@
       "lastPass": "11-13 02:16",
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:13.259358Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2304,8 +2304,8 @@
       "lastPass": "11-13 02:27",
       "lastFail": "10-11 07:41",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:09.959564Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2338,8 +2338,8 @@
       "lastPass": "11-13 02:31",
       "lastFail": "10-04 07:38",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:06.026389Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2484,24 +2484,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1284
+      "durationMs": 1514
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4908
+      "durationMs": 4478
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
       "summary": "4 link(s) failed of 741",
-      "durationMs": 104986
+      "durationMs": 106022
     }
   ],
-  "depsGenerated": "2026-11-13T02:33:03.466Z",
+  "depsGenerated": "2026-11-13T03:27:28.960Z",
   "versions": [
     {
       "kind": "image",
@@ -2764,6 +2764,16 @@
     {
       "kind": "image",
       "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
       "current": "1.16.1",
       "suggested": null,
       "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
@@ -2794,16 +2804,6 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
       ]
     },
     {
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-13T02:33:03.456Z"
+  "versionsGenerated": "2026-11-13T03:27:28.952Z"
 }
