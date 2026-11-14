@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T18:42:35.915Z",
+  "generated": "2026-11-14T06:14:46.357Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -242,7 +242,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:00",
+      "at": "11-14 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -521,7 +521,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:01",
+      "at": "11-14 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -632,7 +632,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:01",
+      "at": "11-14 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -685,8 +685,8 @@
       "users": 808,
       "course": "No",
       "verdict": "UNPUBLISHED",
-      "mins": 3,
-      "at": "11-13 06:05",
+      "mins": 2,
+      "at": "11-14 06:04",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
@@ -774,7 +774,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:02",
+      "at": "11-14 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -977,13 +977,13 @@
       "users": 0,
       "course": "Yes",
       "verdict": "PASS",
-      "mins": 10,
-      "at": "11-13 18:05",
-      "lastPass": "11-13 18:05",
+      "mins": 12,
+      "at": "11-14 06:12",
+      "lastPass": "11-14 06:12",
       "lastFail": "11-13 00:11",
       "lastUpdated": "2026-11-13T10:26:47-05:00",
-      "publishedAt": null,
-      "publishLagHours": null,
+      "publishedAt": "2026-11-13T15:27:11.844085Z",
+      "publishLagHours": 0,
       "step": null,
       "error": null,
       "versions": [
@@ -1079,10 +1079,10 @@
       "users": 0,
       "course": "Yes",
       "verdict": "FAIL",
-      "mins": 9,
-      "at": "11-13 18:40",
+      "mins": 10,
+      "at": "11-14 06:11",
       "lastPass": "08-20 08:17",
-      "lastFail": "11-13 18:40",
+      "lastFail": "11-14 06:11",
       "lastUpdated": "2026-11-13T13:11:56-05:00",
       "publishedAt": "2026-11-13T18:12:30.178074Z",
       "publishLagHours": 0,
@@ -1411,7 +1411,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:02",
+      "at": "11-14 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1438,7 +1438,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:02",
+      "at": "11-14 06:04",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1528,16 +1528,16 @@
       "status": "Live",
       "users": 120,
       "course": "No",
-      "verdict": "UNPUBLISHED",
+      "verdict": "NO-ACCESS",
       "mins": 2,
-      "at": "11-13 06:05",
+      "at": "11-14 06:07",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
       "publishedAt": null,
       "publishLagHours": null,
       "step": null,
-      "error": "(404, no public URL)",
+      "error": "(403, account cannot open this lab)",
       "versions": [
         {
           "kind": "chart",
@@ -1756,7 +1756,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:05",
+      "at": "11-14 06:07",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1970,7 +1970,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:05",
+      "at": "11-14 06:07",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2086,7 +2086,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:06",
+      "at": "11-14 06:08",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2174,7 +2174,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-13 06:06",
+      "at": "11-14 06:08",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2484,24 +2484,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1317
+      "durationMs": 1282
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4353
+      "durationMs": 4592
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
       "summary": "4 link(s) failed of 741",
-      "durationMs": 102651
+      "durationMs": 124394
     }
   ],
-  "depsGenerated": "2026-11-13T18:42:34.151Z",
+  "depsGenerated": "2026-11-14T06:14:44.971Z",
   "versions": [
     {
       "kind": "image",
@@ -2764,6 +2764,26 @@
     {
       "kind": "image",
       "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
       "current": "1.30-alpine",
       "suggested": null,
       "held": null,
@@ -2784,26 +2804,6 @@
         "resource-requests-compute",
         "sidecar",
         "volumes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
       ]
     },
     {
@@ -2892,21 +2892,21 @@
     {
       "kind": "image",
       "name": "registry.k8s.io/echoserver",
-      "current": "1.10",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "first-cluster"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "registry.k8s.io/echoserver",
       "current": "1.9",
       "suggested": null,
       "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
       "labs": [
         "first-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/echoserver",
+      "current": "1.10",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "first-cluster"
       ]
     },
     {
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-13T18:42:34.141Z"
+  "versionsGenerated": "2026-11-14T06:14:44.961Z"
 }
