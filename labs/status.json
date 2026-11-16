@@ -1,13 +1,13 @@
 {
-  "generated": "2026-11-15T07:46:55.667Z",
+  "generated": "2026-11-16T06:20:34.663Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 68,
-    "failing": 1,
-    "blocked": 5,
+    "passing": 70,
+    "failing": 0,
+    "blocked": 4,
     "untested": 0,
-    "dependenciesBehind": 4,
+    "dependenciesBehind": 5,
     "dependencyChecksFailing": 1
   },
   "labs": [
@@ -242,7 +242,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 06:00",
+      "at": "11-16 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -326,16 +326,16 @@
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.14.2",
+          "current": "1.16.1",
           "suggested": null,
-          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
         },
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.16.1",
+          "current": "1.14.2",
           "suggested": null,
-          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
+          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
         }
       ]
     },
@@ -346,16 +346,16 @@
       "status": "Live",
       "users": 958,
       "course": "No",
-      "verdict": "READY-TIMEOUT",
-      "mins": 19,
-      "at": "11-15 03:59",
-      "lastPass": "11-12 23:04",
+      "verdict": "PASS",
+      "mins": 16,
+      "at": "11-16 06:18",
+      "lastPass": "11-16 06:18",
       "lastFail": "08-22 03:41",
       "lastUpdated": "2026-08-20T20:29:42-04:00",
-      "publishedAt": null,
-      "publishLagHours": null,
+      "publishedAt": "2026-08-28T00:30:54.796052Z",
+      "publishLagHours": 0,
       "step": null,
-      "error": "(harness could not confirm the shell)",
+      "error": null,
       "versions": [
         {
           "kind": "image",
@@ -521,7 +521,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 06:00",
+      "at": "11-16 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -632,7 +632,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 06:01",
+      "at": "11-16 06:02",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -684,16 +684,16 @@
       "status": "Live",
       "users": 808,
       "course": "No",
-      "verdict": "UNPUBLISHED",
+      "verdict": "NO-ACCESS",
       "mins": 2,
-      "at": "11-15 06:04",
+      "at": "11-16 06:04",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
       "publishedAt": null,
       "publishLagHours": null,
       "step": null,
-      "error": "(404, no public URL)",
+      "error": "(403, account cannot open this lab)",
       "versions": [
         {
           "kind": "chart",
@@ -774,7 +774,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 06:01",
+      "at": "11-16 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1180,16 +1180,16 @@
       "status": "Live",
       "users": 0,
       "course": "Yes",
-      "verdict": "FAIL",
+      "verdict": "PASS",
       "mins": 10,
-      "at": "11-15 05:35",
-      "lastPass": "11-13 00:24",
+      "at": "11-16 06:11",
+      "lastPass": "11-16 06:11",
       "lastFail": "11-15 05:35",
-      "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": null,
-      "publishLagHours": null,
-      "step": "step6.md:23",
-      "error": "the step's own readiness gate never passed.",
+      "lastUpdated": "2026-11-15T11:03:26-05:00",
+      "publishedAt": "2026-11-15T16:04:02.223559Z",
+      "publishLagHours": 0,
+      "step": null,
+      "error": null,
       "versions": [
         {
           "kind": "chart",
@@ -1411,7 +1411,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 06:02",
+      "at": "11-16 06:05",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1438,7 +1438,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 06:02",
+      "at": "11-16 06:05",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1530,7 +1530,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "11-15 06:05",
+      "at": "11-16 06:08",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
@@ -1607,8 +1607,8 @@
       "lastPass": "11-15 06:26",
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:37:56-04:00",
-      "publishedAt": "2026-08-28T00:30:29.731811Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1626,8 +1626,8 @@
       "lastPass": "11-15 06:07",
       "lastFail": "10-11 05:55",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:16.280580Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1653,8 +1653,8 @@
       "lastPass": "11-15 06:19",
       "lastFail": "09-06 06:40",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:47.785551Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1680,8 +1680,8 @@
       "lastPass": "11-15 06:22",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:28.580363Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1707,8 +1707,8 @@
       "lastPass": "11-15 06:31",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-08-20T20:29:42-04:00",
-      "publishedAt": "2026-08-28T00:31:55.357084Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1726,8 +1726,8 @@
       "lastPass": "11-15 06:36",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:25.865800Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1756,7 +1756,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 06:26",
+      "at": "11-16 06:08",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1787,8 +1787,8 @@
       "lastPass": "11-15 06:32",
       "lastFail": "08-22 04:02",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:39.816959Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1814,8 +1814,8 @@
       "lastPass": "11-15 06:53",
       "lastFail": "10-04 06:52",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:09.136521Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1841,8 +1841,8 @@
       "lastPass": "11-15 06:39",
       "lastFail": "08-22 04:02",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:33.073309Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1860,8 +1860,8 @@
       "lastPass": "11-15 06:45",
       "lastFail": "09-20 06:53",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:51:51.143865Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1894,8 +1894,8 @@
       "lastPass": "11-15 06:56",
       "lastFail": "10-11 06:48",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:51.248625Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1928,8 +1928,8 @@
       "lastPass": "11-15 06:50",
       "lastFail": "10-11 06:38",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:19.546702Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1947,8 +1947,8 @@
       "lastPass": "11-15 06:59",
       "lastFail": "11-13 01:49",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:22.559155Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1970,7 +1970,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 06:53",
+      "at": "11-16 06:08",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2022,8 +2022,8 @@
       "lastPass": "11-15 07:08",
       "lastFail": "15:25",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:31.837670Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2056,8 +2056,8 @@
       "lastPass": "11-15 07:04",
       "lastFail": "10-04 07:04",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:46.216867Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2086,7 +2086,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 06:59",
+      "at": "11-16 06:09",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2124,8 +2124,8 @@
       "lastPass": "11-15 07:16",
       "lastFail": "10-11 06:58",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:38.816294Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2151,8 +2151,8 @@
       "lastPass": "11-15 07:14",
       "lastFail": "08-15 12:59",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:20.427482Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2174,7 +2174,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-15 07:08",
+      "at": "11-16 06:09",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2205,8 +2205,8 @@
       "lastPass": "11-15 07:17",
       "lastFail": "10-11 07:02",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:59.361448Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2239,8 +2239,8 @@
       "lastPass": "11-15 07:29",
       "lastFail": "08-16 08:52",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:11.880508Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -2258,8 +2258,8 @@
       "lastPass": "11-15 07:42",
       "lastFail": "08-15 11:11",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:45.924429Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -2277,8 +2277,8 @@
       "lastPass": "11-15 07:25",
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:13.259358Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2304,8 +2304,8 @@
       "lastPass": "11-15 07:39",
       "lastFail": "10-11 07:41",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:09.959564Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2338,8 +2338,8 @@
       "lastPass": "11-15 07:44",
       "lastFail": "10-04 07:38",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:06.026389Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2347,7 +2347,7 @@
           "kind": "image",
           "name": "alpine/git",
           "current": "2.54.0",
-          "suggested": null,
+          "suggested": "2.54.1",
           "held": null
         },
         {
@@ -2484,25 +2484,35 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1283
+      "durationMs": 1290
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4936
+      "durationMs": 4713
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
       "summary": "4 link(s) failed of 741",
-      "durationMs": 120948
+      "durationMs": 148640
     }
   ],
-  "depsGenerated": "2026-11-15T07:46:51.749Z",
+  "depsGenerated": "2026-11-16T06:20:33.009Z",
   "versions": [
+    {
+      "kind": "image",
+      "name": "alpine/git",
+      "current": "2.54.0",
+      "suggested": "2.54.1",
+      "held": null,
+      "labs": [
+        "volumes"
+      ]
+    },
     {
       "kind": "image",
       "name": "curlimages/curl",
@@ -2549,16 +2559,6 @@
         "kubeadm-quickstart",
         "kubekey-quickstart",
         "microk8s-quickstart"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "alpine/git",
-      "current": "2.54.0",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "volumes"
       ]
     },
     {
@@ -2754,9 +2754,9 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.14.2",
+      "current": "1.16.1",
       "suggested": null,
-      "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
       "labs": [
         "deployments"
       ]
@@ -2764,9 +2764,9 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.16.1",
+      "current": "1.14.2",
       "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
       "labs": [
         "deployments"
       ]
@@ -2930,5 +2930,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-15T07:46:51.740Z"
+  "versionsGenerated": "2026-11-16T06:20:32.999Z"
 }
