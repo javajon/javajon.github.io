@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T06:20:34.663Z",
+  "generated": "2026-11-16T23:58:38.695Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -7,7 +7,7 @@
     "failing": 0,
     "blocked": 4,
     "untested": 0,
-    "dependenciesBehind": 5,
+    "dependenciesBehind": 7,
     "dependencyChecksFailing": 1
   },
   "labs": [
@@ -79,6 +79,27 @@
           "kind": "chart",
           "name": "docker-registry",
           "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/busybox",
+          "current": "1.38.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/eclipse-temurin",
+          "current": "21-jre-alpine",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/node",
+          "current": "24.22.3-slim",
           "suggested": null,
           "held": null
         }
@@ -250,7 +271,22 @@
       "publishLagHours": null,
       "step": null,
       "error": "(403, account cannot open this lab)",
-      "versions": []
+      "versions": [
+        {
+          "kind": "image",
+          "name": "library/golang",
+          "current": "1.12-alpine",
+          "suggested": "1.14-alpine",
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/golang",
+          "current": "1.11-alpine",
+          "suggested": "1.14-alpine",
+          "held": null
+        }
+      ]
     },
     {
       "slug": "crds",
@@ -326,16 +362,16 @@
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.16.1",
+          "current": "1.14.2",
           "suggested": null,
-          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
+          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
         },
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.14.2",
+          "current": "1.16.1",
           "suggested": null,
-          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
         }
       ]
     },
@@ -347,12 +383,12 @@
       "users": 958,
       "course": "No",
       "verdict": "PASS",
-      "mins": 16,
-      "at": "11-16 06:18",
-      "lastPass": "11-16 06:18",
+      "mins": 20,
+      "at": "11-16 23:56",
+      "lastPass": "11-16 23:56",
       "lastFail": "08-22 03:41",
-      "lastUpdated": "2026-08-20T20:29:42-04:00",
-      "publishedAt": "2026-08-28T00:30:54.796052Z",
+      "lastUpdated": "2026-11-16T10:26:40-05:00",
+      "publishedAt": "2026-11-16T15:26:52.706309Z",
       "publishLagHours": 0,
       "step": null,
       "error": null,
@@ -361,6 +397,41 @@
           "kind": "image",
           "name": "joxit/docker-registry-ui",
           "current": "1.5-static",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/alpine",
+          "current": "3.24",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/eclipse-temurin",
+          "current": "25-jdk",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/eclipse-temurin",
+          "current": "25-jdk-alpine",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/eclipse-temurin",
+          "current": "25-jdk-alpine-3.24",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/gradle",
+          "current": "jdk25",
           "suggested": null,
           "held": null
         }
@@ -488,6 +559,20 @@
           "kind": "chart",
           "name": "docker-registry",
           "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/alpine",
+          "current": "3.24",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/golang",
+          "current": "1.26-alpine3.24",
           "suggested": null,
           "held": null
         }
@@ -668,6 +753,20 @@
       "step": null,
       "error": null,
       "versions": [
+        {
+          "kind": "image",
+          "name": "library/golang",
+          "current": "1.12-alpine",
+          "suggested": "1.14-alpine",
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/golang",
+          "current": "1.11-alpine",
+          "suggested": "1.14-alpine",
+          "held": null
+        },
         {
           "kind": "chart",
           "name": "docker-registry",
@@ -862,6 +961,13 @@
           "kind": "chart",
           "name": "docker-registry",
           "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/node",
+          "current": "24-slim",
           "suggested": null,
           "held": null
         }
@@ -1186,8 +1292,8 @@
       "lastPass": "11-16 06:11",
       "lastFail": "11-15 05:35",
       "lastUpdated": "2026-11-15T11:03:26-05:00",
-      "publishedAt": "2026-11-15T16:04:02.223559Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1390,6 +1496,13 @@
           "kind": "image",
           "name": "library/ghost",
           "current": "4.48.9-alpine",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/golang",
+          "current": "1.26",
           "suggested": null,
           "held": null
         },
@@ -1648,13 +1761,13 @@
       "users": 2363,
       "course": "Fund. Week 2",
       "verdict": "PASS",
-      "mins": 11,
-      "at": "11-15 06:19",
-      "lastPass": "11-15 06:19",
+      "mins": 10,
+      "at": "11-16 23:35",
+      "lastPass": "11-16 23:35",
       "lastFail": "09-06 06:40",
-      "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": null,
-      "publishLagHours": null,
+      "lastUpdated": "2026-11-16T16:31:24-05:00",
+      "publishedAt": "2026-11-16T21:32:11.445824Z",
+      "publishLagHours": 0,
       "step": null,
       "error": null,
       "versions": [
@@ -1662,6 +1775,20 @@
           "kind": "chart",
           "name": "docker-registry",
           "current": "3.0.0",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/node",
+          "current": "24-alpine",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/node",
+          "current": "24",
           "suggested": null,
           "held": null
         }
@@ -1825,6 +1952,13 @@
           "current": "3.0.0",
           "suggested": null,
           "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/node",
+          "current": "24-alpine",
+          "suggested": null,
+          "held": null
         }
       ]
     },
@@ -1910,6 +2044,13 @@
           "kind": "image",
           "name": "joxit/docker-registry-ui",
           "current": "1.5-static",
+          "suggested": null,
+          "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/python",
+          "current": "3.14-slim",
           "suggested": null,
           "held": null
         }
@@ -2135,6 +2276,13 @@
           "current": "3.0.0",
           "suggested": null,
           "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/node",
+          "current": "24",
+          "suggested": null,
+          "held": null
         }
       ]
     },
@@ -2322,6 +2470,13 @@
           "current": "1.5-static",
           "suggested": null,
           "held": null
+        },
+        {
+          "kind": "image",
+          "name": "library/node",
+          "current": "24.4.0-alpine3.21",
+          "suggested": null,
+          "held": null
         }
       ]
     },
@@ -2484,24 +2639,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1290
+      "durationMs": 1317
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4713
+      "durationMs": 5389
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
-      "summary": "4 link(s) failed of 741",
-      "durationMs": 148640
+      "summary": "4 link(s) failed of 743",
+      "durationMs": 133099
     }
   ],
-  "depsGenerated": "2026-11-16T06:20:33.009Z",
+  "depsGenerated": "2026-11-16T23:58:35.096Z",
   "versions": [
     {
       "kind": "image",
@@ -2559,6 +2714,28 @@
         "kubeadm-quickstart",
         "kubekey-quickstart",
         "microk8s-quickstart"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/golang",
+      "current": "1.12-alpine",
+      "suggested": "1.14-alpine",
+      "held": null,
+      "labs": [
+        "container-intro",
+        "jobs"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/golang",
+      "current": "1.11-alpine",
+      "suggested": "1.14-alpine",
+      "held": null,
+      "labs": [
+        "container-intro",
+        "jobs"
       ]
     },
     {
@@ -2707,6 +2884,8 @@
       "suggested": null,
       "held": null,
       "labs": [
+        "distillation",
+        "go",
         "krash-configuration-conundrum",
         "krash-elusive-app"
       ]
@@ -2732,12 +2911,62 @@
     },
     {
       "kind": "image",
+      "name": "library/busybox",
+      "current": "1.38.0",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "cdc-with-k8s"
+      ]
+    },
+    {
+      "kind": "image",
       "name": "library/debian",
       "current": "13-slim",
       "suggested": null,
       "held": null,
       "labs": [
         "sidecar"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/eclipse-temurin",
+      "current": "25-jdk",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "distillation"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/eclipse-temurin",
+      "current": "25-jdk-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "distillation"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/eclipse-temurin",
+      "current": "25-jdk-alpine-3.24",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "distillation"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/eclipse-temurin",
+      "current": "21-jre-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "cdc-with-k8s"
       ]
     },
     {
@@ -2753,12 +2982,32 @@
     },
     {
       "kind": "image",
-      "name": "library/nginx",
-      "current": "1.16.1",
+      "name": "library/golang",
+      "current": "1.26-alpine3.24",
       "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "held": null,
       "labs": [
-        "deployments"
+        "go"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/golang",
+      "current": "1.26",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "kube-monkey"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/gradle",
+      "current": "jdk25",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "distillation"
       ]
     },
     {
@@ -2767,6 +3016,16 @@
       "current": "1.14.2",
       "suggested": null,
       "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it",
+      "labs": [
+        "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
       "labs": [
         "deployments"
       ]
@@ -2809,11 +3068,63 @@
     {
       "kind": "image",
       "name": "library/node",
+      "current": "24-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "node-to-k8s",
+        "probes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
       "current": "16-alpine",
       "suggested": null,
       "held": null,
       "labs": [
         "krash-false-start"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "24",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "node-to-k8s",
+        "rust-to-k8s"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "24-slim",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "kotlin-to-k8s"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "24.22.3-slim",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "cdc-with-k8s"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "24.4.0-alpine3.21",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "tekton"
       ]
     },
     {
@@ -2827,6 +3138,16 @@
         "krash-invisible-barrier",
         "krash-perpetual-machine",
         "krash-scaling-stalemate"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/python",
+      "current": "3.14-slim",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "python"
       ]
     },
     {
@@ -2930,5 +3251,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-16T06:20:32.999Z"
+  "versionsGenerated": "2026-11-16T23:58:35.086Z"
 }
