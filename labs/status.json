@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T23:58:38.695Z",
+  "generated": "2026-11-17T06:30:02.677Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -263,7 +263,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:00",
+      "at": "11-17 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -383,9 +383,9 @@
       "users": 958,
       "course": "No",
       "verdict": "PASS",
-      "mins": 20,
-      "at": "11-16 23:56",
-      "lastPass": "11-16 23:56",
+      "mins": 26,
+      "at": "11-17 06:26",
+      "lastPass": "11-17 06:26",
       "lastFail": "08-22 03:41",
       "lastUpdated": "2026-11-16T10:26:40-05:00",
       "publishedAt": "2026-11-16T15:26:52.706309Z",
@@ -410,7 +410,7 @@
         {
           "kind": "image",
           "name": "library/eclipse-temurin",
-          "current": "25-jdk",
+          "current": "25-jdk-alpine-3.24",
           "suggested": null,
           "held": null
         },
@@ -424,7 +424,7 @@
         {
           "kind": "image",
           "name": "library/eclipse-temurin",
-          "current": "25-jdk-alpine-3.24",
+          "current": "25-jdk",
           "suggested": null,
           "held": null
         },
@@ -606,7 +606,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:01",
+      "at": "11-17 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -717,7 +717,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:02",
+      "at": "11-17 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -783,16 +783,16 @@
       "status": "Live",
       "users": 808,
       "course": "No",
-      "verdict": "NO-ACCESS",
+      "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "11-16 06:04",
+      "at": "11-17 06:04",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
       "publishedAt": null,
       "publishLagHours": null,
       "step": null,
-      "error": "(403, account cannot open this lab)",
+      "error": "(404, no public URL)",
       "versions": [
         {
           "kind": "chart",
@@ -873,7 +873,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:04",
+      "at": "11-17 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1524,7 +1524,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:05",
+      "at": "11-17 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1551,7 +1551,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:05",
+      "at": "11-17 06:05",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1641,16 +1641,16 @@
       "status": "Live",
       "users": 120,
       "course": "No",
-      "verdict": "UNPUBLISHED",
+      "verdict": "NO-ACCESS",
       "mins": 2,
-      "at": "11-16 06:08",
+      "at": "11-17 06:07",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
       "publishedAt": null,
       "publishLagHours": null,
       "step": null,
-      "error": "(404, no public URL)",
+      "error": "(403, account cannot open this lab)",
       "versions": [
         {
           "kind": "chart",
@@ -1761,9 +1761,9 @@
       "users": 2363,
       "course": "Fund. Week 2",
       "verdict": "PASS",
-      "mins": 10,
-      "at": "11-16 23:35",
-      "lastPass": "11-16 23:35",
+      "mins": 12,
+      "at": "11-17 06:12",
+      "lastPass": "11-17 06:12",
       "lastFail": "09-06 06:40",
       "lastUpdated": "2026-11-16T16:31:24-05:00",
       "publishedAt": "2026-11-16T21:32:11.445824Z",
@@ -1781,14 +1781,14 @@
         {
           "kind": "image",
           "name": "library/node",
-          "current": "24-alpine",
+          "current": "24",
           "suggested": null,
           "held": null
         },
         {
           "kind": "image",
           "name": "library/node",
-          "current": "24",
+          "current": "24-alpine",
           "suggested": null,
           "held": null
         }
@@ -1883,7 +1883,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:08",
+      "at": "11-17 06:07",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2111,7 +2111,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:08",
+      "at": "11-17 06:08",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2227,7 +2227,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:09",
+      "at": "11-17 06:08",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2322,7 +2322,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-16 06:09",
+      "at": "11-17 06:08",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2639,24 +2639,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1317
+      "durationMs": 1271
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 5389
+      "durationMs": 4532
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
       "summary": "4 link(s) failed of 743",
-      "durationMs": 133099
+      "durationMs": 172546
     }
   ],
-  "depsGenerated": "2026-11-16T23:58:35.096Z",
+  "depsGenerated": "2026-11-17T06:30:01.238Z",
   "versions": [
     {
       "kind": "image",
@@ -2932,7 +2932,17 @@
     {
       "kind": "image",
       "name": "library/eclipse-temurin",
-      "current": "25-jdk",
+      "current": "21-jre-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "cdc-with-k8s"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/eclipse-temurin",
+      "current": "25-jdk-alpine-3.24",
       "suggested": null,
       "held": null,
       "labs": [
@@ -2952,21 +2962,11 @@
     {
       "kind": "image",
       "name": "library/eclipse-temurin",
-      "current": "25-jdk-alpine-3.24",
+      "current": "25-jdk",
       "suggested": null,
       "held": null,
       "labs": [
         "distillation"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/eclipse-temurin",
-      "current": "21-jre-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "cdc-with-k8s"
       ]
     },
     {
@@ -2983,21 +2983,21 @@
     {
       "kind": "image",
       "name": "library/golang",
-      "current": "1.26-alpine3.24",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "go"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/golang",
       "current": "1.26",
       "suggested": null,
       "held": null,
       "labs": [
         "kube-monkey"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/golang",
+      "current": "1.26-alpine3.24",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "go"
       ]
     },
     {
@@ -3033,16 +3033,6 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.30-alpine",
       "suggested": null,
       "held": null,
@@ -3067,23 +3057,12 @@
     },
     {
       "kind": "image",
-      "name": "library/node",
-      "current": "24-alpine",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
       "suggested": null,
-      "held": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
       "labs": [
-        "node-to-k8s",
-        "probes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/node",
-      "current": "16-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "krash-false-start"
+        "krash-elusive-app"
       ]
     },
     {
@@ -3095,6 +3074,16 @@
       "labs": [
         "node-to-k8s",
         "rust-to-k8s"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "16-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "krash-false-start"
       ]
     },
     {
@@ -3115,6 +3104,17 @@
       "held": null,
       "labs": [
         "cdc-with-k8s"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "24-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "node-to-k8s",
+        "probes"
       ]
     },
     {
@@ -3251,5 +3251,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-16T23:58:35.086Z"
+  "versionsGenerated": "2026-11-17T06:30:01.229Z"
 }
