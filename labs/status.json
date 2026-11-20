@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19T06:09:14.046Z",
+  "generated": "2026-11-20T06:07:27.026Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -263,7 +263,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:01",
+      "at": "11-20 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -417,14 +417,14 @@
         {
           "kind": "image",
           "name": "library/eclipse-temurin",
-          "current": "25-jdk-alpine",
+          "current": "25-jdk-alpine-3.24",
           "suggested": null,
           "held": null
         },
         {
           "kind": "image",
           "name": "library/eclipse-temurin",
-          "current": "25-jdk-alpine-3.24",
+          "current": "25-jdk-alpine",
           "suggested": null,
           "held": null
         },
@@ -606,7 +606,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:02",
+      "at": "11-20 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -717,7 +717,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:02",
+      "at": "11-20 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -785,7 +785,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "11-19 06:05",
+      "at": "11-20 06:04",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
@@ -873,7 +873,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:03",
+      "at": "11-20 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1524,7 +1524,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:03",
+      "at": "11-20 06:02",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1551,7 +1551,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:03",
+      "at": "11-20 06:02",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1643,7 +1643,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 2,
-      "at": "11-19 06:06",
+      "at": "11-20 06:05",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
@@ -1781,14 +1781,14 @@
         {
           "kind": "image",
           "name": "library/node",
-          "current": "24-alpine",
+          "current": "24",
           "suggested": null,
           "held": null
         },
         {
           "kind": "image",
           "name": "library/node",
-          "current": "24",
+          "current": "24-alpine",
           "suggested": null,
           "held": null
         }
@@ -1883,7 +1883,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:04",
+      "at": "11-20 06:03",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2111,7 +2111,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:04",
+      "at": "11-20 06:03",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2227,7 +2227,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:05",
+      "at": "11-20 06:03",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2322,7 +2322,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-19 06:05",
+      "at": "11-20 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2639,24 +2639,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1530
+      "durationMs": 1353
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 8870
+      "durationMs": 4662
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
-      "summary": "5 link(s) failed of 743",
-      "durationMs": 156100
+      "summary": "6 link(s) failed of 743",
+      "durationMs": 124224
     }
   ],
-  "depsGenerated": "2026-11-19T06:09:12.642Z",
+  "depsGenerated": "2026-11-20T06:07:25.784Z",
   "versions": [
     {
       "kind": "image",
@@ -2932,16 +2932,6 @@
     {
       "kind": "image",
       "name": "library/eclipse-temurin",
-      "current": "25-jdk",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "distillation"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/eclipse-temurin",
       "current": "21-jre-alpine",
       "suggested": null,
       "held": null,
@@ -2952,7 +2942,7 @@
     {
       "kind": "image",
       "name": "library/eclipse-temurin",
-      "current": "25-jdk-alpine",
+      "current": "25-jdk",
       "suggested": null,
       "held": null,
       "labs": [
@@ -2963,6 +2953,16 @@
       "kind": "image",
       "name": "library/eclipse-temurin",
       "current": "25-jdk-alpine-3.24",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "distillation"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/eclipse-temurin",
+      "current": "25-jdk-alpine",
       "suggested": null,
       "held": null,
       "labs": [
@@ -2983,21 +2983,21 @@
     {
       "kind": "image",
       "name": "library/golang",
-      "current": "1.26",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "kube-monkey"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/golang",
       "current": "1.26-alpine3.24",
       "suggested": null,
       "held": null,
       "labs": [
         "go"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/golang",
+      "current": "1.26",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "kube-monkey"
       ]
     },
     {
@@ -3023,21 +3023,21 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.28.0_alpines.21_slim",
       "suggested": null,
       "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
       "labs": [
         "krash-elusive-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
       ]
     },
     {
@@ -3068,6 +3068,17 @@
     {
       "kind": "image",
       "name": "library/node",
+      "current": "24",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "node-to-k8s",
+        "rust-to-k8s"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
       "current": "16-alpine",
       "suggested": null,
       "held": null,
@@ -3089,12 +3100,11 @@
     {
       "kind": "image",
       "name": "library/node",
-      "current": "24",
+      "current": "24.4.0-alpine3.21",
       "suggested": null,
       "held": null,
       "labs": [
-        "node-to-k8s",
-        "rust-to-k8s"
+        "tekton"
       ]
     },
     {
@@ -3115,16 +3125,6 @@
       "held": null,
       "labs": [
         "kotlin-to-k8s"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/node",
-      "current": "24.4.0-alpine3.21",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "tekton"
       ]
     },
     {
@@ -3251,5 +3251,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-19T06:09:12.633Z"
+  "versionsGenerated": "2026-11-20T06:07:25.774Z"
 }
