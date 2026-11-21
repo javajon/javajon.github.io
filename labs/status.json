@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-20T06:07:27.026Z",
+  "generated": "2026-11-21T06:08:31.188Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -263,7 +263,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:00",
+      "at": "11-21 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -275,14 +275,14 @@
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.11-alpine",
+          "current": "1.12-alpine",
           "suggested": "1.14-alpine",
           "held": null
         },
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.12-alpine",
+          "current": "1.11-alpine",
           "suggested": "1.14-alpine",
           "held": null
         }
@@ -362,16 +362,16 @@
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.14.2",
+          "current": "1.16.1",
           "suggested": null,
-          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
+          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
         },
         {
           "kind": "image",
           "name": "library/nginx",
-          "current": "1.16.1",
+          "current": "1.14.2",
           "suggested": null,
-          "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout"
+          "held": "deployments: the \"before\" image of the rolling-update lesson; step 2 creates the Deployment on it"
         }
       ]
     },
@@ -606,7 +606,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:00",
+      "at": "11-21 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -717,7 +717,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:01",
+      "at": "11-21 06:02",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -756,14 +756,14 @@
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.11-alpine",
+          "current": "1.12-alpine",
           "suggested": "1.14-alpine",
           "held": null
         },
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.12-alpine",
+          "current": "1.11-alpine",
           "suggested": "1.14-alpine",
           "held": null
         },
@@ -785,7 +785,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "11-20 06:04",
+      "at": "11-21 06:05",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
@@ -873,7 +873,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:01",
+      "at": "11-21 06:03",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1524,7 +1524,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:02",
+      "at": "11-21 06:03",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1551,7 +1551,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:02",
+      "at": "11-21 06:03",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1641,16 +1641,16 @@
       "status": "Live",
       "users": 120,
       "course": "No",
-      "verdict": "NO-ACCESS",
+      "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "11-20 06:05",
+      "at": "11-21 06:06",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
       "publishedAt": null,
       "publishLagHours": null,
       "step": null,
-      "error": "(403, account cannot open this lab)",
+      "error": "(404, no public URL)",
       "versions": [
         {
           "kind": "chart",
@@ -1883,7 +1883,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:03",
+      "at": "11-21 06:04",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2111,7 +2111,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:03",
+      "at": "11-21 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2227,7 +2227,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:03",
+      "at": "11-21 06:04",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2322,7 +2322,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-20 06:04",
+      "at": "11-21 06:05",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2639,24 +2639,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1353
+      "durationMs": 1283
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4662
+      "durationMs": 5405
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
       "summary": "6 link(s) failed of 743",
-      "durationMs": 124224
+      "durationMs": 114029
     }
   ],
-  "depsGenerated": "2026-11-20T06:07:25.784Z",
+  "depsGenerated": "2026-11-21T06:08:29.959Z",
   "versions": [
     {
       "kind": "image",
@@ -2719,7 +2719,7 @@
     {
       "kind": "image",
       "name": "library/golang",
-      "current": "1.11-alpine",
+      "current": "1.12-alpine",
       "suggested": "1.14-alpine",
       "held": null,
       "labs": [
@@ -2730,7 +2730,7 @@
     {
       "kind": "image",
       "name": "library/golang",
-      "current": "1.12-alpine",
+      "current": "1.11-alpine",
       "suggested": "1.14-alpine",
       "held": null,
       "labs": [
@@ -2893,6 +2893,16 @@
     {
       "kind": "image",
       "name": "library/busybox",
+      "current": "1.38.0",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "cdc-with-k8s"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/busybox",
       "current": "1.38",
       "suggested": null,
       "held": null,
@@ -2911,32 +2921,12 @@
     },
     {
       "kind": "image",
-      "name": "library/busybox",
-      "current": "1.38.0",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "cdc-with-k8s"
-      ]
-    },
-    {
-      "kind": "image",
       "name": "library/debian",
       "current": "13-slim",
       "suggested": null,
       "held": null,
       "labs": [
         "sidecar"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/eclipse-temurin",
-      "current": "21-jre-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "cdc-with-k8s"
       ]
     },
     {
@@ -2971,12 +2961,32 @@
     },
     {
       "kind": "image",
+      "name": "library/eclipse-temurin",
+      "current": "21-jre-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "cdc-with-k8s"
+      ]
+    },
+    {
+      "kind": "image",
       "name": "library/ghost",
       "current": "4.48.9-alpine",
       "suggested": null,
       "held": null,
       "labs": [
         "chaoskube",
+        "kube-monkey"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/golang",
+      "current": "1.26",
+      "suggested": null,
+      "held": null,
+      "labs": [
         "kube-monkey"
       ]
     },
@@ -2992,22 +3002,22 @@
     },
     {
       "kind": "image",
-      "name": "library/golang",
-      "current": "1.26",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "kube-monkey"
-      ]
-    },
-    {
-      "kind": "image",
       "name": "library/gradle",
       "current": "jdk25",
       "suggested": null,
       "held": null,
       "labs": [
         "distillation"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.16.1",
+      "suggested": null,
+      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
+      "labs": [
+        "deployments"
       ]
     },
     {
@@ -3028,16 +3038,6 @@
       "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
       "labs": [
         "krash-elusive-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
-      "current": "1.16.1",
-      "suggested": null,
-      "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
-      "labs": [
-        "deployments"
       ]
     },
     {
@@ -3100,11 +3100,11 @@
     {
       "kind": "image",
       "name": "library/node",
-      "current": "24.4.0-alpine3.21",
+      "current": "24-slim",
       "suggested": null,
       "held": null,
       "labs": [
-        "tekton"
+        "kotlin-to-k8s"
       ]
     },
     {
@@ -3120,11 +3120,11 @@
     {
       "kind": "image",
       "name": "library/node",
-      "current": "24-slim",
+      "current": "24.4.0-alpine3.21",
       "suggested": null,
       "held": null,
       "labs": [
-        "kotlin-to-k8s"
+        "tekton"
       ]
     },
     {
@@ -3213,21 +3213,21 @@
     {
       "kind": "image",
       "name": "registry.k8s.io/echoserver",
-      "current": "1.10",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "first-cluster"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "registry.k8s.io/echoserver",
       "current": "1.9",
       "suggested": null,
       "held": "first-app: the \"before\" image of the rollout lesson; step 6 rolls to 1.10, then `kubectl replace -f echoserver.yaml` rolls BACK to this and asserts it",
       "labs": [
         "first-app"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "registry.k8s.io/echoserver",
+      "current": "1.10",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "first-cluster"
       ]
     },
     {
@@ -3251,5 +3251,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-20T06:07:25.774Z"
+  "versionsGenerated": "2026-11-21T06:08:29.949Z"
 }
