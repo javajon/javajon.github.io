@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-22T07:31:08.115Z",
+  "generated": "2026-11-23T06:13:05.975Z",
   "summary": {
     "labs": 84,
     "live": 74,
-    "passing": 66,
+    "passing": 67,
     "failing": 3,
-    "blocked": 5,
+    "blocked": 4,
     "untested": 0,
     "dependenciesBehind": 7,
     "dependencyChecksFailing": 1
@@ -263,7 +263,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:00",
+      "at": "11-23 06:03",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -275,14 +275,14 @@
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.12-alpine",
+          "current": "1.11-alpine",
           "suggested": "1.14-alpine",
           "held": null
         },
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.11-alpine",
+          "current": "1.12-alpine",
           "suggested": "1.14-alpine",
           "held": null
         }
@@ -417,14 +417,14 @@
         {
           "kind": "image",
           "name": "library/eclipse-temurin",
-          "current": "25-jdk-alpine",
+          "current": "25-jdk-alpine-3.24",
           "suggested": null,
           "held": null
         },
         {
           "kind": "image",
           "name": "library/eclipse-temurin",
-          "current": "25-jdk-alpine-3.24",
+          "current": "25-jdk-alpine",
           "suggested": null,
           "held": null
         },
@@ -606,7 +606,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:00",
+      "at": "11-23 06:03",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -717,7 +717,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:01",
+      "at": "11-23 06:03",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -756,14 +756,14 @@
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.12-alpine",
+          "current": "1.11-alpine",
           "suggested": "1.14-alpine",
           "held": null
         },
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.11-alpine",
+          "current": "1.12-alpine",
           "suggested": "1.14-alpine",
           "held": null
         },
@@ -784,8 +784,8 @@
       "users": 808,
       "course": "No",
       "verdict": "UNPUBLISHED",
-      "mins": 2,
-      "at": "11-22 06:03",
+      "mins": 3,
+      "at": "11-23 06:07",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
@@ -873,7 +873,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:01",
+      "at": "11-23 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1524,7 +1524,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:02",
+      "at": "11-23 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1551,7 +1551,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:02",
+      "at": "11-23 06:05",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1622,16 +1622,16 @@
       "status": "Live",
       "users": 423,
       "course": "MS Testing",
-      "verdict": "READY-TIMEOUT",
+      "verdict": "PASS",
       "mins": 5,
-      "at": "11-22 05:48",
-      "lastPass": "11-15 05:55",
+      "at": "11-23 06:10",
+      "lastPass": "11-23 06:10",
       "lastFail": "09-20 06:03",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": null,
-      "publishLagHours": null,
+      "publishedAt": "2026-09-18T02:54:15.908699Z",
+      "publishLagHours": 0,
       "step": null,
-      "error": "(harness could not confirm the shell)",
+      "error": null,
       "versions": []
     },
     {
@@ -1641,16 +1641,16 @@
       "status": "Live",
       "users": 120,
       "course": "No",
-      "verdict": "NO-ACCESS",
+      "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "11-22 06:04",
+      "at": "11-23 06:08",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
       "publishedAt": null,
       "publishLagHours": null,
       "step": null,
-      "error": "(403, account cannot open this lab)",
+      "error": "(404, no public URL)",
       "versions": [
         {
           "kind": "chart",
@@ -1766,8 +1766,8 @@
       "lastPass": "11-22 06:13",
       "lastFail": "09-06 06:40",
       "lastUpdated": "2026-11-16T16:31:24-05:00",
-      "publishedAt": "2026-11-16T21:32:11.445824Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1781,14 +1781,14 @@
         {
           "kind": "image",
           "name": "library/node",
-          "current": "24-alpine",
+          "current": "24",
           "suggested": null,
           "held": null
         },
         {
           "kind": "image",
           "name": "library/node",
-          "current": "24",
+          "current": "24-alpine",
           "suggested": null,
           "held": null
         }
@@ -1807,8 +1807,8 @@
       "lastPass": "11-22 06:10",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:28.580363Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1834,8 +1834,8 @@
       "lastPass": "11-22 06:19",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-08-20T20:29:42-04:00",
-      "publishedAt": "2026-08-28T00:31:55.357084Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1853,8 +1853,8 @@
       "lastPass": "11-22 06:24",
       "lastFail": "08-22 03:59",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:25.865800Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1883,7 +1883,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:13",
+      "at": "11-23 06:07",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1914,8 +1914,8 @@
       "lastPass": "11-22 06:25",
       "lastFail": "08-22 04:02",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:39.816959Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1941,8 +1941,8 @@
       "lastPass": "11-22 06:40",
       "lastFail": "10-04 06:52",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:09.136521Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -1975,8 +1975,8 @@
       "lastPass": "11-22 06:30",
       "lastFail": "08-22 04:02",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:33.073309Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -1994,8 +1994,8 @@
       "lastPass": "11-22 06:33",
       "lastFail": "09-20 06:53",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:51:51.143865Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2028,8 +2028,8 @@
       "lastPass": "11-22 06:47",
       "lastFail": "10-11 06:48",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:51.248625Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2069,8 +2069,8 @@
       "lastPass": "11-22 06:38",
       "lastFail": "10-11 06:38",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:19.546702Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -2088,8 +2088,8 @@
       "lastPass": "11-22 06:43",
       "lastFail": "11-13 01:49",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:22.559155Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2111,7 +2111,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:40",
+      "at": "11-23 06:08",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2163,8 +2163,8 @@
       "lastPass": "11-15 07:08",
       "lastFail": "11-22 06:47",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:31.837670Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": "step2-registry.md:45",
       "error": "the step's own readiness gate never passed.",
       "versions": [
@@ -2197,8 +2197,8 @@
       "lastPass": "11-22 06:50",
       "lastFail": "10-04 07:04",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:46.216867Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2227,7 +2227,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:47",
+      "at": "11-23 06:08",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2265,8 +2265,8 @@
       "lastPass": "11-22 07:05",
       "lastFail": "10-11 06:58",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:38.816294Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2299,8 +2299,8 @@
       "lastPass": "11-22 06:59",
       "lastFail": "08-15 12:59",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:20.427482Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2322,7 +2322,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-22 06:50",
+      "at": "11-23 06:08",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2353,8 +2353,8 @@
       "lastPass": "11-22 06:59",
       "lastFail": "10-11 07:02",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:59.361448Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2387,8 +2387,8 @@
       "lastPass": "11-22 07:15",
       "lastFail": "08-16 08:52",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:11.880508Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -2406,8 +2406,8 @@
       "lastPass": "11-22 07:09",
       "lastFail": "08-15 11:11",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:45.924429Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": []
@@ -2425,8 +2425,8 @@
       "lastPass": "11-22 07:14",
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:53:13.259358Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2452,8 +2452,8 @@
       "lastPass": "11-22 07:24",
       "lastFail": "10-11 07:41",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:54:09.959564Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2493,8 +2493,8 @@
       "lastPass": "11-22 07:28",
       "lastFail": "10-04 07:38",
       "lastUpdated": "2026-09-17T22:51:25-04:00",
-      "publishedAt": "2026-09-18T02:52:06.026389Z",
-      "publishLagHours": 0,
+      "publishedAt": null,
+      "publishLagHours": null,
       "step": null,
       "error": null,
       "versions": [
@@ -2639,24 +2639,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1284
+      "durationMs": 1331
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4627
+      "durationMs": 4296
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
-      "summary": "7 link(s) failed of 743",
-      "durationMs": 116834
+      "summary": "8 link(s) failed of 743",
+      "durationMs": 112996
     }
   ],
-  "depsGenerated": "2026-11-22T07:31:04.318Z",
+  "depsGenerated": "2026-11-23T06:13:04.759Z",
   "versions": [
     {
       "kind": "image",
@@ -2719,7 +2719,7 @@
     {
       "kind": "image",
       "name": "library/golang",
-      "current": "1.12-alpine",
+      "current": "1.11-alpine",
       "suggested": "1.14-alpine",
       "held": null,
       "labs": [
@@ -2730,7 +2730,7 @@
     {
       "kind": "image",
       "name": "library/golang",
-      "current": "1.11-alpine",
+      "current": "1.12-alpine",
       "suggested": "1.14-alpine",
       "held": null,
       "labs": [
@@ -2942,16 +2942,6 @@
     {
       "kind": "image",
       "name": "library/eclipse-temurin",
-      "current": "25-jdk-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "distillation"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/eclipse-temurin",
       "current": "21-jre-alpine",
       "suggested": null,
       "held": null,
@@ -2963,6 +2953,16 @@
       "kind": "image",
       "name": "library/eclipse-temurin",
       "current": "25-jdk-alpine-3.24",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "distillation"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/eclipse-temurin",
+      "current": "25-jdk-alpine",
       "suggested": null,
       "held": null,
       "labs": [
@@ -3023,21 +3023,21 @@
     {
       "kind": "image",
       "name": "library/nginx",
-      "current": "1.28.0_alpines.21_slim",
-      "suggested": null,
-      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
-      "labs": [
-        "krash-elusive-app"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/nginx",
       "current": "1.16.1",
       "suggested": null,
       "held": "deployments: the \"after\" image the rollout moves to in step 5; step 7 then uses the 1.161 typo to show a FAILED rollout",
       "labs": [
         "deployments"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/nginx",
+      "current": "1.28.0_alpines.21_slim",
+      "suggested": null,
+      "held": "planted: a krash lab breaks this on purpose and its own solution script repairs it",
+      "labs": [
+        "krash-elusive-app"
       ]
     },
     {
@@ -3068,32 +3068,11 @@
     {
       "kind": "image",
       "name": "library/node",
-      "current": "24-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "node-to-k8s",
-        "probes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/node",
       "current": "16-alpine",
       "suggested": null,
       "held": null,
       "labs": [
         "krash-false-start"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/node",
-      "current": "24-slim",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "kotlin-to-k8s"
       ]
     },
     {
@@ -3105,6 +3084,27 @@
       "labs": [
         "node-to-k8s",
         "rust-to-k8s"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "24-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "node-to-k8s",
+        "probes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "24-slim",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "kotlin-to-k8s"
       ]
     },
     {
@@ -3163,21 +3163,21 @@
     {
       "kind": "image",
       "name": "library/redis",
-      "current": "8-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "redis"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/redis",
       "current": "8.10-alpine",
       "suggested": null,
       "held": null,
       "labs": [
         "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "8-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "redis"
       ]
     },
     {
@@ -3251,5 +3251,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-22T07:31:04.308Z"
+  "versionsGenerated": "2026-11-23T06:13:04.750Z"
 }
