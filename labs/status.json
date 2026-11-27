@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T06:07:12.518Z",
+  "generated": "2026-11-27T06:07:58.015Z",
   "summary": {
     "labs": 84,
     "live": 74,
@@ -263,7 +263,7 @@
       "course": "Fund. Week 2",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:00",
+      "at": "11-27 06:00",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-19T15:48:51-04:00",
@@ -275,14 +275,14 @@
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.12-alpine",
+          "current": "1.11-alpine",
           "suggested": "1.14-alpine",
           "held": null
         },
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.11-alpine",
+          "current": "1.12-alpine",
           "suggested": "1.14-alpine",
           "held": null
         }
@@ -410,7 +410,7 @@
         {
           "kind": "image",
           "name": "library/eclipse-temurin",
-          "current": "25-jdk-alpine",
+          "current": "25-jdk",
           "suggested": null,
           "held": null
         },
@@ -424,7 +424,7 @@
         {
           "kind": "image",
           "name": "library/eclipse-temurin",
-          "current": "25-jdk",
+          "current": "25-jdk-alpine",
           "suggested": null,
           "held": null
         },
@@ -606,7 +606,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:00",
+      "at": "11-27 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -717,7 +717,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:01",
+      "at": "11-27 06:01",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -756,14 +756,14 @@
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.12-alpine",
+          "current": "1.11-alpine",
           "suggested": "1.14-alpine",
           "held": null
         },
         {
           "kind": "image",
           "name": "library/golang",
-          "current": "1.11-alpine",
+          "current": "1.12-alpine",
           "suggested": "1.14-alpine",
           "held": null
         },
@@ -783,16 +783,16 @@
       "status": "Live",
       "users": 808,
       "course": "No",
-      "verdict": "NO-ACCESS",
+      "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "11-26 06:03",
+      "at": "11-27 06:04",
       "lastPass": null,
       "lastFail": "08-22 03:46",
       "lastUpdated": "2026-08-21T04:05:50-04:00",
       "publishedAt": null,
       "publishLagHours": null,
       "step": null,
-      "error": "(403, account cannot open this lab)",
+      "error": "(404, no public URL)",
       "versions": [
         {
           "kind": "chart",
@@ -873,7 +873,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:01",
+      "at": "11-27 06:02",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T22:09:01-04:00",
@@ -1524,7 +1524,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:02",
+      "at": "11-27 06:02",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-08-21T11:58:42-04:00",
@@ -1551,7 +1551,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:02",
+      "at": "11-27 06:02",
       "lastPass": null,
       "lastFail": "19:34",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -1643,7 +1643,7 @@
       "course": "No",
       "verdict": "UNPUBLISHED",
       "mins": 2,
-      "at": "11-26 06:05",
+      "at": "11-27 06:05",
       "lastPass": null,
       "lastFail": "08-22 03:57",
       "lastUpdated": "2026-08-21T11:59:04-04:00",
@@ -1781,14 +1781,14 @@
         {
           "kind": "image",
           "name": "library/node",
-          "current": "24-alpine",
+          "current": "24",
           "suggested": null,
           "held": null
         },
         {
           "kind": "image",
           "name": "library/node",
-          "current": "24",
+          "current": "24-alpine",
           "suggested": null,
           "held": null
         }
@@ -1883,7 +1883,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:03",
+      "at": "11-27 06:03",
       "lastPass": null,
       "lastFail": "19:41",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2111,7 +2111,7 @@
       "course": "No",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:03",
+      "at": "11-27 06:03",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2227,7 +2227,7 @@
       "course": "MS Testing",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:03",
+      "at": "11-27 06:04",
       "lastPass": null,
       "lastFail": "20:03",
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2322,7 +2322,7 @@
       "course": "Intrm. Week 1",
       "verdict": "NO-ACCESS",
       "mins": 0,
-      "at": "11-26 06:04",
+      "at": "11-27 06:04",
       "lastPass": null,
       "lastFail": null,
       "lastUpdated": "2026-09-17T22:49:24-04:00",
@@ -2639,24 +2639,24 @@
       "title": "Container images",
       "ok": true,
       "summary": "32 resolve, 0 aging, 1 planted, 0 broken",
-      "durationMs": 1175
+      "durationMs": 1291
     },
     {
       "id": "charts",
       "title": "Helm chart versions",
       "ok": true,
       "summary": "48 pinned chart(s) checked, 0 problem(s)",
-      "durationMs": 4482
+      "durationMs": 4924
     },
     {
       "id": "links",
       "title": "Links in lab text",
       "ok": false,
       "summary": "7 link(s) failed of 743",
-      "durationMs": 108207
+      "durationMs": 121323
     }
   ],
-  "depsGenerated": "2026-11-26T06:07:11.086Z",
+  "depsGenerated": "2026-11-27T06:07:56.880Z",
   "versions": [
     {
       "kind": "image",
@@ -2719,7 +2719,7 @@
     {
       "kind": "image",
       "name": "library/golang",
-      "current": "1.12-alpine",
+      "current": "1.11-alpine",
       "suggested": "1.14-alpine",
       "held": null,
       "labs": [
@@ -2730,7 +2730,7 @@
     {
       "kind": "image",
       "name": "library/golang",
-      "current": "1.11-alpine",
+      "current": "1.12-alpine",
       "suggested": "1.14-alpine",
       "held": null,
       "labs": [
@@ -2893,16 +2893,6 @@
     {
       "kind": "image",
       "name": "library/busybox",
-      "current": "1.38.0",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "cdc-with-k8s"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/busybox",
       "current": "1.38",
       "suggested": null,
       "held": null,
@@ -2921,12 +2911,32 @@
     },
     {
       "kind": "image",
+      "name": "library/busybox",
+      "current": "1.38.0",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "cdc-with-k8s"
+      ]
+    },
+    {
+      "kind": "image",
       "name": "library/debian",
       "current": "13-slim",
       "suggested": null,
       "held": null,
       "labs": [
         "sidecar"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/eclipse-temurin",
+      "current": "25-jdk",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "distillation"
       ]
     },
     {
@@ -2942,16 +2952,6 @@
     {
       "kind": "image",
       "name": "library/eclipse-temurin",
-      "current": "25-jdk-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "distillation"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/eclipse-temurin",
       "current": "25-jdk-alpine-3.24",
       "suggested": null,
       "held": null,
@@ -2962,7 +2962,7 @@
     {
       "kind": "image",
       "name": "library/eclipse-temurin",
-      "current": "25-jdk",
+      "current": "25-jdk-alpine",
       "suggested": null,
       "held": null,
       "labs": [
@@ -3068,17 +3068,6 @@
     {
       "kind": "image",
       "name": "library/node",
-      "current": "24-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "node-to-k8s",
-        "probes"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/node",
       "current": "24",
       "suggested": null,
       "held": null,
@@ -3095,6 +3084,17 @@
       "held": null,
       "labs": [
         "krash-false-start"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/node",
+      "current": "24-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "node-to-k8s",
+        "probes"
       ]
     },
     {
@@ -3130,16 +3130,6 @@
     {
       "kind": "image",
       "name": "library/python",
-      "current": "3.14-slim",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "python"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/python",
       "current": "3.13.3-slim",
       "suggested": null,
       "held": null,
@@ -3148,6 +3138,16 @@
         "krash-invisible-barrier",
         "krash-perpetual-machine",
         "krash-scaling-stalemate"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/python",
+      "current": "3.14-slim",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "python"
       ]
     },
     {
@@ -3163,21 +3163,21 @@
     {
       "kind": "image",
       "name": "library/redis",
-      "current": "8-alpine",
-      "suggested": null,
-      "held": null,
-      "labs": [
-        "redis"
-      ]
-    },
-    {
-      "kind": "image",
-      "name": "library/redis",
       "current": "8.10-alpine",
       "suggested": null,
       "held": null,
       "labs": [
         "volumes"
+      ]
+    },
+    {
+      "kind": "image",
+      "name": "library/redis",
+      "current": "8-alpine",
+      "suggested": null,
+      "held": null,
+      "labs": [
+        "redis"
       ]
     },
     {
@@ -3251,5 +3251,5 @@
       ]
     }
   ],
-  "versionsGenerated": "2026-11-26T06:07:11.075Z"
+  "versionsGenerated": "2026-11-27T06:07:56.871Z"
 }
